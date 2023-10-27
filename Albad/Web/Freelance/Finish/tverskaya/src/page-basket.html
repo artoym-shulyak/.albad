@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+ "title":"Главная"
+})
+<body>
+  <div class="wrapper">
+    @@include('html/header.html',{})
+    <main class="main">
+
+      <section class="head">
+        <div class="head__container">
+          <ul class="head__path">
+            <li>
+              <a href="index.html">главная</a>
+            </li>
+            <span>/</span>
+            <li>магазин</li>
+          </ul>
+          <div class="head__middle">
+            <h2 class="head__title">корзина</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="basket">
+        <div class="basket__container">
+          <div class="basket__body">
+            <div class="basket__wrap">
+              <div class="basket__images">
+                <img src="img/basket-1.png" alt="">
+              </div>
+              <div class="basket__info">
+                <h4 class="basket__name">Заяц в красной накидке</h4>
+                <span>Артикул: 0102000003</span>
+              </div>
+              <div class="basket__count">
+                <div class="basket__come active" data-plus></div>
+                <div class="basket__number" data-number>1</div>
+                <div class="basket__come" data-minus></div>
+              </div>
+              <div class="basket__price">800 ₽</div>
+              <div class="basket__remove">удалить</div>
+            </div>
+            <div class="basket__wrap">
+              <div class="basket__images">
+                <img src="img/basket-1.png" alt=""></div>
+              <div class="basket__info">
+                <h4 class="basket__name">Заяц в красной накидке</h4>
+                <span>Артикул: 0102000003</span>
+              </div>
+              <div class="basket__count">
+                <div class="basket__come active" data-plus></div>
+                <div class="basket__number" data-number>1</div>
+                <div class="basket__come" data-minus></div>
+              </div>
+              <div class="basket__price">800 ₽</div>
+              <div class="basket__remove">удалить</div>
+            </div>
+            <div class="basket__wrap">
+              <div class="basket__images">
+                <img src="img/basket-1.png" alt=""></div>
+              <div class="basket__info">
+                <h4 class="basket__name">Заяц в красной накидке</h4>
+                <span>Артикул: 0102000003</span>
+              </div>
+              <div class="basket__count">
+                <div class="basket__come active" data-plus></div>
+                <div class="basket__number" data-number>1</div>
+                <div class="basket__come" data-minus></div>
+              </div>
+              <div class="basket__price">800 ₽</div>
+              <div class="basket__remove">удалить</div>
+            </div>
+          </div>
+          <div class="basket__footer">
+            <div class="basket__remove">очистить корзину</div>
+            <div class="basket__price">3850 ₽</div>
+            <button class="basket__btn">оформить заказ</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="similar">
+        <div class="similar__container">
+          <h2 class="similar__title">вы смотрели:</h2>
+          <div class="swiper similar__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="shop__item">
+                  <div class="shop__images">
+                    <img src="img/good-1.png" alt="">
+                    <span>новинка</span>
+                  </div>
+                  <div class="shop__info">
+                    <div class="shop__status">категория</div>
+                    <h4 class="shop__name">Заяц в красной накидке</h4>
+                    <div class="shop__end">
+                      <div class="shop__price">800 ₽</div>
+                      <button class="shop__btn">купить</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="shop__item">
+                  <div class="shop__images">
+                    <img src="img/good-2.png" alt="">
+                    <span>новинка</span>
+                  </div>
+                  <div class="shop__info">
+                    <div class="shop__status">категория</div>
+                    <h4 class="shop__name">Заяц в красной накидке</h4>
+                    <div class="shop__end">
+                      <div class="shop__price">800 ₽</div>
+                      <button class="shop__btn">купить</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="shop__item">
+                  <div class="shop__images">
+                    <img src="img/good-3.png" alt=""></div>
+                    <div class="shop__info">
+                      <div class="shop__status">категория</div>
+                      <h4 class="shop__name">Тарелка маленькая «Бабочки» №2</h4>
+                      <div class="shop__end">
+                        <div class="shop__price">550 ₽</div>
+                        <button class="shop__btn">купить</button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="shop__item">
+                    <div class="shop__images">
+                      <img src="img/good-4.png" alt="">
+                      <span>новинка</span>
+                    </div>
+                    <div class="shop__info">
+                      <div class="shop__status">категория</div>
+                      <h4 class="shop__name">Чашка «Индийские цветы»</h4>
+                      <div class="shop__end">
+                        <div class="shop__price">600 ₽</div>
+                        <button class="shop__btn">купить</button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="shop__item">
+                    <div class="shop__images">
+                      <img src="img/good-4.png" alt="">
+                      <span>новинка</span>
+                    </div>
+                    <div class="shop__info">
+                      <div class="shop__status">категория</div>
+                      <h4 class="shop__name">Чашка «Индийские цветы»</h4>
+                      <div class="shop__end">
+                        <div class="shop__price">600 ₽</div>
+                        <button class="shop__btn">купить</button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="similar__scrollbar"></div>
+            <a href="#" class="similar__link">перейти в магазин</a>
+          </div>
+        </section>
+
+      </main>
+      @@include('html/footer.html',{})
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="files/main.js"></script>
+  </body>
+
+  </html>

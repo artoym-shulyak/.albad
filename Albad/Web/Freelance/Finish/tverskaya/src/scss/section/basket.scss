@@ -1,0 +1,318 @@
+.basket {
+    margin: 0 0 140px 0;
+}
+
+.basket__container {}
+
+.basket__body {
+    margin-bottom: 60px;
+}
+
+.basket__wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 1199.98px) {
+        flex-wrap: wrap;
+        grid-gap: 20px;
+        display: grid;
+        grid-template-columns: 150px auto 100px 165px;
+    }
+
+    @media (max-width: 991.98px) {
+        grid-gap: 35px;
+        margin-bottom: 60px;
+        grid-template-columns: 170px auto 100px;
+    }
+
+    @media (max-width:576.98px) {
+        grid-gap: 20px;
+        margin-bottom: 40px;
+        grid-template-columns: 145px auto 70px;
+    }
+
+    @media (max-width: 479.98px) {
+        display: grid;
+        grid-template-columns: 150px auto;
+    }
+
+    @media (max-width: 374.98px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .basket__images {
+        height: 122px;
+        flex: 0 0 150px;
+        position: relative;
+        background: $grey-light;
+        border-radius: 24px;
+        overflow: hidden;
+        margin-right: 35px;
+
+        @media (max-width: 1199.98px) {
+            margin-right: 0;
+        }
+
+        @media (max-width: 991.98px) {
+            margin-right: 0;
+            flex: 0 0 170px;
+        }
+
+        @media (max-width:576.98px) {
+            flex: 0 0 35%;
+        }
+
+        @media (max-width: 374.98px) {
+            height: 200px;
+        }
+
+        img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .basket__info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+
+        @media (max-width:576.98px) {
+            flex: 0 0 60%;
+        }
+
+        span {
+            display: block;
+            color: $grey;
+            font-size: 18px;
+            line-height: 113%;
+
+            @media (max-width:576.98px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 479.98px) {
+                font-size: 14px;
+            }
+
+        }
+    }
+
+    .basket__name {
+        margin-bottom: 8px;
+        font-size: 26px;
+        line-height: 130%;
+
+        @media (max-width:576.98px) {
+            font-size: 22px;
+        }
+
+        @media (max-width: 479.98px) {
+            font-size: 20px;
+        }
+
+    }
+
+    .basket__count {
+        display: flex;
+        align-items: center;
+        margin-right: 93px;
+
+        @media (max-width: 1199.98px) {
+            order: 4;
+            margin-right: 0px;
+        }
+
+        @media (max-width: 991.98px) {
+            margin-right: 0;
+            // order: 3;
+        }
+    }
+
+    .basket__come {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 125%;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #E5E5E5;
+        position: relative;
+
+        @media (max-width: 576.98px) {
+            height: 50px;
+            width: 50px;
+        }
+
+        &::after {
+            position: absolute;
+            content: '\002B';
+            top: 15px;
+            left: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 576.98px) {
+                top: 10px;
+                left: 17px;
+            }
+        }
+
+        &.active {
+            background: $blue-dark;
+
+            &::after {
+                color: $white;
+            }
+        }
+    }
+
+    .basket__number+.basket__come {
+        &::after {
+            position: absolute;
+            content: '\2212 ';
+            top: 15px;
+            left: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 576.98px) {
+                top: 10px;
+                left: 17px;
+            }
+        }
+    }
+
+    .basket__number {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 125%;
+        text-align: center;
+        width: 45px;
+    }
+
+    .basket__price {
+        font-size: 40px;
+        line-height: 50px;
+        margin-right: 121px;
+
+        @media (max-width: 1199.98px) {
+            order: 5;
+            margin-right: 0;
+            grid-column-start: 2;
+        }
+
+        @media (max-width:991.98px) {
+            grid-column-start: unset;
+        }
+
+        @media (max-width: 479.98px) {
+            font-size: 32px;
+            line-height: 38px;
+
+        }
+    }
+
+    .basket__remove {
+        cursor: pointer;
+        color: $grey;
+        font-size: 24px;
+        line-height: 125%;
+
+        @media (max-width: 1199.98px) {
+            order: 3;
+            flex: 0 0 25%;
+            text-align: right;
+        }
+
+        @media (max-width: 576.98px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 479.98px) {
+            order: 5;
+            text-align: center;
+        }
+    }
+
+}
+
+
+
+.basket__footer {
+    display: flex;
+    align-items: center;
+    background: $grey-light;
+    border-radius: 24px;
+    padding: 50px;
+
+    @media (max-width: 991.98px) {
+        justify-content: space-between;
+    }
+
+    @media (max-width: 576.98px) {
+        padding: 30px;
+    }
+
+    @media (max-width: 479.98px) {
+        flex-direction: column;
+    }
+
+    .basket__remove {
+        cursor: pointer;
+        color: $grey;
+        font-size: 24px;
+        line-height: 125%;
+        flex: 1 0 auto;
+
+        @media (max-width: 991.98px) {
+            display: none;
+        }
+    }
+
+    .basket__price {
+        font-size: 40px;
+        line-height: 50px;
+        margin-right: 249px;
+
+        @media (max-width: 1199.98px) {
+            margin-right: 150px;
+        }
+
+        @media (max-width: 991.98px) {
+            margin: 0;
+        }
+
+        @media (max-width: 576.98px) {
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        @media (max-width: 479.98px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    .basket__btn {
+        @extend %btn_orange_color;
+        padding: 17px 24px;
+
+        @media (max-width: 576.98px) {
+            padding: 15px 20px;
+        }
+    }
+}

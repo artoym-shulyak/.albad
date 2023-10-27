@@ -1,0 +1,32 @@
+@import 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css';
+
+// Шрифты
+// @import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Poiret+One&family=Raleway:wght@400;500;600;700&display=swap');
+@import 'fonts.scss';
+
+// Основы
+@import 'base/variables';
+@import 'base/global.scss';
+@import 'base/header.scss';
+@import 'base/footer.scss';
+
+// Блоки
+@import 'section/head.scss';
+@import 'section/content.scss';
+@import 'section/advantage.scss';
+@import 'section/our-work.scss';
+@import 'section/certificates.scss';
+@import 'section/client.scss';
+@import 'section/path.scss';
+@import 'section/thank.scss';
+@import 'section/contact.scss';
+@import 'section/map.scss';
+@import 'section/welcome.scss';
+@import 'section/principle.scss';
+@import 'section/prev.scss';
+@import 'section/cooperation.scss';
+@import 'section/project.scss';
+@import 'section/team.scss';
+@import 'section/vacancies.scss';
+@import 'section/questions.scss';
+@import 'modals/modal.scss';

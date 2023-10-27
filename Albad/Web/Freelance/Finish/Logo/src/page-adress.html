@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Магазины"
+})
+
+<body>
+ @@include('html/header.html',{})
+ <main>
+
+  <!-- Магазины -->
+  <section class="shop">
+   <div class="shop__container">
+    <h1 class="shop__title">Магазины</h1>
+   </div>
+   <div class="shop__big-container">
+    <img class="shop__img" src="img/img-maps.png" alt="" class="shop__shop">
+    <div class="shop__body">
+     <div class="shop__text">
+      <span>Город: Санкт-Петербург</span>
+     </div>
+     <div class="shop__info">
+      <div class="shop__item">
+       <div class="shop__top">
+        <h3 class="shop__name">Новомосковский</h3>
+        <div class="shop__adres"><img src="img/icon-black-map.svg" alt=""><span>Московский, ул. Хабарова, 2</span></div>
+        <div class="shop__phone"><img src="img/icon-black-phone.svg" alt=""><span>+7 (999) 999 99 99, доб. 999</span>
+        </div>
+       </div>
+       <div class="shop__footer">
+        <div class="shop__label">График работы:</div>
+        <ul class="shop__list">
+         <li><span>пн-пт</span><span>с 10:00 до 22:00</span></li>
+         <li><span>сб-вс</span><span>с 10:00 до 22:00</span></li>
+        </ul>
+       </div>
+      </div>
+      <div class="shop__item">
+       <div class="shop__top">
+        <h3 class="shop__name">ТРЦ Реутов парк</h3>
+        <div class="shop__adres"><img src="img/icon-black-map.svg" alt=""><span>Московский, ул. Хабарова, 2</span></div>
+       </div>
+       <div class="shop__footer">
+        <div class="shop__label">График работы:</div>
+        <ul class="shop__list">
+         <li><span>пн-пт</span><span>с 10:00 до 22:00</span></li>
+         <li><span>сб-вс</span><span>с 10:00 до 22:00</span></li>
+        </ul>
+       </div>
+      </div>
+      <div class="shop__item">
+       <div class="shop__top">
+        <h3 class="shop__name">Трк красный кит</h3>
+        <div class="shop__adres"><img src="img/icon-black-map.svg" alt=""><span>Московский, ул. Хабарова, 2</span></div>
+       </div>
+       <div class="shop__footer">
+        <div class="shop__label">График работы:</div>
+        <ul class="shop__list">
+         <li><span>пн-пт</span><span>с 10:00 до 22:00</span></li>
+         <li><span>сб-вс</span><span>с 10:00 до 22:00</span></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   </div>
+  </section>
+  <!-- Магазины -->
+
+  <!-- Скидка -->
+  @@include('html/subcribe.html',{})
+  <!-- Скидка -->
+
+
+ </main>
+ @@include('html/footer.html',{})
+
+ <!-- Модальное окно - Сменить пароль - -->
+ @@include('html/modal-save.html',{})
+ <!-- Модальное окно - Сменить пароль - -->
+
+ <!-- Модальное окно - Регистрация - -->
+ @@include('html/modal-register.html',{})
+ <!-- Модальное окно - Регистрация - -->
+
+ <!-- Модальное окно - Вход - -->
+ @@include('html/modal-sign.html',{})
+ <!-- Модальное окно - Вход - -->
+
+ <!-- Оформить заказ -->
+ @@include('html/modal-arrange.html',{})
+ <!-- Оформить заказ -->
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+ <script src="js/app.min.js"></script>
+</body>
+
+</html>

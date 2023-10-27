@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Результат диагностики"
+})
+
+<body class="main-body">
+
+  <div class="wrapper">
+    <main>
+
+      <!-- Результат диагностики -> "Личный Кабинет" -->
+      <div class="main">
+        <div class="main__container-big">
+          <div id="primary" class="main__wrapper show-result">
+            <div class="main__panel">
+              <div class="main__notify"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.00335 15.1217C7.92455 15.1217 8.67826 14.4263 8.67826 13.5764H5.32844C5.32844 14.4263 6.08215 15.1217 7.00335 15.1217ZM12.0281 10.486V6.62289C12.0281 4.25096 10.663 2.26534 8.25954 1.73996V1.21459C8.25954 0.573316 7.69844 0.0556641 7.00335 0.0556641C6.30827 0.0556641 5.74717 0.573316 5.74717 1.21459V1.73996C3.35205 2.26534 1.97862 4.24324 1.97862 6.62289V10.486L0.303711 12.0312V12.8038H13.703V12.0312L12.0281 10.486ZM10.3532 11.2586H3.65353V6.62289C3.65353 4.70681 4.91809 3.14612 7.00335 3.14612C9.08862 3.14612 10.3532 4.70681 10.3532 6.62289V11.2586Z"
+                    fill="white" />
+                </svg>
+              </div>
+              <ul class="main__items">
+                <li><a href="page-home.html">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 19.4916V13.6442H14V19.4916H19V11.695H22L12 2.92383L2 11.695H5V19.4916H10Z"
+                        fill="white" />
+                    </svg>
+                  </a></li>
+                <li><a href="page-timer.html">
+                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24.7371 4.40462L19.0476 0L17.4521 1.74587L23.1416 6.1505L24.7371 4.40462ZM7.27272 1.74587L5.68954 0L0 4.39321L1.59555 6.13908L7.27272 1.74587ZM12.987 7.00632H11.1317V13.8529L17.0068 17.105L17.9344 15.7015L12.987 12.9971V7.00632ZM12.3686 2.44194C6.22139 2.44194 1.23686 7.04055 1.23686 12.7118C1.23686 18.383 6.20902 22.9816 12.3686 22.9816C18.5158 22.9816 23.5003 18.383 23.5003 12.7118C23.5003 7.04055 18.5158 2.44194 12.3686 2.44194ZM12.3686 20.6994C7.58193 20.6994 3.71057 17.1278 3.71057 12.7118C3.71057 8.29575 7.58193 4.72413 12.3686 4.72413C17.1552 4.72413 21.0266 8.29575 21.0266 12.7118C21.0266 17.1278 17.1552 20.6994 12.3686 20.6994Z"
+                        fill="white" />
+                    </svg>
+
+                  </a></li>
+                <li><a href="page-maps.html"><img src="img/map.svg" alt=""></a></li>
+                <li class="active"><a href="page-result.html"><img src="img/infamous.svg" alt=""></a></li>
+              </ul>
+              <div class="main__question"><svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.35 19.2H12.65V16.8H10.35V19.2ZM11.5 0C5.152 0 0 5.376 0 12C0 18.624 5.152 24 11.5 24C17.848 24 23 18.624 23 12C23 5.376 17.848 0 11.5 0ZM11.5 21.6C6.4285 21.6 2.3 17.292 2.3 12C2.3 6.708 6.4285 2.4 11.5 2.4C16.5715 2.4 20.7 6.708 20.7 12C20.7 17.292 16.5715 21.6 11.5 21.6ZM11.5 4.8C8.9585 4.8 6.9 6.948 6.9 9.6H9.2C9.2 8.28 10.235 7.2 11.5 7.2C12.765 7.2 13.8 8.28 13.8 9.6C13.8 12 10.35 11.7 10.35 15.6H12.65C12.65 12.9 16.1 12.6 16.1 9.6C16.1 6.948 14.0415 4.8 11.5 4.8Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div div class="main__body">
+              <div class="main__head">
+                <div class="main__search">
+                  <input type="text" placeholder="поиск">
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.2768 9.80587H11.5557L11.3001 9.57255C12.1947 8.58743 12.7333 7.3085 12.7333 5.91723C12.7333 2.81495 10.0769 0.300293 6.79973 0.300293C3.5226 0.300293 0.866211 2.81495 0.866211 5.91723C0.866211 9.0195 3.5226 11.5342 6.79973 11.5342C8.26942 11.5342 9.62044 11.0243 10.6611 10.1775L10.9076 10.4194V11.1021L15.4718 15.4142L16.832 14.1266L12.2768 9.80587V9.80587ZM6.79973 9.80587C4.52674 9.80587 2.69191 8.06894 2.69191 5.91723C2.69191 3.76551 4.52674 2.02858 6.79973 2.02858C9.07273 2.02858 10.9076 3.76551 10.9076 5.91723C10.9076 8.06894 9.07273 9.80587 6.79973 9.80587Z"
+                      fill="#BEBEBE" />
+                  </svg>
+                </div>
+                <div class="main__elems">
+                  <div class="main__elem">
+                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.69964 15.066C7.62084 15.066 8.37455 14.3706 8.37455 13.5208H5.02473C5.02473 14.3706 5.77844 15.066 6.69964 15.066ZM11.7244 10.4303V6.56723C11.7244 4.1953 10.3593 2.20968 7.95582 1.6843V1.15892C7.95582 0.517652 7.39473 0 6.69964 0C6.00455 0 5.44346 0.517652 5.44346 1.15892V1.6843C3.04834 2.20968 1.67491 4.18757 1.67491 6.56723V10.4303L0 11.9755V12.7481H13.3993V11.9755L11.7244 10.4303ZM10.0495 11.2029H3.34982V6.56723C3.34982 4.65114 4.61438 3.09046 6.69964 3.09046C8.78491 3.09046 10.0495 4.65114 10.0495 6.56723V11.2029Z"
+                        fill="white" />
+                    </svg>
+                  </div>
+                  <div id="to-primary-screen" class="main__elem"><img src="img/ava.png" alt=""></div>
+                </div>
+                <div class="main__link">
+                  <a href="'#" id="btn-delivery">Доставка</a>
+                  <a href="#" id="btn-chat" href="page-chatBot.html">Чат-бот</a>
+                </div>
+              </div>
+              <div class="main__header">
+                <div class="main__h-item active">Пасты</div>
+                <div class="main__h-item">Щетки</div>
+                <div class="main__h-basket">
+                  <div data-basket>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_188_1783)">
+                        <path
+                          d="M6.76617 16.0549C7.15682 16.0549 7.47351 15.7311 7.47351 15.3317C7.47351 14.9322 7.15682 14.6084 6.76617 14.6084C6.37552 14.6084 6.05884 14.9322 6.05884 15.3317C6.05884 15.7311 6.37552 16.0549 6.76617 16.0549Z"
+                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M14.5469 16.0549C14.9376 16.0549 15.2543 15.7311 15.2543 15.3317C15.2543 14.9322 14.9376 14.6084 14.5469 14.6084C14.1563 14.6084 13.8396 14.9322 13.8396 15.3317C13.8396 15.7311 14.1563 16.0549 14.5469 16.0549Z"
+                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M1.10742 0.867188H3.93676L5.83242 10.5517C5.8971 10.8847 6.07426 11.1838 6.33289 11.3967C6.59152 11.6096 6.91514 11.7227 7.24709 11.7162H14.1224C14.4543 11.7227 14.778 11.6096 15.0366 11.3967C15.2952 11.1838 15.4724 10.8847 15.5371 10.5517L16.6688 4.48351H4.6441"
+                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_188_1783">
+                          <rect width="16.9761" height="17.3584" fill="white"
+                            transform="translate(0.400146 0.143555)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="main__contents">
+                <div id="main-doctor" class="main__doctor doctor">
+                  <div class="doctor__item">
+                    <div class="doctor__image">
+                      <img src="img/photo.png" alt="">
+                    </div>
+                    <div class="doctor__info">
+                      <h4 class="doctor__surname">Кривошенко</h4>
+                      <h3 class="doctor__name">Евгений Геннадьевич</h3>
+                      <p class="doctor__text">Евростоматология</p>
+                      <div class="doctor__calendar">
+                        <div class="doctor__head active">Расписание
+                        </div>
+                        <div class="doctor__content active">
+                          <div class="doctor__header">
+                            <div class="doctor__month">Июнь 2023</div>
+                            <div class="doctor__next"><svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M1.2332 10.4065C0.874885 10.0507 0.873861 9.47153 1.23092 9.11447L3.97876 6.36663C4.41441 5.93098 4.41441 5.22466 3.97876 4.78901L1.23092 2.04117C0.873862 1.68411 0.874886 1.1049 1.2332 0.749106V0.749106C1.58973 0.395089 2.16543 0.396106 2.5207 0.751381L6.55833 4.78901C6.99398 5.22466 6.99398 5.93098 6.55833 6.36663L2.5207 10.4043C2.16543 10.7595 1.58973 10.7605 1.2332 10.4065V10.4065Z"
+                                  fill="#D2D2D2" />
+                              </svg>
+                            </div>
+                          </div>
+                          <ul class="doctor__week">
+                            <li>ВС</li>
+                            <li>ПН</li>
+                            <li>ВТ</li>
+                            <li>СР</li>
+                            <li>ЧТ</li>
+                            <li>ПТ</li>
+                            <li>СБ</li>
+                          </ul>
+                          <ul class="doctor__numbers">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>1</li>
+                            <li class="_weekends">2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>6</li>
+                            <li class="_holidays">7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li class="_holidays">15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li class="_weekends">23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="doctor__chat">
+                    <div class="doctor__mesages">
+                      <div class="doctor__sending">Как эффективно и правильно чистить зубы?</div>
+                      <div class="doctor__geting">Сейчас я вам все подробно объясню...</div>
+                    </div>
+                    <div class="doctor__send">
+                      <input type="text">
+                      <button><svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976315 7.29289 0.292892L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 18L9 1H7L7 18H9Z"
+                            fill="white" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div id="main-goods" class="main__goods goods">
+                  <div class="goods__wrap">
+                    <div class="goods__item">
+                      <h2 class="goods__title">Зубные <br> пасты</h2>
+                      <div class="goods__text">Рекомендовано</div>
+                      <div class="goods__logo">
+                        <img src="img/icon-logo.png" alt="">
+                      </div>
+                    </div>
+                    <div class="goods__body goods__body-first">
+                      <div class="goods__prev">
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 14L2 7.5L9 1" stroke="#7A7878" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                      </div>
+                      <div class="swiper goods__swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="goods__img">
+                              <img src="img/img-good-1.png" alt="">
+                            </div>
+                            <button class="goods__btn">В корзину</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="goods__img">
+                              <img src="img/img-good-2.png" alt="">
+                            </div>
+                            <button class="goods__btn">В корзину</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="goods__img">
+                              <img src="img/img-good-3.png" alt="">
+                            </div>
+                            <button class="goods__btn">В корзину</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="goods__img">
+                              <img src="img/img-good-1.png" alt="">
+                            </div>
+                            <button class="goods__btn">В корзину</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="goods__img">
+                              <img src="img/img-good-2.png" alt="">
+                            </div>
+                            <button class="goods__btn">В корзину</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="goods__next">
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 14L8 7.28333L0.999999 1" stroke="#7A7878" stroke-width="2"
+                            stroke-linecap="round" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="goods__wrap">
+                    <div class="goods__item">
+                      <h2 class="goods__title">Зубные <br> пасты</h2>
+                      <div class="goods__text">Рекомендовано</div>
+                      <div class="goods__logo">
+                        <img src="img/icon-logo.png" alt="">
+                      </div>
+                    </div>
+                    <div class="goods__body goods__body-last">
+                      <div class="goods__prev">
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 14L2 7.5L9 1" stroke="#7A7878" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                      </div>
+                      <div class="swiper goods__swiper-second">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="goods__img">
+                              <img src="img/img-good-1.png" alt="">
+                            </div>
+                            <button class="goods__btn">В корзину</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="goods__img">
+                              <img src="img/img-good-2.png" alt="">
+                            </div>
+                            <button class="goods__btn">В корзину</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="goods__img">
+                              <img src="img/img-good-3.png" alt="">
+                            </div>
+                            <button class="goods__btn">В корзину</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="goods__img">
+                              <img src="img/img-good-1.png" alt="">
+                            </div>
+                            <button class="goods__btn">В корзину</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="goods__img">
+                              <img src="img/img-good-2.png" alt="">
+                            </div>
+                            <button class="goods__btn">В корзину</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="goods__next">
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 14L8 7.28333L0.999999 1" stroke="#7A7878" stroke-width="2"
+                            stroke-linecap="round" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-basket class="goods__more">
+                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.9257 34.8071C14.7803 34.8071 15.473 34.0988 15.473 33.225C15.473 32.3512 14.7803 31.6428 13.9257 31.6428C13.0712 31.6428 12.3784 32.3512 12.3784 33.225C12.3784 34.0988 13.0712 34.8071 13.9257 34.8071Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M30.9457 34.8071C31.8003 34.8071 32.493 34.0988 32.493 33.225C32.493 32.3512 31.8003 31.6428 30.9457 31.6428C30.0912 31.6428 29.3984 32.3512 29.3984 33.225C29.3984 34.0988 30.0912 34.8071 30.9457 34.8071Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M1.54736 1.58228H7.73655L11.8833 22.7672C12.0248 23.4956 12.4123 24.1499 12.9781 24.6156C13.5438 25.0813 14.2517 25.3286 14.9779 25.3144H30.0176C30.7438 25.3286 31.4517 25.0813 32.0174 24.6156C32.5832 24.1499 32.9707 23.4956 33.1122 22.7672L35.5879 9.49299H9.28384"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div id="main-basket" class="main__basket basket">
+                  <h2 class="basket__title">Товары в вашей корзине</h2>
+                  <div class="basket__goods">
+                    <a href="#" class="basket__good">
+                      <div class="basket__img"><img src="img/basket-good.png" alt=""></div>
+                      <div class="basket__info">
+                        <div class="basket__lead">
+                          <h3 class="basket__name">Зубная паста Президент отбеливающая, 200 мл.</h3>
+                          <div class="basket__count">Количество: <span>2</span> шт.</div>
+                        </div>
+                        <div class="basket__price">
+                          <p>Стоимость: </p>
+                          <span>1099 руб.</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <form class="basket__result">
+                    <div class="basket__promocode">
+                      <div class="basket__name">Промокод:</div>
+                      <input type="text">
+                    </div>
+                    <div class="basket__info">
+                      <div class="basket__amount">Заказ на сумму: <span>1099</span> руб.</div>
+                      <div class="basket__company"> Скидка от компании: <span>400</span> руб.</div>
+                      <div class="basket__price">Итого:<span>699 руб</span>.</div>
+                      <button class="basket__btn">Оформить заказ</button>
+                    </div>
+                  </form>
+                  <a href="#" class="basket__home">На главную</a>
+                </div>
+                <div id="main-delivery" class="main__delivery delivery">
+                  <div class="delivery__wraps">
+                    <div id="mv-media-item-prev" class="delivery__wrap">
+                      <span class="delivery__icon"><img src="img/icon-notify-45.png" alt=""></span>
+                      <p class="delivery__descr">Данная услуга позволяет автоматически получать доставку
+                        стоматологических
+                        принадлежностей. </p>
+                      <div class="delivery__span">Два формата:</div>
+                      <ul class="delivery__list">
+                        <li><span>1.</span>
+                          <p>Если вы не определились со стоматологическими принадлежностями - проведите
+                            полную
+                            диагностику и мы подберем их для вас.</p>
+                        </li>
+                        <li><span>2.</span>
+                          <p>У вас уже есть удобные для вас принадлежности. Заполните форму справа и мы
+                            будем
+                            автоматически поставлять их для вас.</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div id="mv-media-item-next" class="delivery__wrap">
+                      <h2 class="delivery__title">Подбор принадлежностей</h2>
+                      <button class="delivery__btn">Пройти осмотр</button>
+                    </div>
+                  </div>
+                  <form action="#" class="delivery__form">
+                    <h2 class="delivery__title">Доставка принадлежностей</h2>
+                    <p class="delivery__descr">Заполните инфомацию о комфортных для вас принадлежностях, которыми вы
+                      хотели бы воспользоваться вследующий раз. Указывайте название, количество. Вы сможете изменить эту
+                      информацию в любое время ДО совершения заказа.</p>
+                    <div class="delivery__inputs">
+                      <label for="">
+                        <div class="delivery__name">Щетка</div>
+                        <input type="text">
+                      </label>
+                      <label for="">
+                        <div class="delivery__name">Паста</div>
+                        <input type="text">
+                      </label>
+                      <label for="">
+                        <div class="delivery__name">Дополнительно</div>
+                        <input type="text">
+                      </label>
+                      <label for="">
+                        <div class="delivery__name">Куда доставить?</div>
+                        <input type="text">
+                      </label>
+                      <label for="">
+                        <div class="delivery__name">Когда доставить?</div>
+                        <input type="text">
+                      </label>
+                    </div>
+                    <button class="delivery__send">Сохранить</button>
+                  </form>
+                </div>
+                <div class="main__diagcs diagcs">
+                  <h2 class="diagcs__title">Быстрая диагностика</h2>
+                  <div class="diagcs__image" style="background: transparent">
+                    <img src="img/diagcs-img-1.png" alt="">
+                  </div>
+                  <div class="diagcs__body">
+                    <h2 class="diagcs__title">Быстрая диагностика</h2>
+                    <p class="diagcs__descr">Быстрая диагностика необходима для оценки гигиены полости рта.
+                      Искусственный
+                      интеллект оценивает наличие налета на зубах и помогает вам качественно избавляться от него.</p>
+                    <p class="diagcs__sub-descr">Следуя инструкции, сделайте фотографию вашей улыбки.</p>
+                    <button id="start-fast" class="diagcs__btn">Начать диагностику</button>
+                  </div>
+                  <a data-back-diagcs href="#" class="diagcs__back">Назад</a>
+                </div>
+                <div class="main__diagcs diagcs">
+                  <h2 class="diagcs__title">Полная диагностика</h2>
+                  <div class="diagcs__image" style="background: transparent">
+                    <img src="img/tooth.gif" alt="">
+                  </div>
+                  <div class="diagcs__body">
+                    <h2 class="diagcs__title">Полная диагностика</h2>
+                    <p class="diagcs__descr">Полная диагностика необходима для оценки гигиены полости рта.
+                      Искусственный
+                      интеллект оценивает наличие налета на зубах и помогает вам качественно избавляться от него.</p>
+                    <p class="diagcs__sub-descr">Следуя инструкции, сделайте фотографию вашей улыбки.</p>
+                    <button data-camera class="diagcs__btn">Начать диагностику</button>
+                  </div>
+                  <a data-back-diagcs href="#" class="diagcs__back">Назад</a>
+                </div>
+                <div class="main__diagcs diagcs">
+                  <h2 class="diagcs__title">Диагностика с врачом</h2>
+                  <div class="diagcs__image" style="background: transparent">
+                    <img src="img/tooth.gif" alt="">
+                  </div>
+                  <div class="diagcs__body">
+                    <h2 class="diagcs__title">Диагностика с врачом</h2>
+                    <p class="diagcs__descr">Диагностика с врачом необходима для оценки гигиены полости рта.
+                      Искусственный
+                      интеллект оценивает наличие налета на зубах и помогает вам качественно избавляться от него.</p>
+                    <p class="diagcs__sub-descr">Следуя инструкции, сделайте фотографию вашей улыбки.</p>
+                    <button data-camera class="diagcs__btn">Начать диагностику</button>
+                  </div>
+                  <a data-back-diagcs href="#" class="diagcs__back">Назад</a>
+                </div>
+                <div class="result">
+                  <div class="result__wrap">
+                    <div class="result__inner">
+                      <div class="result__prev">
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 14L2 7.5L9 1" stroke="#7A7878" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                      </div>
+                      <div class="swiper result__swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="img/dia-tooth.png" alt=""></div>
+                          <div class="swiper-slide"><img src="img/dia-tooth.png" alt=""></div>
+                          <div class="swiper-slide"><img src="img/dia-tooth.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="result__next">
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 14L8 7.28333L0.999999 1" stroke="#7A7878" stroke-width="2"
+                            stroke-linecap="round" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="result__diagnostics">
+                      <div class="result__head">
+                        <h2 class="result__title">Состояние вашей улыбки</h2>
+                        <div class="select">
+                          <div class="select__value">
+                            Месяц
+                          </div>
+                          <div class="select__lead">
+                            <ul>
+                              <li>Июль</li>
+                              <li>Июнь</li>
+                              <li>Август</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="result__grid">
+                        <ul class="result__numbers">
+                          <li>100</li>
+                          <li>80</li>
+                          <li>60</li>
+                          <li>40</li>
+                          <li>20</li>
+                          <li>10</li>
+                          <li>0</li>
+                        </ul>
+                        <div class="result__information">
+                          <svg width="408" height="166" viewBox="0 0 408 166" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0V166" stroke="#AEA8FF" stroke-width="2" />
+                            <path d="M73 0V166" stroke="#AEA8FF" stroke-width="2" />
+                            <path d="M139 0V166" stroke="#AEA8FF" stroke-width="2" />
+                            <path d="M204 0V166" stroke="#AEA8FF" stroke-width="2" />
+                            <path d="M269 0V166" stroke="#AEA8FF" stroke-width="2" />
+                            <path d="M335 0V166" stroke="#AEA8FF" stroke-width="2" />
+                            <path d="M400 0V166" stroke="#AEA8FF" stroke-width="2" />
+                            <path
+                              d="M8 158C14.5366 125.935 37.6599 74.1212 72.9576 107.205C108.255 140.289 130.153 120.99 136.69 107.205C145.95 80.8339 178.663 34.371 204.507 82.9316C231.062 132.827 257.208 144.515 269.873 120.691C281.14 99.495 299.288 40.6775 333.605 73.9414C367.922 107.205 403.057 55.0619 399.788 20"
+                              stroke="white" stroke-width="5" stroke-linecap="round" />
+                            <ellipse cx="72.5" cy="106" rx="7.5" ry="7" fill="white" />
+                            <ellipse cx="8" cy="158.5" rx="8" ry="7.5" fill="white" />
+                            <ellipse cx="139.5" cy="99" rx="7.5" ry="7" fill="white" />
+                            <circle cx="204.5" cy="81.5" r="5.5" fill="white" />
+                            <circle cx="271.5" cy="119.5" r="7.5" fill="white" />
+                            <ellipse cx="337" cy="74.5" rx="8" ry="7.5" fill="white" />
+                            <ellipse cx="401" cy="23.5" rx="7" ry="7.5" fill="white" />
+                          </svg>
+
+
+                        </div>
+                      </div>
+                      <ul class="result__week">
+                        <li>Пн</li>
+                        <li>Вт</li>
+                        <li>Ср</li>
+                        <li>Чт</li>
+                        <li>Пт</li>
+                        <li>Сб</li>
+                        <li>Вс</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="result__wrap">
+                    <div class="result__info">
+                      <h2 class="result__title">Результат диагностики</h2>
+                      <div class="result__items">
+                        <div class="result__item">
+                          <div class="result__circle" id="graph" data-percent="87"></div>
+                          <div class="result__name">Здоровье зубов </div>
+                        </div>
+                        <div class="result__item">
+                          <div class="result__circle result__circle--2" id="graph" data-percent="97"></div>
+                          <div class="result__name">Зубной налет и чистота</div>
+                        </div>
+                      </div>
+                      <p class="result__descr">Есть участки зубов подверженные повреждениям. Необходимо провести
+                        дополнительную диагностику через 7 дней. Мы сможем сравнить и дать коррективы профилактики. Есть
+                        участки подверженные зубному камню. На зубе выявлена коррозия эмали. Требуется поход к
+                        стоматологу.</p>
+                    </div>
+                    <div class="result__info">
+                      <h2 class="result__title">Рекомендации</h2>
+                      <p class="result__descr">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст
+                        Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст
+                        Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="main-home" class="main__home">
+                  <div class="main__hygiene">
+                    <div class="main__header">
+                      <h2 class="main__title">Гигиена полости рта </h2>
+                      <div class="select">
+                        <div class="select__value">
+                          Месяц
+                        </div>
+                        <div class="select__lead">
+                          <ul>
+                            <li>Июль</li>
+                            <li>Июнь</li>
+                            <li>Август</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main__grid">
+                      <ul class="main__numbers">
+                        <li>100</li>
+                        <li>80</li>
+                        <li>60</li>
+                        <li>40</li>
+                        <li>20</li>
+                        <li>10</li>
+                        <li>0</li>
+                      </ul>
+                      <div id="diagnostics" class="main__info">
+                        <svg width="497" height="184" viewBox="0 0 497 184" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 0V184" stroke="#AEA8FF" stroke-width="2" />
+                          <path d="M88 0V184" stroke="#AEA8FF" stroke-width="2" />
+                          <path d="M168 0V184" stroke="#AEA8FF" stroke-width="2" />
+                          <path d="M248 0V184" stroke="#AEA8FF" stroke-width="2" />
+                          <path d="M328 0V184" stroke="#AEA8FF" stroke-width="2" />
+                          <path d="M408 0V184" stroke="#AEA8FF" stroke-width="2" />
+                          <path d="M488 0V184" stroke="#AEA8FF" stroke-width="2" />
+                          <path
+                            d="M8.5 175.5C16.5 139.833 44.8 82.2 88 119C131.2 155.8 158 134.333 166 119C177.333 89.6667 217.37 37.9851 249 92C281.5 147.5 313.5 160.5 329 134C342.79 110.424 365 45 407 82C449 119 492 61 488 22"
+                            stroke="white" stroke-width="5" stroke-linecap="round" />
+                          <circle cx="88" cy="118" r="8" fill="white" />
+                          <circle cx="8" cy="176" r="8" fill="white" />
+                          <circle cx="170" cy="112" r="8" fill="white" />
+                          <circle cx="248.5" cy="90.5" r="6.5" fill="white" />
+                          <circle cx="329" cy="133" r="8" fill="white" />
+                          <circle cx="409" cy="83" r="8" fill="white" />
+                          <circle cx="489" cy="26" r="8" fill="white" />
+                        </svg>
+                      </div>
+                    </div>
+                    <ul class="main__week">
+                      <li>Пн</li>
+                      <li>Вт</li>
+                      <li>Ср</li>
+                      <li>Чт</li>
+                      <li>Пт</li>
+                      <li>Сб</li>
+                      <li>Вс</li>
+                    </ul>
+                  </div>
+                  <div class="main__chat">
+                    <div class="main__messages">
+                      <div class="main__geting">Сейчас я вам все подробно объясню...</div>
+                      <div class="main__sending">Как правильно чистить зубы?</div>
+                    </div>
+                    <div class="main__send">
+                      <input type="text">
+                      <button>
+                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976315 7.29289 0.292892L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 18L9 1H7L7 18H9Z"
+                            fill="white" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="main__boxes">
+                    <div id="to-main-doctor" class="main__header">
+                      <div class="main__icon">
+                        <img src="img/icon-tooth.png" alt="">
+                      </div>
+                      <div class="main__text">Врач</div>
+                    </div>
+                    <div id="btn-goods" class="main__footer">
+                      <div class="main__lead">
+                        <div class="main__icon">
+                          <img src="img/icon-goods.png" alt="">
+                        </div>
+                        <div class="main__text">Товары</div>
+                      </div>
+                      <div class="main__count">
+                        <span>В корзине</span>
+                        <span>4</span>
+                      </div>
+                      <svg width="141" height="81" viewBox="0 0 141 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17 57C-4.20002 49.4 -0.833347 69.8334 3.49999 80.5H105.5C127.9 80.5 138.5 57.5 140.5 46.5V5.50003C136.5 0.500031 128.3 -5.49997 127.5 10.5C126.7 26.5 113.167 25.1667 106.5 22.5C60 -20 54 16 50.5 22.5C47 29 43.5 66.5 17 57Z"
+                          fill="#7EB7FC" />
+                      </svg>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="main__items">
+                  <div class="main__item">
+                    <button class="main__more">
+                      <span></span>
+                    </button>
+                    <div class="main__icon">
+                      <img src="img/icon-timer.png" alt="">
+                    </div>
+                    <h3 class="main__title">БЫСТРАЯ</h3>
+                    <div class="main__sub-text">ДИАГНОСТИКА</div>
+                    <a data-diagcs class="main__link">Провести</a>
+                  </div>
+                  <div class="main__item">
+                    <button class="main__more">
+                      <span></span>
+                    </button>
+                    <div class="main__icon">
+                      <img src="img/icon-full.png" alt="">
+                    </div>
+                    <h3 class="main__title">ПОЛНАЯ</h3>
+                    <div class="main__sub-text">ДИАГНОСТИКА</div>
+                    <a data-diagcs class="main__link">Провести</a>
+                  </div>
+                  <div class="main__item">
+                    <button class="main__more">
+                      <span></span>
+                    </button>
+                    <div class="main__icon">
+                      <img src="img/icon-doctor.png" alt="">
+                    </div>
+                    <h3 class="main__title">С ВРАЧОМ</h3>
+                    <div class="main__sub-text">ДИАГНОСТИКА</div>
+                    <a data-diagcs class="main__link">Провести</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="primary-screen" class="main__information">
+            <div class="main__info">
+              <div class="main__wrap">
+                <div class="main__photo"><img src="img/ava.png" alt=""></div>
+                <div class="main__item">
+                  <div class="main__name">Максим Иванов</div>
+                  <div class="main__text">Белгород, 23 года</div>
+                </div>
+              </div>
+              <div class="main__status">СТАНДАРТ<span>ПЛЮС</span></div>
+            </div>
+            <div id="window-primary" class="main__part">
+              <ul class="main__items">
+                <li>
+                  <div class="main__icon"><img src="img/icon-luna.png" alt=""></div>
+                  <div class="main__lead">Релакс</div>
+                  <a href="#" class="main__link"><svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 11L6 5.83333L1 1" stroke="#7A7878" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <div class="main__icon"><svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.2664 4.41249C12.7789 5.02499 10.9414 3.79999 10.9414 3.79999C10.9414 3.79999 11.5539 1.69999 13.0414 1.17499C14.5289 0.649988 16.3664 1.78749 16.3664 1.78749C16.3664 1.78749 15.7539 3.79999 14.2664 4.41249Z"
+                        stroke="#5631FA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M16.8039 6.33752C15.4914 6.07502 14.0914 6.42502 13.0414 7.12502C12.0789 7.73752 10.8539 7.73752 9.97888 7.12502C8.84138 6.42502 7.44138 6.07502 6.12888 6.33752C2.89138 6.86252 0.616379 10.275 1.05388 13.95C1.49138 17.625 5.07888 24.1875 8.31638 23.6625C8.75388 23.575 9.19138 23.4 9.54138 23.1375C10.6789 22.35 12.2539 22.35 13.3914 23.1375C13.7414 23.4 14.1789 23.575 14.6164 23.6625C17.8539 24.1875 21.4414 17.625 21.8789 13.95C22.4039 10.275 20.1289 6.86252 16.8039 6.33752Z"
+                        stroke="#5631FA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M7.96643 1L8.31643 1.2625C10.3289 2.75 11.4664 5.1125 11.4664 7.5625" stroke="#5631FA"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="main__lead">Диета</div>
+                  <a href="#" class="main__link"><svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 11L6 5.83333L1 1" stroke="#7A7878" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <div class="main__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <mask id="path-1-inside-1_34_361" fill="white">
+                        <path
+                          d="M23.2609 9.89385L23.7 8.71486L22.4464 5.6892L21.3023 5.16708L19.9778 5.6086L19.6469 5.50514C19.2163 4.9758 18.729 4.48977 18.1961 4.05667L18.0926 3.72343L18.5341 2.39767L18.012 1.25357L14.9863 0L13.8086 0.440315L13.183 1.69028L12.875 1.85149C12.1917 1.78051 11.5035 1.7793 10.825 1.84908L10.517 1.68908L9.89264 0.441518L8.71486 0L5.688 1.25357L5.16588 2.39767L5.6074 3.72102L5.50273 4.05306C4.97339 4.48375 4.48616 4.97098 4.05426 5.50393L3.72222 5.6074L2.39767 5.16588L1.25357 5.688L0 8.71486L0.439112 9.89385L1.68908 10.5194L1.85028 10.8274C1.7793 11.5095 1.7793 12.1977 1.84788 12.8774L1.68787 13.1854L0.440315 13.8098L0.00120296 14.9887L1.25478 18.0144L2.39887 18.5365L3.72222 18.0962L4.05306 18.1997C4.48375 18.729 4.97098 19.215 5.50393 19.6481L5.6074 19.979L5.16588 21.3047L5.6892 22.4488L8.71486 23.7024L9.89385 23.2621L10.5182 22.0133L10.8262 21.8521C11.5095 21.9231 12.1977 21.9231 12.8774 21.8533L13.1842 22.0145L13.8086 23.2621L14.9863 23.7012L18.012 22.4476L18.5341 21.3035L18.0938 19.9802L18.1973 19.6493C18.7278 19.2175 19.2138 18.7302 19.6457 18.1985L19.9766 18.095L21.3023 18.5365L22.4464 18.0144L23.7 14.9875L23.2609 13.8086L22.0109 13.183L21.8497 12.8762C21.9207 12.1941 21.9207 11.5059 21.8521 10.825L22.0121 10.517L23.2609 9.89385ZM21.1929 9.68331L20.708 10.6121L20.7285 10.7829C20.8127 11.4879 20.8127 12.2049 20.7261 12.9135L20.7056 13.0855L21.1917 14.0155L22.3706 14.605L22.5042 14.9635L21.585 17.1807L21.2374 17.3395L19.9862 16.9232L18.9853 17.2372L18.8782 17.3732C18.4391 17.935 17.9314 18.4427 17.3732 18.8818L17.2372 18.9877L16.9232 19.9886L17.3395 21.2386L17.1807 21.5862L14.9635 22.5054L14.605 22.3718L14.0155 21.1941L13.0867 20.708L12.9159 20.7285C12.2121 20.8127 11.4951 20.8127 10.7841 20.7261L10.6133 20.7056L9.68331 21.1916L9.09382 22.3718L8.73532 22.5054L6.5181 21.5875L6.3593 21.2398L6.77555 19.9886L6.46156 18.9877L6.32561 18.8806C5.76259 18.4391 5.2549 17.9326 4.81699 17.3744L4.71113 17.2384L3.7114 16.9244L2.46143 17.3419L2.11375 17.1831L1.19462 14.9659L1.32816 14.6074L2.34594 14.0973L2.5276 13.9758L2.99197 13.0879L2.97152 12.9171C2.88731 12.2121 2.88731 11.4951 2.97393 10.7865L2.99438 10.6145L2.50835 9.68452L1.32937 9.09502L1.19462 8.73652L2.11375 6.5193L2.46143 6.3605L3.7126 6.77676L4.71353 6.46276L4.8206 6.32682C5.26092 5.76379 5.7674 5.25731 6.32561 4.8182L6.46156 4.71113L6.77435 3.71019L6.3593 2.46263L6.5181 2.11495L8.73532 1.19583L9.09382 1.32937L9.68331 2.50715L10.6121 2.99318L10.7829 2.97273C11.4879 2.88851 12.2049 2.88851 12.9135 2.97513L13.0855 2.99558L14.0155 2.50835L14.6062 1.32816L14.9647 1.19462L17.1819 2.11375L17.3407 2.46143L16.9244 3.7126L17.2372 4.71353L17.3732 4.8206C17.935 5.26092 18.4427 5.7674 18.8818 6.32682L18.9877 6.46276L19.9886 6.77676L21.2386 6.3605L21.5863 6.5193L22.5054 8.73652L22.3718 9.09502L21.1929 9.68331Z" />
+                      </mask>
+                      <path
+                        d="M23.2609 9.89385L23.7 8.71486L22.4464 5.6892L21.3023 5.16708L19.9778 5.6086L19.6469 5.50514C19.2163 4.9758 18.729 4.48977 18.1961 4.05667L18.0926 3.72343L18.5341 2.39767L18.012 1.25357L14.9863 0L13.8086 0.440315L13.183 1.69028L12.875 1.85149C12.1917 1.78051 11.5035 1.7793 10.825 1.84908L10.517 1.68908L9.89264 0.441518L8.71486 0L5.688 1.25357L5.16588 2.39767L5.6074 3.72102L5.50273 4.05306C4.97339 4.48375 4.48616 4.97098 4.05426 5.50393L3.72222 5.6074L2.39767 5.16588L1.25357 5.688L0 8.71486L0.439112 9.89385L1.68908 10.5194L1.85028 10.8274C1.7793 11.5095 1.7793 12.1977 1.84788 12.8774L1.68787 13.1854L0.440315 13.8098L0.00120296 14.9887L1.25478 18.0144L2.39887 18.5365L3.72222 18.0962L4.05306 18.1997C4.48375 18.729 4.97098 19.215 5.50393 19.6481L5.6074 19.979L5.16588 21.3047L5.6892 22.4488L8.71486 23.7024L9.89385 23.2621L10.5182 22.0133L10.8262 21.8521C11.5095 21.9231 12.1977 21.9231 12.8774 21.8533L13.1842 22.0145L13.8086 23.2621L14.9863 23.7012L18.012 22.4476L18.5341 21.3035L18.0938 19.9802L18.1973 19.6493C18.7278 19.2175 19.2138 18.7302 19.6457 18.1985L19.9766 18.095L21.3023 18.5365L22.4464 18.0144L23.7 14.9875L23.2609 13.8086L22.0109 13.183L21.8497 12.8762C21.9207 12.1941 21.9207 11.5059 21.8521 10.825L22.0121 10.517L23.2609 9.89385ZM21.1929 9.68331L20.708 10.6121L20.7285 10.7829C20.8127 11.4879 20.8127 12.2049 20.7261 12.9135L20.7056 13.0855L21.1917 14.0155L22.3706 14.605L22.5042 14.9635L21.585 17.1807L21.2374 17.3395L19.9862 16.9232L18.9853 17.2372L18.8782 17.3732C18.4391 17.935 17.9314 18.4427 17.3732 18.8818L17.2372 18.9877L16.9232 19.9886L17.3395 21.2386L17.1807 21.5862L14.9635 22.5054L14.605 22.3718L14.0155 21.1941L13.0867 20.708L12.9159 20.7285C12.2121 20.8127 11.4951 20.8127 10.7841 20.7261L10.6133 20.7056L9.68331 21.1916L9.09382 22.3718L8.73532 22.5054L6.5181 21.5875L6.3593 21.2398L6.77555 19.9886L6.46156 18.9877L6.32561 18.8806C5.76259 18.4391 5.2549 17.9326 4.81699 17.3744L4.71113 17.2384L3.7114 16.9244L2.46143 17.3419L2.11375 17.1831L1.19462 14.9659L1.32816 14.6074L2.34594 14.0973L2.5276 13.9758L2.99197 13.0879L2.97152 12.9171C2.88731 12.2121 2.88731 11.4951 2.97393 10.7865L2.99438 10.6145L2.50835 9.68452L1.32937 9.09502L1.19462 8.73652L2.11375 6.5193L2.46143 6.3605L3.7126 6.77676L4.71353 6.46276L4.8206 6.32682C5.26092 5.76379 5.7674 5.25731 6.32561 4.8182L6.46156 4.71113L6.77435 3.71019L6.3593 2.46263L6.5181 2.11495L8.73532 1.19583L9.09382 1.32937L9.68331 2.50715L10.6121 2.99318L10.7829 2.97273C11.4879 2.88851 12.2049 2.88851 12.9135 2.97513L13.0855 2.99558L14.0155 2.50835L14.6062 1.32816L14.9647 1.19462L17.1819 2.11375L17.3407 2.46143L16.9244 3.7126L17.2372 4.71353L17.3732 4.8206C17.935 5.26092 18.4427 5.7674 18.8818 6.32682L18.9877 6.46276L19.9886 6.77676L21.2386 6.3605L21.5863 6.5193L22.5054 8.73652L22.3718 9.09502L21.1929 9.68331Z"
+                        fill="#20B9FD" stroke="#20B9FD" stroke-width="4" mask="url(#path-1-inside-1_34_361)" />
+                      <mask id="path-2-inside-2_34_361" fill="white">
+                        <path
+                          d="M11.8428 5.68194C8.46949 5.68194 5.72534 8.42128 5.72534 11.7898C5.72534 15.1583 8.46949 17.8977 11.8428 17.8977C15.2162 17.8977 17.9603 15.1583 17.9603 11.7898C17.9603 8.42128 15.2162 5.68194 11.8428 5.68194ZM11.8428 16.7861C9.08304 16.7861 6.83816 14.5448 6.83816 11.7898C6.83816 9.03483 9.08304 6.79356 11.8428 6.79356C14.6026 6.79356 16.8475 9.03483 16.8475 11.7898C16.8475 14.5448 14.6026 16.7861 11.8428 16.7861Z" />
+                      </mask>
+                      <path
+                        d="M11.8428 5.68194C8.46949 5.68194 5.72534 8.42128 5.72534 11.7898C5.72534 15.1583 8.46949 17.8977 11.8428 17.8977C15.2162 17.8977 17.9603 15.1583 17.9603 11.7898C17.9603 8.42128 15.2162 5.68194 11.8428 5.68194ZM11.8428 16.7861C9.08304 16.7861 6.83816 14.5448 6.83816 11.7898C6.83816 9.03483 9.08304 6.79356 11.8428 6.79356C14.6026 6.79356 16.8475 9.03483 16.8475 11.7898C16.8475 14.5448 14.6026 16.7861 11.8428 16.7861Z"
+                        fill="#20B9FD" />
+                      <path
+                        d="M11.8428 3.68194C7.368 3.68194 3.72534 7.31364 3.72534 11.7898H7.72534C7.72534 9.52892 9.57098 7.68194 11.8428 7.68194V3.68194ZM3.72534 11.7898C3.72534 16.266 7.36799 19.8977 11.8428 19.8977V15.8977C9.57098 15.8977 7.72534 14.0507 7.72534 11.7898H3.72534ZM11.8428 19.8977C16.3177 19.8977 19.9603 16.266 19.9603 11.7898H15.9603C15.9603 14.0507 14.1147 15.8977 11.8428 15.8977V19.8977ZM19.9603 11.7898C19.9603 7.31364 16.3177 3.68194 11.8428 3.68194V7.68194C14.1147 7.68194 15.9603 9.52892 15.9603 11.7898H19.9603ZM11.8428 14.7861C10.1845 14.7861 8.83816 13.4371 8.83816 11.7898H4.83816C4.83816 15.6525 7.98161 18.7861 11.8428 18.7861V14.7861ZM8.83816 11.7898C8.83816 10.1425 10.1845 8.79356 11.8428 8.79356V4.79356C7.98161 4.79356 4.83816 7.92713 4.83816 11.7898H8.83816ZM11.8428 8.79356C13.5012 8.79356 14.8475 10.1425 14.8475 11.7898H18.8475C18.8475 7.92713 15.7041 4.79356 11.8428 4.79356V8.79356ZM14.8475 11.7898C14.8475 13.4371 13.5012 14.7861 11.8428 14.7861V18.7861C15.7041 18.7861 18.8475 15.6525 18.8475 11.7898H14.8475Z"
+                        fill="#20B9FD" mask="url(#path-2-inside-2_34_361)" />
+                    </svg>
+                  </div>
+                  <div class="main__lead">Настройки</div>
+                  <a id="to-settings" href="#" class="main__link"><svg width="8" height="12" viewBox="0 0 8 12"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 11L6 5.83333L1 1" stroke="#7A7878" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a href="#" class="main__diagnostic">
+                <div class="main__text">Здоровье зубов</div>
+                <div class="main__name">Последняя диагностика</div>
+                <div class="main__img"><svg width="174" height="104" viewBox="0 0 174 104" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_34_364)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M87 0C126.65 0 160.527 24.991 174 60.2269L130.5 77.0687C123.802 59.4508 106.864 46.9552 87 46.9552C67.1363 46.9552 50.1982 59.4508 43.5 77.0687L0 60.2269C13.4735 24.991 47.3496 0 87 0Z"
+                        fill="#E6E6E6" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M87 0C105.401 0 122.493 5.35522 136.967 14.6687L111.329 53.9403C104.246 49.5164 95.931 47.0328 87.077 47.0328C67.2133 47.0328 50.2752 59.5284 43.577 77.1463L0 60.2269C13.4734 24.991 47.3496 0 87 0Z"
+                        fill="#100072" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M145.898 1.08656L87.8469 101.982C86.615 104.078 83.8434 104.621 81.8416 103.301C79.8398 101.982 79.1469 99.2657 80.5327 97.2477L145.898 1.08656Z"
+                        fill="black" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_34_364">
+                        <rect width="174" height="104" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div id="settings" class="main__form">
+              <div class="main__photo"><img src="img/ava.png" alt=""></div>
+              <form class="main__setings setings">
+                <label for="">
+                  <input type="text" placeholder="Максим">
+                </label>
+                <label for="">
+                  <input type="text" placeholder="Иванов">
+                </label>
+                <label for="">
+                  <input type="text" placeholder="Белгород">
+                </label>
+                <label for="">
+                  <input type="text" placeholder="01.02.2000">
+                </label>
+                <label for="">
+                  <input type="text" placeholder="8 (900) 888 - 38 - 49">
+                </label>
+                <label for="">
+                  <input type="text" placeholder="maximus@gmail.com">
+                </label>
+                <label for="">
+                  <input type="text" placeholder="***********">
+                  <span>
+                    <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17.5 5C17.5 6.13115 16.7172 7.24554 15.2569 8.10457C13.8081 8.95679 11.7739 9.5 9.5 9.5C7.22611 9.5 5.19188 8.95679 3.7431 8.10457C2.28276 7.24554 1.5 6.13115 1.5 5C1.5 3.86885 2.28276 2.75446 3.7431 1.89543C5.19188 1.04321 7.22611 0.5 9.5 0.5C11.7739 0.5 13.8081 1.04321 15.2569 1.89543C16.7172 2.75446 17.5 3.86885 17.5 5Z"
+                        stroke="#7A7878" />
+                      <line y1="5.5" x2="21" y2="5.5" stroke="white" stroke-width="3" />
+                      <circle cx="10" cy="5" r="2.5" stroke="#7A7878" />
+                    </svg>
+                  </span>
+                </label>
+                <label for="#">
+                  <div class="setings__span">Мой врач</div>
+                  <input type="text" placeholder="Игоренко Кирилл Федосович">
+                </label>
+                <label for="#">
+                  <div class="setings__span">Моя стоматология</div>
+                  <input type="text" placeholder="Евростоматология">
+                </label>
+                <div data-back-window class="setings__back">
+                  Назад
+                  <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 14L2 7.5L9 1" stroke="#7A7878" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </form>
+            </div>
+            <button data-back class="main__back">Назад</и>
+          </div>
+        </div>
+      </div>
+      <!-- Результат диагностики -> "Личный Кабинет" -->
+
+    </main>
+
+    <!-- Камера -->
+    <div class="camera">
+      <img data-frontal class="camera__repeat" src="img/icon-repeat.svg" alt="">
+      <img class="camera__img" src="img/fast-img.png" alt="">
+      <img class="camera__img" src="img/camera-on-the-left.png" alt="">
+      <img class="camera__img" src="img/camera-on-the-right.png" alt="">
+      <img class="camera__img" src="img/camera-on-the-top.png" alt="">
+      <img class="camera__img" src="img/camera-on-the-bottom.png" alt="">
+      <div class="camera__items">
+        <div class="camera__item active">Фронтально</div>
+        <div class="camera__item">Слева</div>
+        <div class="camera__item">Справа</div>
+        <div class="camera__item">Верх</div>
+        <div class="camera__item">Низ</div>
+      </div>
+      <video class="camera__screen" id="camera" autoplay></video>
+    </div>
+    <!-- Камера -->
+  </div>
+
+  <div data-page class="data-base">
+    PAGES
+  </div>
+
+  <div id="data-base-modal" class="data-base-modal">
+    <div class="data-base-moda__list">
+      <a href="index.html">Главная страница</a>
+      <a href="page-home.html">Home - ЛК</a>
+      <a href="page-maps.html">Карты - ЛК</a>
+      <a href="page-result.html">Рез. диагностики - ЛК</a>
+      <a href="page-timer.html">Таймер - ЛК</a>
+      <button>ЗАКРЫТЬ</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="files/main.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

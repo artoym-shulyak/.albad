@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Помочь нам"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+
+			<section class="head">
+				<div class="head__container">
+					<ul class="head__path">
+						<li><a href="index.htm l">главная</a></li>
+						<span>/</span>
+						<li>помочь нам</li>
+					</ul>
+					<div class="head__middle">
+						<h2 class="head__title">помочь нам</h2>
+						<button id="btn-primary"><img src="img/hearth.svg" alt=""><span>хочу
+								помочь</span></button>
+					</div>
+				</div>
+			</section>
+
+			<section class="helps">
+				<div class="helps__container">
+					<div class="helps__wrapper">
+						<h2 class="helps__title">Вы можете помочь нашему проекту, сделав благотворительное пожертвование
+						</h2>
+						<div class="helps__btns">
+							<button class="active">частное лицо</button>
+							<button>юридическое лицо</button>
+						</div>
+						<h4 class="helps__lead">выберите цель</h4>
+						<ul class="helps__items">
+							<li class="active">текущая деятельность</li>
+							<li>детские творческие мастерские</li>
+							<li>я могу больше</li>
+							<li>особый
+								старт в профессию</li>
+							<li>публичные
+								программы</li>
+						</ul>
+						<p class="helps__descr">Центру нужны средства на поддержание инфраструктуры, ежедневные
+							хозяйственные и административные расходы. А еще благодаря вашим пожертвованиям у нас всегда
+							есть свежая вода и чай с печенькой.</p>
+						<div class="helps__buttons">
+							<button class="active">ежемесячное</button>
+							<button>разовое</button>
+						</div>
+						<h4 class="helps__lead">выберите сумму</h4>
+						<ul class="helps__prices">
+							<li class="active">200 р.</li>
+							<li>500 р.</li>
+							<li>1 000 р.</li>
+							<li>2 000 р.</li>
+							<li>5 000 р.</li>
+						</ul>
+						<h4 class="helps__lead">или введите свою сумму</h4>
+						<div class="helps__price">
+							<input type="text" placeholder="любая сумма">
+						</div>
+						<div class="helps__end">
+							<button class="helps__btn">пожертвовать</button>
+							<div class="helps__info">
+								<p>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь
+									c <a href="#">политикой конфиденциальности</a></p>
+							</div>
+						</div>
+						<img class="helps__hearth-img" src="img/hearth-img.png" alt="">
+					</div>
+					<p class="helps__sub-info">* Ежемесячное пожертвование будет автоматически списываться с вашей карты
+						каждый месяц. Вы в любой момент сможете изменить сумму ежемесячного пожертвования или отменить
+						подписку, связавшись с нами по телефону <a class="helps__phone" href="tel:+74991303935">+7 499
+							130-39-35</a>
+						или написав <a class="helps__mail" href="mailto:space@tverskaya15.ru">письмо
+							space@tverskaya15.ru</a>.</p>
+					<h3 class="helps__header">Вы можете помочь нашему проекту,<br>
+						сделав благотворительное пожертвование</h3>
+					<p class="helps__description">Центру нужны средства на поддержание инфраструктуры, ежедневные
+						хозяйственные<br> и административные расходы. А еще благодаря вашим пожертвованиям у нас
+						всегда<br> есть свежая вода и чай с печенькой.</p>
+					<h2 class="helps__title">на что нужны деньги</h2>
+					<div class="helps__boxes">
+						<div class="helps__boxex">
+							<div class="helps__box">
+								<p class="helps__descr">Вместе мы можем помочь взрослым, живущим в ПНИ, получать знания,
+									заниматься творчеством, интересно и качественно проводить свободное время, расширять
+									круг общения. Поддержите участников проекта и оформите регулярное пожертвование на
+									любую
+									комфортную для вас сумму.</p>
+								<button class="helps__btn">помочь проекту</button>
+							</div>
+							<div class="helps__box">
+								<p class="helps__descr">Сейчас проект осуществляется при поддержке Благотворительного
+									фонда
+									«Абсолют-помощь», грант фонда покрывает половину расходов, остальное мы оплачиваем
+									из
+									собственных средств. После окончания карантина мы хотим продолжить проводить
+									поддерживающие online занятия в дополнение к очной программе, а также оставить
+									online
+									формат для тех, кто не может приезжать в центр. Чтобы ребята смогли и дальше
+									заниматься,
+									нам нужно оплачивать работу кураторов и преподавателей, покупать и ремонтировать
+									планшеты для занятий, оплачивать интернет, приобретать расходные материалы для
+									занятий
+									(тетради, кисти, краски и др). </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="files/main.js"></script>
+</body>
+
+</html>

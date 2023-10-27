@@ -1,0 +1,34 @@
+// Шрифты
+@import "fonts";
+@import "base/variables";
+
+// Основы
+@import "base/global.scss";
+@import "base/header.scss";
+@import "base/footer.scss";
+
+// Блоки
+@import "section/items.scss";
+@import "section/content.scss";
+@import "section/explain.scss";
+@import "section/possible.scss";
+@import "section/confed.scss";
+@import "section/questions.scss";
+@import "section/rates.scss";
+@import "section/comment.scss";
+@import "section/news.scss";
+@import "section/community.scss";
+@import "main/main.scss";
+@import "main/timer.scss";
+@import "main/article.scss";
+@import "main/maps.scss";
+@import "main/service.scss";
+@import "main/result.scss";
+@import "main/delivery.scss";
+@import "main/diagcs.scss";
+@import "main/doctor.scss";
+@import "main/settings.scss";
+@import "main/goods.scss";
+@import "main/basket.scss";
+@import "main/video.scss";
+@import "base/data";

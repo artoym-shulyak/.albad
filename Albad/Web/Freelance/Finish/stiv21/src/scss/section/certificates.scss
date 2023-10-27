@@ -1,0 +1,121 @@
+.certificates {
+	padding: 140px 0;
+	&__container {
+	}
+	&__title {
+		text-align: right;
+		@media (max-width: 576.98px) {
+			text-align: left;
+		}
+	}
+	&__swiper {
+		width: 100%;
+		height: 700px;
+		position: relative;
+		@media (max-width: 1599.98px) {
+			left: 50%;
+			transform: translateX(-50%);
+			height: 550px;
+			display: flex;
+			align-items: center;
+			grid-gap: 30px;
+		}
+		@media (max-width: 1299.98px) {
+			height: 550px;
+		}
+		@media (max-width: 1199.98px) {
+			height: 400px;
+		}
+		@media (max-width: 991.98px) {
+			flex-direction: column;
+			align-items: unset;
+			height: auto;
+		}
+	}
+	.swiper-wrapper {
+		align-items: center;
+	}
+	.swiper {
+		width: 100%;
+		height: 100%;
+	}
+	.swiper-slide {
+		overflow: hidden;
+		height: 600px;
+		background: #d9d9d9;
+		@media (max-width: 1599.98px) {
+			height: 450px;
+		}
+		@media (max-width: 1199.98px) {
+			height: 300px;
+		}
+		@media (max-width: 991.98px) {
+			height: 1100px !important;
+		}
+		@media (max-width: 767.98px) {
+			height: 900px !important;
+		}
+		@media (max-width: 576.98px) {
+			height: 650px !important;
+		}
+		@media (max-width: 479.98px) {
+			height: 450px !important;
+		}
+		img {
+			height: 100%;
+			width: 100%;
+			@media (max-width: 991.98px) {
+				object-fit: contain;
+			}
+		}
+	}
+	.swiper-slide-active {
+		height: 100%;
+	}
+	&__prev,
+	&__next {
+		top: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+		background: transparent;
+		cursor: pointer;
+		height: 70px;
+		width: 70px;
+		z-index: 1;
+		svg {
+			height: 100%;
+			width: 100%;
+		}
+		@media (max-width: 1599.98px) {
+			position: relative;
+			top: 0;
+			transform: translateY(0%);
+		}
+		@media (max-width: 1199.98px) {
+			height: 50px;
+			width: 50px;
+		}
+		@media (max-width: 991.98px) {
+			height: 70px;
+			width: 70px;
+		}
+	}
+	&__prev {
+		left: -110px;
+		@media (max-width: 1599.98px) {
+			left: 0;
+		}
+		@media (max-width: 991.98px) {
+			display: none;
+		}
+	}
+	&__next {
+		right: -110px;
+		@media (max-width: 1599.98px) {
+			right: 0;
+		}
+		@media (max-width: 991.98px) {
+			margin-left: auto;
+		}
+	}
+}

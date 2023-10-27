@@ -1,0 +1,117 @@
+.interest {
+    padding: 45px 0 35px 0;
+
+    @media (max-width: 767.98px) {
+        padding: 25px 0;
+    }
+}
+
+.interest__container {}
+
+.interest__title {
+    @extend %title;
+}
+
+.interest__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.interest__item {
+    margin-right: 35px;
+    position: relative;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 300px;
+    box-shadow: 1px 1px rgb(65, 106, 176), -0.5em 0 .3em rgb(163 0 16);
+
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 25px;
+        line-height: 130%;
+        padding: 9px 30px;
+        background: $gradient;
+        color: #fff;
+
+        @media (max-width: 1079.98px) {
+            font-size: 22px;
+            padding: 10px 20px;
+        }
+
+        @media (max-width: 767.98px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 576.98px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 479.98px) {
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+
+        @media (max-width: 374.98px) {
+            font-size: 12px;
+        }
+    }
+
+    &:hover {
+        box-shadow: 3px 3px rgb(65, 106, 176), -1em 0 .4em rgb(163 0 16);
+    }
+
+    @media (max-width: 767.98px) {
+        height: 270px;
+        width: 270px;
+    }
+
+    @media (max-width: 576.98px) {
+        width: 80%;
+        margin: 0 0 25px 0;
+        height: 250px;
+    }
+
+    @media (max-width: 374.98px) {
+        height: 200px;
+    }
+
+}
+
+.interest__item:nth-child(3n) {
+    margin-right: 0;
+
+    @media (max-width: 1198.98px) {
+        margin-right: 35px;
+    }
+
+    @media (max-width: 576.98px) {
+        margin-right: 0;
+        ;
+    }
+}
+
+.interest__item:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 1198.98px) {
+    .interest__item:nth-child(2n) {
+        margin-right: 0;
+    }
+}

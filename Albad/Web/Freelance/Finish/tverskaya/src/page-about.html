@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"О нас"
+})
+
+
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/header.html',{})
+
+
+		<main class="main">
+			<section class="head">
+				<div class="head__container">
+					<ul class="head__path">
+						<li><a href="index.html">главная</a></li>
+						<span>/</span>
+						<li>о нас</li>
+					</ul>
+
+					<div class="head__middle">
+						<h2 class="head__title">о нас</h2>
+						<button id="btn-primary"><img src="img/hearth.svg" alt=""><span>хочу
+								помочь</span></button>
+					</div>
+				</div>
+			</section>
+
+			<section class="head-items">
+				<div class="head-items__container">
+					<div class="head__swiper head__swiper-about">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide active">
+								<a href="#">миссия</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">команда</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">документы и реквизиты</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">отчёты</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">наши программы и проекты</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">наши партнёры</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">новости</a>
+							</div>
+							<div class="swiper-slide ">
+								<a href="#">мы в сми</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about">
+				<div class="about__container">
+					<h3 class="about__title">Социальный проект «ТВЕРСКАЯ 15» — это инклюзивный культурный центр в самом
+						сердце Москвы. Работа центра нацелена на создание среды, способствующей возвращению в социум
+						исключенных из него людей.</h3>
+					<p id="asd" class="about__descr">Деятельность центра сфокусирована на организации творческих и культурных
+						событий,
+						изучении и внедрении принципов инклюзивного взаимодействия, налаживании связей внутри НКО-сообщества
+						для совместного развития инклюзивной среды.
+						<br><br>
+						Мы участвуем в формировании инклюзивного общества, основанного на признании и уважении особенностей
+						всех людей, обеспечивающее им полноту включения в жизнь общества.
+					</p>
+					<div class="swiper center__swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/about-1.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/about-2.png" alt="">
+							</div>
+						</div>
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<div id="asd2" class="center__box">
+						<div class="center__img center__asd">
+							<img src="img/about-1.png" alt="">
+						</div>
+						<div class="center__img ">
+							<img src="img/about-2.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="inclusion">
+				<div class="inclusion__container">
+					<h2 class="inclusion__title">наше понимание инклюзии</h2>
+					<div class="inclusion__items">
+						<div class="inclusion__item">
+							<h3 class="inclusion__name">инклюзия —</h3>
+							<p class="inclusion__descr">это социокультурная модель отношений индивида и общества, основанная на
+								признании и уважении многообразия особенностей различных людей, обеспечивающее всем полноту
+								участия в жизни общества.</p>
+						</div>
+						<div class="inclusion__item">
+							<h3 class="inclusion__name">инклюзия —</h3>
+							<p class="inclusion__descr">это когда индивидуальность каждого человека рассматривается как норма,
+								люди не делятся на группы в соответствии со своими особенностями и свободно взаимодействуют друг
+								с другом.</p>
+							<a href="#" class="inclusion__link"><img src="img/next.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="geography">
+				<div class="geography__container">
+					<h2 class="geography__title">география проекта</h2>
+					<div class="geography__body">
+						<img class="geography__img" src="img/city.png" alt="">
+						<div class="geography__info">
+							<div class="geography__paths">
+								<div class="geography__path"><span>Москва</span><img src="img/next.svg" alt=""></div>
+								<div class="geography__path"><span>Московская область</span><img src="img/next.svg" alt="">
+								</div>
+								<div class="geography__path"><span>Другие регионы</span><img src="img/next.svg" alt=""></div>
+							</div>
+							<div class="geography__items">
+								<div class="geography__item">
+									<p>Наш Культурный центр располагается в самом центре Москвы, потому в большей степени мы
+										нацелены на работу с жителями столицы. Но также у нас есть некоторые проекты, в которых
+										принимают участие жители Московской области и других регионов России.</p>
+								</div>
+								<div class="geography__item">
+									<p>Мы участвуем в формировании инклюзивного общества, основанного на признании и уважении
+										особенностей всех людей, обеспечивающее им полноту включения в жизнь общества. </p>
+									<button class="geography__btn">контакты</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="files/main.js"></script>
+</body>
+
+</html>

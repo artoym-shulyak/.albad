@@ -1,0 +1,280 @@
+ .possible {
+  padding: 43px 0 30px 0;
+  background: #F1F1F1;
+
+  @media (max-width:991.98px) {
+   padding: 20px 0 31px 0;
+  }
+
+  &__container {}
+
+  &__title {
+   @extend %title-default;
+   margin-bottom: 23px;
+
+   @media (max-width:991.98px) {
+    text-align: center;
+    margin-bottom: 6px;
+   }
+
+   @media (max-width:576.98px) {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+   }
+  }
+
+  &__wrapper {
+   width: 993px;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   border-radius: 50px;
+   background: $white;
+   padding: 26px 70px 12px 70px;
+
+   @media (max-width:1139.98px) {
+    width: 850px;
+    padding: 26px 30px 12px 30px;
+   }
+
+   @media (max-width:991.98px) {
+    width: 100%;
+   }
+
+   @media (max-width:767.98px) {
+    padding: 16px 16px 30px 16px;
+   }
+
+   @media (max-width:576.98px) {
+    border-radius: 30px;
+   }
+  }
+
+  &__head {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 15px;
+
+   @media (max-width:991.98px) {
+    grid-gap: 15px;
+   }
+
+   @media (max-width:767.98px) {
+    grid-gap: 6px 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+  }
+
+  &__head-item {
+   font-weight: 500;
+   color: $white;
+   letter-spacing: -0.005em;
+   padding: 19px 56px;
+   cursor: pointer;
+   border-radius: 50px;
+   background: $blue-default;
+   transition: $transiton;
+
+   @media (max-width:991.98px) {
+    padding: 15px 30px;
+   }
+
+   @media (max-width:767.98px) {
+    padding: 10px 15px;
+    text-align: center;
+    width: 49%;
+   }
+
+   @media (max-width:576.98px) {
+    font-size: 10px;
+    line-height: 12px;
+    width: 48%;
+    padding: 5px 15px;
+
+    &:nth-child(3) {
+     order: 2;
+    }
+
+    &:nth-child(2) {
+     order: 3;
+     width: auto;
+    }
+   }
+
+   &:hover,
+   &.active {
+    background: $blue-dark;
+   }
+  }
+
+  &__body {
+   padding: 0 20px;
+   display: none;
+   grid-gap: 38px;
+
+   @media (max-width:991.98px) {
+    padding: 0;
+    grid-gap: 25px;
+   }
+
+   @media (max-width:576.98px) {
+    &:nth-child(2) {
+     order: 3;
+    }
+
+    &:nth-child(3) {
+     order: 2;
+    }
+   }
+
+   &.active {
+    display: flex;
+   }
+
+  }
+
+  &__prev {
+   flex: 0 0 206px;
+
+   @media (max-width:767.98px) {
+    display: none;
+   }
+
+   img {
+    max-width: 100%;
+    object-fit: cover;
+   }
+  }
+
+  &__inner {}
+
+  &__text {
+   margin-bottom: 26px;
+   font-family: $mont;
+   font-weight: 500;
+
+   @media (max-width:767.98px) {
+    text-align: center;
+   }
+
+   @media (max-width:576.98px) {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 29px;
+   }
+  }
+
+  ._center {
+   text-align: center;
+  }
+
+  &__list {
+   display: flex;
+   flex-direction: column;
+   grid-gap: 22px;
+   margin-bottom: 17px;
+
+   @media (max-width:576.98px) {
+    grid-gap: 49px;
+    margin-bottom: 20px;
+   }
+
+   li {
+    display: grid;
+    grid-template-columns: 50px auto;
+
+    @media (max-width:576.98px) {
+     grid-template-columns: 25px auto;
+     grid-gap: 14px;
+    }
+   }
+  }
+
+  &__number {
+   font-family: $baron;
+   font-weight: 900;
+   font-size: 70px;
+   line-height: 70px;
+   color: $blue-dark;
+
+   @media (max-width:576.98px) {
+    font-size: 50px;
+    line-height: 50px;
+   }
+  }
+
+  &__info {
+   position: relative;
+
+   &::after {
+    content: '';
+    height: 1px;
+    width: 307px;
+    position: absolute;
+    top: -14px;
+    left: 0;
+    border-top: 1px solid #100072;
+
+    @media (max-width:576.98px) {
+     top: -9px;
+     width: 100%;
+    }
+   }
+
+   .possible__name {
+    color: $blue-dark;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    display: inline-block;
+
+    @media (max-width:576.98px) {
+     font-size: 14px;
+     line-height: 17px;
+     margin-bottom: 2px;
+    }
+
+    span {
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 17px;
+     position: absolute;
+     right: -30px;
+     top: -9px;
+
+     @media (max-width:576.98px) {
+      font-size: 10px;
+      line-height: 12px;
+      top: -4px;
+      right: -24px;
+     }
+    }
+   }
+
+   .possible__descr {
+    font-weight: 500;
+    font-family: $mont;
+    padding-left: 0;
+
+    @media (max-width:576.98px) {
+     font-size: 10px;
+     line-height: 12px;
+    }
+   }
+  }
+
+  &__descr {
+   font-weight: 500;
+   font-family: $mont;
+   padding-left: 10px;
+
+   @media (max-width:576.98px) {
+    font-size: 10px;
+    line-height: 12px;
+   }
+  }
+ }

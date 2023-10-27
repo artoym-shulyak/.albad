@@ -1,0 +1,221 @@
+// colors
+$black: #1d1d1d;
+$white: #f2f2f2;
+$dark: #5f5f5f;
+$yellow: #fde590;
+
+// fonts
+$exo: Exo2;
+$poiret: PoiretOne;
+$raleway: Raleway;
+
+$xxl: 1399.98px;
+$xl: 1199.98px;
+$lg: 991.98px;
+$md: 767.98px;
+$sm: 576.98px;
+
+%logo {
+	font-size: 50px;
+	text-transform: uppercase;
+	font-family: $poiret;
+	line-height: 100%;
+	@media (max-width: 1299.98px) {
+		font-size: 40px;
+	}
+	@media (max-width: 1079.98px) {
+		font-size: 50px;
+	}
+	@media (max-width: 767.98px) {
+		font-size: 30px;
+	}
+}
+
+%btn-dark {
+	cursor: pointer;
+	padding: 33px 15px;
+	flex: 0 1 300px;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: $raleway;
+	text-align: center;
+	background: $dark;
+	backdrop-filter: blur(7.5px);
+	color: $white;
+}
+
+%btn-light {
+	cursor: pointer;
+	padding: 33px 15px;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: $raleway;
+	text-align: center;
+	background: $white;
+	backdrop-filter: blur(7.5px);
+	color: $black;
+}
+
+%circle280 {
+	height: 280px;
+	width: 280px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 20px;
+	background: $yellow;
+	border-radius: 100%;
+	span {
+		font-size: 25px;
+		font-family: $raleway;
+		@media (max-width: 576.98px) {
+			font-size: 20px;
+		}
+	}
+	svg {
+		margin-top: -30px;
+		@media (max-width: 576.98px) {
+			height: 19px;
+			width: 19px;
+		}
+	}
+}
+
+%circle-transparent {
+	top: -0px;
+	left: 0px;
+	z-index: -1;
+	position: absolute;
+	border-radius: 100%;
+	border: 1px solid rgba(37, 37, 37, 0.5);
+	height: 550px;
+	width: 550px;
+	content: '';
+}
+
+.content__title,
+.advantage__title,
+.client__title,
+.our-work__title,
+.certificates__title,
+.vacancies__title,
+.project__title,
+.thank__title,
+.welcome__title,
+.principle__title,
+.cooperation__title,
+.contact__title,
+.map__title {
+	@extend %title;
+}
+
+%title-home {
+	font-size: 80px;
+	line-height: 118%;
+	margin-bottom: 100px;
+	color: $black;
+	display: flex;
+	flex-direction: column;
+	text-transform: uppercase;
+	@media (max-width: 1599.98px) {
+		font-size: 65px;
+	}
+	@media (max-width: 991.98px) {
+		font-size: 55px;
+	}
+	@media (max-width: 767.98px) {
+		font-size: 50px;
+	}
+	@media (max-width: 479.98px) {
+		font-size: 40px;
+	}
+	pre {
+		display: none;
+		&:nth-child(1) {
+			display: block;
+		}
+		@media (max-width: 1599.98px) {
+			&:nth-child(1) {
+				display: none;
+			}
+			&:nth-child(2) {
+				display: block;
+			}
+		}
+		@media (max-width: 991.98px) {
+			&:nth-child(2) {
+				display: none;
+			}
+			&:nth-child(3) {
+				display: block;
+			}
+		}
+		@media (max-width: 776.98px) {
+			&:nth-child(3) {
+				display: none;
+			}
+			&:nth-child(4) {
+				display: block;
+			}
+		}
+	}
+}
+
+%title {
+	margin-bottom: 100px;
+	font-size: 65px;
+	text-transform: uppercase;
+	font-family: $poiret;
+	line-height: 100%;
+	@media (max-width: 1599.98px) {
+		font-size: 50px;
+	}
+	@media (max-width: 991.98px) {
+		font-size: 40px;
+	}
+	@media (max-width: 767.98px) {
+		font-size: 45px;
+	}
+	@media (max-width: 479.98px) {
+		font-size: 30px;
+	}
+	pre {
+		display: none;
+		&:nth-child(1) {
+			display: block;
+		}
+		@media (max-width: 1599.98px) {
+			&:nth-child(1) {
+				display: none;
+			}
+			&:nth-child(2) {
+				display: block;
+			}
+		}
+		@media (max-width: 991.98px) {
+			&:nth-child(2) {
+				display: none;
+			}
+			&:nth-child(3) {
+				display: block;
+			}
+		}
+		@media (max-width: 776.98px) {
+			&:nth-child(3) {
+				display: none;
+			}
+			&:nth-child(4) {
+				display: block;
+			}
+		}
+	}
+}
+
+%title-middle {
+	font-size: 35px;
+	line-height: 100%;
+	text-transform: uppercase;
+	@media (max-width: 767.98px) {
+		font-size: 25px;
+	}
+}

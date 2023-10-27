@@ -1,0 +1,261 @@
+.modal {
+ position: fixed;
+ height: 100%;
+ width: 100%;
+ left: 0;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ z-index: -1;
+ opacity: 0;
+ background: $bg-modal;
+ padding: 0 15px;
+
+
+
+ &._arrange {
+
+  .modal__body {
+   width: 587px;
+
+   @media (max-width:640.98px) {
+    width: 100%;
+   }
+
+  }
+
+  .modal__descr {
+   text-align: center;
+   line-height: 130%;
+   letter-spacing: 0.045em;
+   color: $black-light;
+   margin-bottom: 20px;
+   width: 365px;
+   margin: 0 auto;
+
+   @media (max-width:576.98px) {
+    width: 100%;
+   }
+  }
+
+  .modal__btn {
+   cursor: pointer;
+   display: inline-flex;
+   align-items: center;
+   grid-gap: 10px;
+   padding: 18px 27px;
+   text-transform: uppercase;
+   color: $white;
+   line-height: 100%;
+   background-color: $black;
+   border-radius: 50px;
+   justify-content: center;
+   width: 356px;
+   margin: 0 auto 20px;
+
+   @media (max-width:576.98px) {
+    width: 100%;
+   }
+  }
+
+  .modal__agree {
+   display: flex;
+   flex-direction: column;
+   grid-gap: 24px;
+   width: 293px;
+   margin-bottom: 28px;
+   margin: 0 auto 28px;
+
+   @media (max-width:374.98px) {
+    width: 250px;
+    font-size: 12px;
+   }
+
+   label {
+    display: flex;
+    align-items: center;
+    padding-left: 34px;
+    line-height: 130%;
+    letter-spacing: 0.045em;
+    color: $black-light;
+
+    span {
+     text-decoration: underline;
+
+    }
+   }
+
+   .check-box {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    clip: repeat(0 0 0 0);
+   }
+
+   .check-style {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-left: -32px;
+    border: 1px solid #565656;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   }
+
+   .check-box:checked+.check-style {
+    background-image: url('../../img/ok.svg');
+    background-repeat: no-repeat;
+    background-color: $black;
+   }
+
+  }
+
+  .check-box:checked {
+   background-color: $red;
+  }
+
+  .modal__cards {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   align-items: center;
+   grid-gap: 50px;
+   justify-content: center;
+
+   @media (max-width:776.98px) {
+    grid-template-columns: repeat(5, 45px);
+    grid-gap: 20px;
+   }
+
+   @media (max-width:374.98px) {
+    grid-template-columns: repeat(5, 40px);
+    grid-gap: 10px;
+   }
+
+   img {
+    max-width: 100%;
+    object-fit: cover;
+   }
+  }
+
+ }
+
+ &.active {
+  opacity: 1;
+  z-index: 5;
+
+  .modal__body {
+   transform: translate(-50%, -50%) scale(1);
+  }
+ }
+
+
+ &__body {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  width: 476px;
+  padding: 48px;
+  background-color: $white;
+
+  transition: $animation;
+
+  @media (max-width:640.98px) {
+   padding: 33px 21px 50px 21px;
+   width: 100%;
+  }
+
+  @media (max-width:374.98px) {
+   padding: 33px 15px 30px 15px;
+  }
+ }
+
+ &__close {
+  position: absolute;
+  cursor: pointer;
+  right: 16px;
+  top: 16px;
+  height: 16px;
+  width: 16px;
+
+  @media (max-width:776.98px) {
+   top: 20px;
+   right: 20px;
+  }
+
+  @media (max-width:374.98px) {
+   right: 15px;
+   top: 15px;
+  }
+
+  img {
+   max-width: 100%;
+   object-fit: cover;
+  }
+ }
+
+ &__text {
+  text-align: center;
+ }
+
+ form {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+ }
+
+ &__title {
+  margin-bottom: 30px;
+  @extend %title-default;
+  text-align: center;
+
+  @media (max-width:776.98px) {
+   font-size: 20px;
+  }
+ }
+
+ label {
+  input {
+   width: 100%;
+   outline: none;
+   border: 1px solid #B6B6B6;
+   background-color: $white;
+   border-radius: 50px;
+   line-height: 130%;
+   color: $black;
+   letter-spacing: 0.045em;
+   padding: 12px 20px;
+
+   &::placeholder {
+    color: $black-light;
+    letter-spacing: 0.045em;
+    line-height: 130%;
+   }
+  }
+ }
+
+ &__label {
+  line-height: 130%;
+  letter-spacing: 0.045em;
+  margin-bottom: 10px;
+
+  span {
+   color: $red;
+  }
+ }
+
+ &__btn {
+  margin-top: 10px;
+  width: 100%;
+  background-color: $black;
+  border-radius: 50px;
+  padding: 16px 24px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $white;
+  cursor: pointer;
+ }
+}

@@ -1,0 +1,139 @@
+.project {
+	padding-bottom: 140px;
+	@media (max-width: 991.98px) {
+		padding-top: 140px;
+	}
+}
+.project__container-big {
+	position: relative;
+}
+.project__wrapper {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 100px;
+	@media (max-width: 991.98px) {
+		grid-gap: 140px;
+	}
+}
+.project__wrap {
+	display: grid;
+	grid-gap: 80px;
+	grid-template-columns: 53.3% auto;
+	&:nth-child(2n) {
+		grid-template-columns: auto 53.3%;
+		.project__image {
+			grid-column: 2;
+		}
+		.project__info {
+			grid-column: 0;
+			grid-row: 1;
+		}
+	}
+	@media (max-width: 1199.98px) {
+		grid-gap: 40px;
+	}
+	@media (max-width: 991.98px) {
+		grid-template-columns: 1fr;
+		&:nth-child(2n) {
+			grid-template-columns: 1fr;
+			.project__image {
+				grid-column: 1;
+			}
+			.project__info {
+				grid-column: 1;
+				grid-row: 2;
+			}
+		}
+	}
+}
+.project__image {
+	background: #d9d9d9;
+	height: 480px;
+	flex: 0 0 800px;
+	@media (max-width: 991.98px) {
+		height: 680px;
+	}
+	@media (max-width: 767.98px) {
+		height: 580px;
+	}
+	@media (max-width: 576.98px) {
+		height: 455px;
+	}
+	img {
+		max-width: 100%;
+		object-fit: cover;
+	}
+}
+.project__info {
+}
+.project__name {
+	font-size: 35px;
+	line-height: 100%;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	@media (max-width: 767.98px) {
+		font-size: 25px;
+	}
+}
+.project__descr {
+	font-family: $raleway;
+	font-weight: 500;
+	span {
+		font-weight: 700;
+	}
+}
+
+.project__circle {
+	@extend %circle-transparent;
+	top: 0;
+	right: -400px;
+	left: auto;
+	@media (max-width: 991.98px) {
+		height: 300px;
+		width: 300px;
+		top: -60px;
+		right: -185px;
+	}
+}
+.project__circle-yellow {
+	@extend %circle280;
+	position: absolute;
+	top: 360px;
+	z-index: -1;
+	left: -280px;
+	height: 450px;
+	width: 450px;
+	@media (max-width: 991.98px) {
+		left: auto;
+		top: 1100px;
+		height: 200px;
+		width: 200px;
+		right: -30px;
+	}
+	@media (max-width: 767.98px) {
+		top: 1000px;
+	}
+	@media (max-width: 576.98px) {
+		top: 970px;
+	}
+}
+.project__circle-end {
+	@extend %circle280;
+	position: absolute;
+	top: auto;
+	right: -250px;
+	left: auto;
+	bottom: -300px;
+	height: 450px;
+	width: 450px;
+	z-index: -1;
+	@media (max-width: 991.98px) {
+		height: 200px;
+		width: 200px;
+		bottom: 736px;
+		right: -28px;
+	}
+	@media (max-width: 767.98px) {
+		bottom: 520px;
+	}
+}

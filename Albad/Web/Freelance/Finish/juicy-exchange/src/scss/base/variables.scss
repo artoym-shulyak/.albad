@@ -1,0 +1,37 @@
+$yellow: #FFE600;
+$bg_fiol:linear-gradient(180deg, #A140FF 0%, #6356FF 100%);
+
+%btn-default {
+    display: block;
+    background: $bg_fiol;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 14px;
+    width: 196px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.8s;
+
+    &:hover {
+        background: linear-gradient(180deg, #642AA7 0%, #392C90 100%);
+        box-shadow: 0px 3px 10px rgba(155, 66, 255, 0.2);
+    }
+}
+
+%title-default {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @media (max-width: 991.98px) {
+        margin-bottom: 44px;
+    }
+
+    @media (max-width: 576.98px) {
+        font-size: 32px;
+        line-height: 39px;
+    }
+}

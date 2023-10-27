@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Отчёты"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+
+			<section class="head">
+				<div class="head__container">
+					<ul class="head__path">
+						<li><a href="index.html">главная</a></li>
+						<span>/</span>
+						<li>о нас</li>
+					</ul>
+					<div class="head__middle">
+						<h2 class="head__title">о нас</h2>
+						<button id="btn-primary"><img src="img/hearth.svg" alt=""><span>хочу
+								помочь</span></button>
+					</div>
+				</div>
+			</section>
+
+			<section class="head-items head-documents">
+				<div class="head-items__container">
+					<div class="head__swiper head__swiper-reports">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide ">
+								<a href="#">миссия</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">команда</a>
+							</div>
+							<div class="swiper-slide ">
+								<a href="#">документы и реквизиты</a>
+							</div>
+							<div class="swiper-slide active">
+								<a href="#">отчёты</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">наши программы и проекты</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">наши партнёры</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">новости</a>
+							</div>
+							<div class="swiper-slide ">
+								<a href="#">мы в сми</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="reports">
+				<div class="reports__container">
+					<h2 class="reports__title">отчёты</h2>
+					<div class="reports__items good">
+						<div class="good__item">
+							<div class="good__images"><img src="img/document-1.png" alt=""></div>
+							<div class="good__footer">
+								<p class="good__text">документы</p>
+								<h3 class="good__name">Свидетельство о государственной регистрации</h3>
+								<a href="#" class="good__end">
+									<span>Скачать документ</span>
+									<img src="img/next.svg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="good__item">
+							<div class="good__images"><img src="img/document-1.png" alt=""></div>
+							<div class="good__footer">
+								<p class="good__text">документы</p>
+								<h3 class="good__name">Свидетельство о государственной регистрации</h3>
+								<a href="#" class="good__end">
+									<span>Скачать документ</span>
+									<img src="img/next.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="files/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.team {
+	padding: 70px 0 140px 0;
+	@media (max-width: 991.98px) {
+		display: none;
+	}
+}
+.team__container {
+	position: relative;
+}
+.team__head {
+	display: flex;
+	grid-gap: 50px;
+	@media (max-width: 1199.98px) {
+		grid-gap: 30px;
+	}
+}
+.team__title {
+	@extend %title;
+	margin-bottom: 0;
+	letter-spacing: -0.7px;
+	flex: 0 0 555px;
+	@media (max-width: 1199.98px) {
+		flex: 0 0 430px;
+	}
+}
+.team__span {
+	flex: 0 0 120px;
+	@media (max-width: 1199.98px) {
+		flex: 0 0 90px;
+	}
+	svg {
+		max-width: 100%;
+		object-fit: cover;
+	}
+	@media (max-width: 991.98px) {
+		display: none;
+	}
+}
+.team__descr {
+	font-family: $raleway;
+	font-weight: 500;
+}

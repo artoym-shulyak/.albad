@@ -1,0 +1,295 @@
+.rates {
+ padding: 43px 0 70px 0;
+ background: #F1F1F1;
+
+ @media (max-width:1139.98px) {
+  padding: 43px 0 40px 0;
+ }
+
+ @media (max-width:991.98px) {
+  padding: 20px 0 0 0;
+ }
+
+ &__container {
+  position: relative
+ }
+
+ &__title {
+  @extend %title-default;
+
+  @media (max-width:1139.98px) {
+   margin-bottom: 0;
+  }
+
+  @media (max-width:991.98px) {
+   text-align: center;
+  }
+
+  @media (max-width:576.98px) {
+   font-size: 18px;
+   line-height: 22px;
+   font-weight: 600;
+  }
+ }
+
+ &__slider {
+  width: 271px;
+  padding: 28px 25px 23px 25px;
+  box-shadow: 0px 4px 20px rgba(102, 110, 120, 0.36);
+  border-radius: 40px;
+  background: $white;
+  text-align: center;
+  height: 443px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: $transiton;
+
+  &.active {
+   width: 284px;
+
+   .rates__btn {
+    background: $blue-dark;
+   }
+  }
+ }
+
+ &__name {
+  color: $blue-dark;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  font-family: $mont;
+  text-align: center;
+
+  @media (max-width: 479.98px) {
+   font-size: 16px;
+   line-height: 20px;
+   margin-bottom: 14px;
+  }
+ }
+
+ &__list {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-weight: 500;
+  font-family: $mont;
+  margin-bottom: 8px;
+
+  @media (max-width:479.98px) {
+   font-size: 10px;
+   line-height: 12px;
+  }
+
+  li {
+   padding-left: 10px;
+   position: relative;
+
+   &::after {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    height: 2px;
+    width: 2px;
+    background: $black;
+    border-radius: 50%;
+    content: '';
+   }
+  }
+ }
+
+ &__service {
+  font-family: $mont;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 7px;
+
+  @media (max-width:479.98px) {
+   font-size: 10px;
+   line-height: 12px;
+  }
+ }
+
+ &__btn {
+  color: $white;
+  letter-spacing: -0.005em;
+  font-weight: 500;
+  padding: 17px;
+  border-radius: 50px;
+  cursor: pointer;
+  background: $blue-default;
+  display: inline-block;
+  width: 199px;
+  transition: $transiton;
+
+  @media (max-width:767.98px) {
+   background: $blue-dark;
+  }
+
+  @media (max-width:479.98px) {
+   font-size: 10px;
+   line-height: 12px;
+   padding: 10px;
+   width: 122px;
+  }
+
+ }
+
+ &__texts {
+  margin-bottom: 8px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+
+  @media (max-width:479.98px) {
+   grid-gap: 6px;
+   font-size: 10px;
+   line-height: 12px;
+  }
+
+  li {
+   text-align: center;
+   font-family: $mont;
+   font-weight: 500;
+  }
+ }
+
+ &__text {
+  text-align: center;
+  font-family: $mont;
+  font-weight: 500;
+  margin-bottom: 8px;
+ }
+
+ &__prev,
+ &__next {
+  cursor: pointer;
+  position: absolute;
+  top: 270px;
+  transform: translateY(-50%);
+
+  @media (max-width:991.98px) {
+   width: 16px;
+   height: 42px;
+   top: 280px;
+
+   svg {
+    height: 100%;
+    width: 100%;
+   }
+  }
+
+  @media (max-width:479.98px) {
+   width: 10px;
+   height: 30px;
+   top: 250px;
+  }
+
+  @media (max-width:479.98px) {
+   top: 210px;
+  }
+ }
+
+ &__prev {
+  left: 30px;
+
+  @media (max-width:767.98px) {
+   left: 35px;
+  }
+
+  @media (max-width:479.98px) {
+   left: 25px;
+  }
+ }
+
+ &__next {
+  right: 45px;
+
+  @media (max-width:767.98px) {
+   right: 45px;
+  }
+
+  @media (max-width:479.98px) {
+   right: 25px;
+  }
+ }
+
+ &__swiper {
+  width: 950px;
+  padding: 20px 40px;
+
+  @media (max-width:1139.98px) {
+   width: 650px;
+   padding: 30px 40px 40px 40px;
+  }
+
+  @media (max-width:991.98px) {
+   width: 640px;
+   padding: 30px 20px 40px 20px;
+  }
+
+  @media (max-width:767.98px) {
+   width: 350px;
+  }
+
+  @media (max-width:479.98px) {
+   width: 249px;
+  }
+
+  .swiper-wrapper {
+   align-items: center;
+  }
+
+  .swiper-slide {
+   width: 271px;
+   padding: 28px 25px 23px 25px;
+   box-shadow: 0px 4px 20px rgba(102, 110, 120, 0.36);
+   border-radius: 40px;
+   background: $white;
+   text-align: center;
+   height: 422px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   @media (max-width:767.98px) {
+    width: auto;
+
+   }
+
+   @media (max-width:576.98px) {
+    height: 422px;
+   }
+
+   @media (max-width:479.98px) {
+    padding: 27px 16px 32px 16px;
+    height: 320px;
+   }
+
+  }
+
+  .swiper-slide-active {
+   width: 284px;
+   height: 443px;
+
+   @media (max-width:576.98px) {
+    width: auto;
+    height: 422px;
+   }
+
+   @media (max-width:479.98px) {
+    height: 320px;
+    padding: 27px 16px 32px 16px;
+   }
+
+   .rates__btn {
+    background: $blue-dark;
+
+   }
+  }
+ }
+}

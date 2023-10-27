@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Профиль"
+})
+
+<body>
+ @@include('html/header.html',{})
+ <main>
+
+
+  <!-- Профиль -->
+  <div class="user">
+   <div class="user__container">
+    <h1 class="user__title">Привет, Евгения!</h1>
+    <div class="user__wrapper">
+     <ul class="user__chapters">
+           <li class="active"><a href="">Личные данные</a></li>
+      <li><a href="page-orders.html">Заказы</a></li>
+      <li><a href="page-favourites.html">Избранное</a></li>
+         <li><a href="">Выйти</a></li>
+     </ul>
+       <div class="user__body">
+        <div class="user__item">
+       <h2 class="user__name">Личные данные</h2>
+       <ul class="user__data">
+        <li>
+            <label for="">Контакты</label>
+          <span>+7 (999) 999-99-99</span>
+        </li>
+          <li>
+         <label for="">Адрес доставки</label>
+             <span>г. Москва, ул. Революции ...</span>
+            </li>
+        <li>
+         <label for="">Дата рождения</label>
+         <span>17.02.1990</span>
+          </li>
+        <li>
+             <label for="">Бонусы</label>
+         <span>102</span>
+        </li>
+       </ul>
+      </div>
+      <div class="user__item">
+       <h2 class="user__name">Изменить личные данные</h2>
+       <div class="user__footer">
+        <div class="user__wrap">
+         <label for="" class="user__label">Ваше имя <span>*</span></label>
+         <input type="text" placeholder="Ваше имя">
+        </div>
+        <div class="user__wrap">
+         <label for="" class="user__label">E-mail <span>*</span></label>
+         <input type="text" placeholder="Введите e-mail">
+        </div>
+        <div class="user__wrap">
+         <label for="" class="user__label">Телефон <span>*</span></label>
+         <input type="text" placeholder="Введите телефон">
+        </div>
+        <div class="user__wrap">
+         <label for="" class="user__label">Дата рождения</label>
+         <div class="user__calendar">
+          <input type="text" placeholder="_.__.___">
+          <img src="img/icon-date.svg" alt="">
+         </div>
+        </div>
+        <div class="user__agree">
+         <label>
+          <input class="check-box" type="checkbox">
+          <span class="check-style"></span>
+          <p>Я согласен <span>с политикой обработки персональных данных</span></p>
+         </label>
+         <label>
+          <input class="check-box" type="checkbox">
+          <span class="check-style"></span>
+          <p><span>Получать электронные чеки при покупке в рознице</span></p>
+         </label>
+        </div>
+        <button class="user__btn">Сохранить измерения</button>
+       </div>
+      </div>
+      <div class="user__item">
+       <h2 class="user__name">Адрес доставки</h2>
+       <div class="user__footer">
+        <div class="user__grid">
+         <div class="user__wrap">
+          <label for="" class="user__label">Город</label>
+          <input type="text" placeholder="Москва">
+         </div>
+         <div class="user__wrap">
+          <label for="" class="user__label">Улица</label>
+          <input type="text" placeholder="Ленина">
+         </div>
+         <div class="user__wrap">
+          <label for="" class="user__label">Дом</label>
+          <input type="text" placeholder="Дом/корпус">
+         </div>
+         <div class="user__wrap">
+          <label for="" class="user__label">квартира</label>
+          <input type="text" placeholder="Квартира">
+         </div>
+        </div>
+        <div class="user__btns">
+         <button class="user__btn">Сохранить адрес</button>
+         <button class="user__btn user__btn--light">+ дОБАВИТЬ АДРЕС</button>
+        </div>
+       </div>
+      </div>
+      <div class="user__item">
+       <h2 class="user__name">Способ оплаты</h2>
+       <div class="user__footer">
+        <div class="user__text">
+         <img src="img/icon-attraction.svg" alt=""><span>Банковская карта для возврата не привязана!</span>
+        </div>
+        <button class="user__btn">Привязать карту</button>
+       </div>
+      </div>
+      <div class="user__item">
+       <h2 class="user__name">Сменить пароль</h2>
+       <div class="user__footer">
+        <div class="user__wrap">
+         <label for="" class="user__label">Ваш текущий пароль</label>
+         <input type="text" placeholder="Ваш пароль">
+        </div>
+        <button class="user__btn">Сменить пароль</button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Профиль -->
+
+ </main>
+ @@include('html/footer.html',{})
+
+ <!-- Модальное окно - Сменить пароль - -->
+ @@include('html/modal-save.html',{})
+ <!-- Модальное окно - Сменить пароль - -->
+
+ <!-- Модальное окно - Регистрация - -->
+ @@include('html/modal-register.html',{})
+ <!-- Модальное окно - Регистрация - -->
+
+ <!-- Модальное окно - Вход - -->
+ @@include('html/modal-sign.html',{})
+ <!-- Модальное окно - Вход - -->
+
+ <!-- Оформить заказ -->
+ @@include('html/modal-arrange.html',{})
+ <!-- Оформить заказ -->
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+ <script src="js/app.min.js"></script>
+</body>
+
+</html>

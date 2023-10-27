@@ -1,0 +1,75 @@
+ .brend {
+    @extend %margin_bottom140;
+ }
+
+ .brend__container {}
+
+ .brend__title {
+    @extend %title_fz_45;
+ }
+
+ .brend__items {
+    display: grid;
+    grid-template-columns: repeat(5, 264px);
+    grid-gap: 20px;
+    justify-content: space-between;
+
+    @media (max-width: 1439.98px) {
+       grid-template-columns: repeat(auto-fit, 264px);
+    }
+
+    @media (max-width: 991.98px) {
+       grid-template-columns: repeat(auto-fit, 220px);
+    }
+
+    @media (max-width: 767.98px) {
+       grid-template-columns: repeat(auto-fit, 240px);
+       justify-content: start;
+    }
+
+    @media (max-width: 576.98px) {
+       justify-content: space-between;
+       grid-template-columns: repeat(auto-fit, 210px);
+    }
+
+    @media (max-width: 479.98px) {
+       grid-template-columns: 200px;
+       justify-content: center;
+    }
+
+    li {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background: $grey-light;
+       border-radius: 50%;
+       text-align: center;
+       padding: 15px;
+       height: 264px;
+
+       @media (max-width: 991.98px) {
+          height: 220px;
+       }
+
+       @media (max-width: 767.98px) {
+          height: 240px;
+       }
+
+       @media (max-width: 576.98px) {
+          height: 210px;
+
+          img {
+             transform: scale(0.8);
+          }
+       }
+
+       @media (max-width: 479.98px) {
+          height: 200px;
+          font-size: 14px;
+
+          img {
+             transform: scale(0.6);
+          }
+       }
+    }
+ }

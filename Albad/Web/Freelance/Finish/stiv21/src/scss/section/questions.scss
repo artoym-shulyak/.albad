@@ -1,0 +1,129 @@
+.questions {
+	padding: 70px 0;
+	@media (max-width: 991.98px) {
+		padding-bottom: 140px;
+	}
+}
+.questions__container {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 40px;
+	position: relative;
+}
+.questions__item {
+	border: 1px solid $dark;
+}
+.questions__circle {
+	@extend %circle-transparent;
+	right: -600px;
+	left: auto;
+	top: auto;
+	bottom: 0;
+}
+.questions__head {
+	display: flex;
+	justify-content: space-between;
+	padding: 35px;
+	grid-gap: 20px;
+	cursor: pointer;
+	@media (max-width: 767.98px) {
+		padding: 20px;
+	}
+	svg {
+		flex: 0 0 40px;
+		pointer-events: none;
+		transition: all 0.6s;
+	}
+	&.active {
+		svg {
+			transform: rotate(-90deg);
+		}
+	}
+}
+.questions__head.active + .questions__footer {
+	display: flex;
+	max-height: 1500px;
+	opacity: 1;
+	padding: 0px 35px 35px 35px;
+	@media (max-width: 767.98px) {
+		padding: 0px 20px 20px 20px;
+	}
+}
+.questions__title {
+	pointer-events: none;
+	@extend %title-middle;
+	word-break: break-all;
+}
+.questions__footer {
+	max-height: 0;
+	opacity: 0;
+	display: flex;
+	overflow: hidden;
+	grid-gap: 50px;
+	padding: 0px 35px 0px 35px;
+	padding-top: 0px;
+	transition: all 0.6s;
+	@media (max-width: 1279.98px) {
+		flex-direction: column;
+		grid-gap: 40px;
+	}
+	@media (max-width: 767.98px) {
+		padding: 0px 20px 0px 20px;
+	}
+}
+
+.questions__descr {
+	font-family: $raleway;
+	font-weight: 500;
+	flex: 0 0 530px;
+	@media (max-width: 1399.98px) {
+		flex: 0 0 450px;
+	}
+	@media (max-width: 1279.98px) {
+		flex: 1 1 100%;
+	}
+}
+.questions__list {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 30px;
+	@media (max-width: 1279.98px) {
+		grid-gap: 40px;
+	}
+	li {
+		display: grid;
+		grid-template-columns: 185px auto;
+		grid-gap: 30px;
+		@media (max-width: 991.98px) {
+			grid-template-columns: 1fr;
+			grid-gap: 20px;
+		}
+		span {
+			font-size: 30px;
+		}
+		p {
+			font-weight: 500;
+			font-family: $raleway;
+		}
+	}
+}
+
+.team__circle-yellow {
+	@extend %circle280;
+	position: absolute;
+	z-index: -1;
+	height: 450px;
+	width: 450px;
+	top: auto;
+	bottom: -600px;
+	left: -350px;
+	// @media (max-width: 1399.98px) {
+	// 	left: 500px;
+	// }
+	@media (max-width: 991.98px) {
+		height: 200px;
+		width: 200px;
+		left: -40px;
+		bottom: -220px;
+	}
+}

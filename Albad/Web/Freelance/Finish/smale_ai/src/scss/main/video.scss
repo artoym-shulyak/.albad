@@ -1,0 +1,158 @@
+.camera {
+ position: fixed;
+ height: 100%;
+ width: 100%;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ opacity: 0;
+
+ &:after {
+  position: fixed;
+  content: '';
+  background-image: url('../../img/bg-camera.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+
+  @media only screen and (max-device-width: 991.98px) {
+   background-image: url('../../img/bg-camera-horizontal.svg');
+  }
+
+  @media only screen and (max-device-width: 991.98px) and (orientation: landscape) {
+   background-image: url('../../img/bg-camera.svg');
+  }
+ }
+
+ @media (max-width:991.98px) {
+  &.fast-camera {
+   z-index: 5;
+   opacity: 1;
+  }
+
+  &.screen-camera {
+   z-index: 5;
+   opacity: 1;
+
+   .camera__items {
+    opacity: 1;
+    z-index: 5;
+   }
+  }
+ }
+
+ &__play {
+  padding: 50px;
+  background: $blue-dark;
+  color: $white;
+  border-radius: 20px;
+ }
+
+ &__screen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+ &__repeat {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+  height: 40px;
+  width: 40px;
+  transform: rotate(0);
+
+  @media only screen and (max-device-width: 991.98px) {
+   top: auto;
+   bottom: 10px;
+   transform: rotate(90deg);
+  }
+
+  @media only screen and (max-device-width: 991.98px) and (orientation: landscape) {
+   bottom: auto;
+   top: 10px;
+   transform: rotate(0deg);
+  }
+
+  img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+  }
+ }
+
+ &__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 154px;
+  height: 64px;
+  z-index: 5;
+  opacity: 0;
+
+  &.active {
+   opacity: 1;
+  }
+
+  @media only screen and (max-device-width: 991.98px) {
+   left: auto;
+   right: -45px;
+   top: 45px;
+   transform: rotate(90deg);
+  }
+
+  @media only screen and (max-device-width: 991.98px) and (orientation: landscape) {
+   right: auto;
+   left: 0;
+   top: 0px;
+   transform: rotate(0deg);
+  }
+
+  img {
+   max-width: 100%;
+   object-fit: cover;
+  }
+ }
+
+ &__items {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  left: -280px;
+  transform: translateY(-50%) rotate(90deg);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+  opacity: 0;
+  z-index: -1;
+
+  @media only screen and (max-device-width: 991.98px) {}
+
+  @media only screen and (max-device-width: 991.98px) and (orientation: landscape) {
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 8px;
+   top: auto;
+  }
+ }
+
+ &__item {
+  background: #7EB7FC;
+  border-radius: 50px;
+  cursor: pointer;
+  color: $white;
+  padding: 10px 30px;
+
+  &.active {
+   background: $blue-dark;
+  }
+ }
+
+}

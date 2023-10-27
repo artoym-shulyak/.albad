@@ -1,0 +1,72 @@
+.carousel {
+    padding: 45px 0;
+
+    @media (max-width: 767.98px) {
+        padding: 25px 0;
+    }
+
+    @media (max-width: 479.98px) {
+        .investor__link {
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+
+}
+
+.carousel__container {
+    position: relative;
+}
+
+.carousel__swiper {
+    width: 920px;
+    height: 250px;
+
+    @media (max-width: 1198.98px) {
+        width: 780px;
+    }
+
+    @media (max-width: 991.98px) {
+        width: 600px;
+    }
+
+    @media (max-width: 576.98px) {
+        width: 100%;
+    }
+
+    @media (max-width: 479.98px) {
+        height: 200px;
+    }
+}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: $white;
+    background-color: $red;
+    border-radius: 4px;
+    height: 35px;
+    width: 35px;
+    left: 25px;
+
+    &::after {
+        font-size: 20px;
+    }
+
+    @media (max-width: 479.98px) {
+        left: 10px;
+    }
+}
+
+.swiper-button-next {
+    left: auto;
+    right: 25px;
+
+    @media (max-width: 479.98px) {
+        right: 10px;
+    }
+}

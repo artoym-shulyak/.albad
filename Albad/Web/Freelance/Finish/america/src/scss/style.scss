@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+// Шрифты
+// @import "fonts";
+
+
+// Основы
+@import "base/variables.scss";
+@import "base/global.scss";
+@import "base/header.scss";
+@import "base/footer.scss";
+
+// Блоки
+@import "section/content.scss";
+@import "section/helps.scss";
+@import "section/reliability.scss";
+@import "./section/condition.scss";
+@import "./section/more.scss";
+@import "./section/social.scss";
+@import "./section/about.scss";
+@import "./section/head.scss";
+@import "./section/biography.scss";
+@import "./section/services.scss";
+@import "./section/consultaion.scss";
+@import "./section/description.scss";
+@import "./section/site.scss";
+@import "./section/mission.scss";
+@import "./section/our-value.scss";
+@import "./section/progress.scss";
+@import "./section/contact.scss";
+@import "./section/maps.scss";
+@import "./section/ways.scss";
+@import "./section/full.scss";
+@import "./section/interest.scss";
+@import "./section/box-interest.scss";
+@import "./section/gets.scss";
+@import "./section/importans.scss";
+@import "./section/choise.scss";
+@import "./section/chance.scss";
+@import "./section/promotion.scss";
+@import "./section/visa-to.scss";
+@import "./section/author.scss";
+@import "./section/term.scss";
+@import "./section/goods.scss";
+@import "./section/useful.scss";
+@import "./section/answer.scss";
+@import "./section/carousel.scss";
+@import "./section/modal.scss";
+@import "./section/policy.scss";
+@import "./section/fullofuse.scss";
+@import "./section/send-modal.scss";
+@import "./section/bonus.scss";
+
+.investor-course {
+	padding: 45px 0;
+}

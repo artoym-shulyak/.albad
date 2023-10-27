@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Афиша"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+
+			<section class="head">
+				<div class="head__container">
+					<ul class="head__path">
+						<li><a href="index.html">главная</a></li>
+						<span>/</span>
+						<li>афиша</li>
+					</ul>
+					<div class="head__middle">
+						<h2 class="head__title">афиша</h2>
+						<button id="btn-primary"><img src="img/hearth.svg" alt=""><span>хочу
+								помочь</span></button>
+					</div>
+				</div>
+			</section>
+
+			<section class="afisha">
+				<div class="afisha__container">
+					<div class="afisha__arrows">
+						<div class="afisha__prev"><img src="img/prev.svg" alt=""></div>
+						<div class="afisha__month">сентябрь 2022</div>
+						<div class="afisha__next"><img src="img/next-60.svg" alt=""></div>
+					</div>
+					<div class="afisha__head">
+						<div id="filter-header" class="afisha__top active">
+							<div class="afisha__overflow">
+								<ul class="afisha__head-items">
+									<li class="active">месяц</li>
+									<li>неделя</li>
+									<li>список</li>
+								</ul>
+							</div>
+							<div class="afisha__overflow">
+								<ul class="afisha__head-items">
+									<li class="active">сегодня</li>
+									<li>выходные</li>
+									<li>указать дату</li>
+									<!-- <li>
+										<div class="calendar">
+											указать дату
+											<input class="parent" type="date" placeholder="calendar">
+										</div>
+									</li> -->
+								</ul>
+							</div>
+							<div class="afisha__overflow">
+								<ul class="afisha__head-items">
+									<li class=" active">все</li>
+									<li>по тематике</li>
+									<li>по проекту </li>
+								</ul>
+							</div>
+						</div>
+						<div class="afisha__footer">
+							<ul id="filter-footer" class="afisha__items active">
+								<li class="active">для взрослых</li>
+								<li>для детей</li>
+								<li>семейные</li>
+								<li>социальное</li>
+								<li>коммерческое</li>
+							</ul>
+							<button id="btn-filter" class="afisha__btn active">
+								<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M25.8987 0.556835C25.7128 0.185612 25.434 0 25.0622 0H0.897519C0.525754 0 0.246931 0.185612 0.0610488 0.556835C-0.0318924 0.835253 -0.0318924 1.20648 0.15399 1.48489L9.26222 13.2712V25.0576C9.26222 25.4288 9.4481 25.7072 9.72692 25.8928C10.0057 26.0784 10.3775 25.9856 10.6563 25.8928L16.2328 22.1806C16.5116 21.995 16.6975 21.7166 16.6975 21.4382V13.364L25.8057 1.5777C25.9916 1.20648 26.0846 0.835253 25.8987 0.556835ZM14.8387 20.8813L11.121 23.3871V13.9209H14.8387V20.8813ZM15.3034 12.0648H10.6563L2.75634 1.85612H23.2034L15.3034 12.0648Z"
+										fill="black" />
+								</svg>
+								<span>скрыть фильтры</span>
+							</button>
+						</div>
+					</div>
+					<ul class="afisha__days">
+						<li>понельник</li>
+						<li>вторник</li>
+						<li>среда</li>
+						<li>четверг</li>
+						<li>пятница</li>
+						<li>суббота</li>
+						<li>воскресенье</li>
+					</ul>
+					<div class="afisha__body">
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="afisha__item">
+							<div class="afisha__number">28</div>
+							<div class="afisha__wrap afisha__wrap_online">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap afisha__wrap_off">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+							<div class="afisha__wrap">
+								<div class="afisha__data">12:00</div>
+								<div class="afisha__prev"><img src="img/prev-img.png" alt=""></div>
+								<p class="afisha__descr">Мифы и легенды народов мира</p>
+								<div class="afisha__box prev">
+									<div class="prev__img"><img src="img/prev-big.png" alt=""></div>
+									<div class="prev__info">
+										<p class="prev__descr">«ТВЕРСКАЯ 15» приглашает детей от 6 лет и их родителей на
+											мастер-класс по сухому и мокрому валянию из шерсти.</p>
+										<div class="prev__more"><img src="img/next-45.png" alt=""></div>
+										<div class="afisha__btn">записаться</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="files/main.js"></script>
+</body>
+
+</html>

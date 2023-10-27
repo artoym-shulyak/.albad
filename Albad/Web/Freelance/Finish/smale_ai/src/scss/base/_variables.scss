@@ -1,0 +1,39 @@
+$black: #000000;
+$blue-dark: #100072;
+$white: #ffffff;
+$blue-light: rgba(193, 221, 255, 0.58);
+$blue-default: #7EB7FC;
+$blue-default-light: #C1DDFF;
+$grey-default: #D9D9D9;
+$bg-blue: linear-gradient(180deg, #A1CBFF 0%, #EAF4FF 100%);
+$bg-cricle: linear-gradient(180deg, #2080FB 0%, rgba(50, 72, 209, 0) 100%);
+
+$transiton: all 0.2s ease-in-out;
+
+// Шрифты
+$nato-sans: 'Noto Sans', sans-serif;
+$mont: 'Montserrat', sans-serif;
+$baron: Baron Neue Black;
+$roboto: Roboto;
+$inter: Inter;
+
+%title-default {
+ font-weight: 600;
+ font-size: 28px;
+ line-height: 34px;
+ letter-spacing: -0.015em;
+ font-family: $mont;
+}
+
+%btn-blue-dark {
+ display: inline-block;
+ letter-spacing: -0.005em;
+ color: $white;
+ font-weight: 500;
+ padding: 19px 56px;
+ background: $blue-dark;
+ border-radius: 50px;
+}
+
+$black: #1D1D1D;
+$black-light: #565656;

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Контакты"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+
+			<section class="head">
+				<div class="head__container">
+					<ul class="head__path">
+						<li><a href="index.html">главная</a></li>
+						<span>/</span>
+						<li>Контакты</li>
+					</ul>
+					<div class="head__middle">
+						<h2 class="head__title">Контакты </h2>
+						<button id="btn-primary"><img src="img/hearth.svg" alt=""><span>хочу
+								помочь</span></button>
+					</div>
+				</div>
+			</section>
+
+			<section class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__wrapper">
+						<div class="contacts__img"><img src="img/city.png" alt=""></div>
+						<div class="contacts__body">
+							<div class="contacts__info">
+								<p>Москва, ул. Тверская, 15</p>
+								<span>(вход с Вознесенского пер.)</span>
+							</div>
+							<div class="contacts__data">
+								<a href="#" class="contacts__phone">+7 499 130 39 35</a>
+								<a href="#" class="contacts__mail">space@tverskaya15.ru</a>
+							</div>
+							<div class="contacts__social">
+								<a href="#" class="contacts__link">Телеграм</a>
+								<a href="#" class="contacts__link">Вконтакте</a>
+							</div>
+							<button class="contacts__btn">написать нам</button>
+						</div>
+					</div>
+					<div class="contacts__maps">
+						<picture>
+							<source srcset="img/maps-mobile.png" media="(max-width: 991.98px)">
+							<img src="img/maps.png" alt="">
+						</picture>
+					</div>
+					<div class="contacts__questions">
+						<h2 class="contacts__title">По вопросам сотрудничества — пишите:</h2>
+						<div class="contacts__wraps">
+							<div class="contacts__wrap">
+								<div class="contacts__ava"><img src="img/ava.png" alt=""></div>
+								<div class="contacts__item">
+									<h6 class="contacts__name">Джемият Курбанова</h6>
+									<p class="contacts__status">координатор волонтеров</p>
+									<a href="mailto:volunteers@tverskaya15.ru"
+										class="contacts__mail">volunteers@tverskaya15.ru</a>
+								</div>
+							</div>
+							<div class="contacts__wrap">
+								<div class="contacts__ava"><img src="img/ava.png" alt=""></div>
+								<div class="contacts__item">
+									<h6 class="contacts__name">Джемият Курбанова</h6>
+									<p class="contacts__status">координатор волонтеров</p>
+									<a href="mailto:volunteers@tverskaya15.ru"
+										class="contacts__mail">volunteers@tverskaya15.ru</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="files/main.js"></script>
+</body>
+
+</html>

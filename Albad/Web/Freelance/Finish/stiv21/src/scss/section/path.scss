@@ -1,0 +1,37 @@
+.path {
+	padding: 100px 0;
+	@media (max-width: 767.98px) {
+		display: none;
+	}
+}
+.path__container,
+.path__container-big {
+	display: flex;
+	align-items: center;
+	grid-gap: 30px;
+	a {
+		font-size: 22px;
+		font-weight: 700;
+		font-family: $raleway;
+	}
+	span {
+		width: 70px;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: '';
+			left: 0;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 1px;
+			width: 100%;
+			background: $black;
+		}
+	}
+}
+.path__title {
+	font-family: $raleway;
+	font-size: 22px;
+	font-weight: 500;
+}

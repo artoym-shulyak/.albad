@@ -1,0 +1,111 @@
+$dark: #000;
+$white: #fff;
+$yellow: #FFB03B;
+$orange: #FF624D;
+$blue: #0094CE;
+$blue-dark: #0030A8;
+$green: #51B749;
+$grey-light: #F6F6F6;
+$grey: #646464;
+$grey_input: #ECECEC;
+$transition: all 0.2s ease-in-out;
+
+// Title for 57px
+%title_fz_57 {
+	font-size: 57px;
+	line-height: 105%;
+	letter-spacing: 0.02em;
+
+	@media (max-width: 479.98px) {
+		font-size: 44px;
+	}
+}
+
+// Title for 45px
+%title_fz_45 {
+	margin: 0 0 60px 0;
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 113%;
+
+	@media (max-width: 576.98px) {
+		font-size: 36px;
+		line-height: 105%;
+	}
+
+	@media (max-width: 479.98px) {
+		font-size: 32px;
+		margin-bottom: 40px;
+	}
+
+	@media (max-width: 374.98px) {
+		margin-bottom: 20px;
+	}
+}
+
+// Button orange color
+%btn_orange_color {
+	padding: 20px 24px 19px;
+	background: $orange;
+	color: $white;
+	cursor: pointer;
+	border-radius: 40px;
+
+	span {
+		margin: 0 0 0 15px;
+	}
+}
+
+%margin_bottom140 {
+	margin: 0 0 140px 0;
+
+	@media (max-width: 991.98px) {
+		margin: 0 0 120px 0;
+	}
+
+	@media (max-width: 576.98px) {
+		margin: 0 0 90px 0;
+	}
+
+	@media (max-width: 479.98px) {
+		margin: 0 0 70px 0;
+	}
+}
+
+// Button yellow color and activ
+%btn_active_yellow {
+	font-size: 20px;
+	line-height: 125%;
+	padding: 18px 26px;
+	border-radius: 65px;
+	cursor: pointer;
+
+	&.active {
+		background: $yellow;
+	}
+}
+
+// Scrollbar
+%scroll_bar {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	background: $grey-light;
+	border-radius: 100px;
+	margin-bottom: 50px;
+	display: block;
+
+	.swiper-scrollbar-drag {
+		background: $green;
+	}
+
+	@media (max-width: 1023.98px) {
+		display: block;
+	}
+
+	@media (max-width: 576.98px) {
+		height: 9px;
+	}
+}

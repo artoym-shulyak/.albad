@@ -1,0 +1,95 @@
+.consultaion {
+    padding: 70px 0;
+    background: $gradient;
+    color: $white;
+    text-align: center;
+
+    span {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    @media (max-width: 767.98px) {
+        padding: 35px 0;
+    }
+}
+
+.consultaion__container {}
+
+.consultaion__title {
+    @extend %title;
+    margin-bottom: 10px;
+    color: $white;
+}
+
+.consultaion__descr {
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 30px;
+
+    
+}
+
+.consultaion__form {
+    margin-bottom: 15px;
+
+    textarea {
+        width: 100%;
+        padding: 15px;
+        min-height: 95px;
+        outline: none;
+        resize: none;
+        background: $white;
+        margin-bottom: 15px;
+
+        &:focus {
+            box-shadow: 3px 3px rgb(65, 106, 176), -1em 0 .4em rgb(163 0 16);
+        }
+    }
+}
+
+.consultaion__inputs {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 15px;
+    margin-bottom: 15px;
+
+    input {
+        background: $white;
+        outline: none;
+        padding: 15px;
+
+        &:focus {
+            box-shadow: 3px 3px rgb(65, 106, 176), -1em 0 .4em rgb(163 0 16);
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.consultaion__btn {
+    @extend %btn-bg;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.consultaion__sub-descr {
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+
+.consultaion__phone {
+    font-size: 32px;
+    line-height: 130%;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 26px;
+    }
+}

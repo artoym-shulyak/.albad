@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{ "title":"Главная" })
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main>
+            <section class="path">
+                <div class="path__container">
+                    <a href="index.html">Главная</a>
+                    <span></span>
+                    <div class="path__title">Вакансии</div>
+                </div>
+            </section>
+            @@include('html/vacancies/vacancies.html',{})
+            @@include('html/vacancies/questions.html',{})
+            @@include('html/vacancies/team.html',{})
+        </main>
+        @@include('html/footer.html',{})
+    </div>
+    <script src="js/app.min.js"></script>
+    <script src='files/main.js'></script>
+    </script>
+</body>
+
+</html>

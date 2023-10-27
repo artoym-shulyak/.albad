@@ -1,0 +1,131 @@
+.content {
+	padding: 70px 0;
+	@media (max-width: 576.98px) {
+		padding: 30px 0;
+	}
+}
+.content__container {
+}
+.content__wrapper {
+	position: relative;
+	@media (max-width: 1199.98px) {
+		display: flex;
+		flex-direction: column;
+		grid-gap: 80px;
+	}
+}
+.content__text,
+.content__descr {
+	display: block;
+	font-weight: 500;
+	font-family: $raleway;
+	margin-left: auto;
+	span {
+		font-weight: 700;
+	}
+}
+.content__descr {
+	margin-bottom: 260px;
+	width: 620px;
+	@media (max-width: 1199.98px) {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+}
+.content__images {
+	position: absolute;
+	left: -265px;
+	top: 0;
+	z-index: -1;
+	@media (max-width: 1279.98px) {
+		left: -440px;
+	}
+	@media (max-width: 1199.98px) {
+		position: relative;
+		left: 0;
+		margin-bottom: 0px;
+		height: 800px;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	@media (max-width: 991.98px) {
+		height: 600px;
+	}
+	@media (max-width: 767.98px) {
+		height: 450px;
+	}
+	@media (max-width: 576.98px) {
+		height: 300px;
+	}
+	img {
+		max-width: 100%;
+		object-fit: cover;
+	}
+}
+.content__after {
+	position: absolute;
+	top: 40px;
+	right: -77px;
+	height: 400px;
+	width: 400px;
+	background: $yellow;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+	font-size: 50px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 100%;
+	@media (max-width: 1199.98px) {
+		right: 0;
+		top: 30px;
+	}
+	@media (max-width: 991.98px) {
+		height: 250px;
+		width: 250px;
+		font-size: 35px;
+	}
+	@media (max-width: 767.98px) {
+		height: 200px;
+		width: 200px;
+		font-size: 30px;
+	}
+	@media (max-width: 576.98px) {
+		height: 165px;
+		width: 165px;
+		font-size: 20px;
+	}
+}
+.content__before {
+	position: absolute;
+	right: -380px;
+	bottom: 20px;
+	z-index: -2;
+	height: 500px;
+	width: 500px;
+	border: 1px solid $black;
+	text-align: center;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+	font-size: 50px;
+	font-weight: 500;
+	line-height: 100%;
+	@media (max-width: 1199.98px) {
+		display: none;
+	}
+}
+.content__text {
+	width: 330px;
+	margin-bottom: 127px;
+	@media (max-width: 1199.98px) {
+		width: 100%;
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,148 @@
+.explain {
+ padding: 43px 0 134px 0;
+
+ @media (max-width:1199.98px) {
+  padding: 20px 0 80px 0;
+ }
+
+ @media (max-width:991.98px) {
+  padding: 20px 0 42px 0;
+ }
+
+ &__container {}
+
+ &__title {
+  margin-bottom: 105px;
+  @extend %title-default;
+
+  @media (max-width:991.98px) {
+   margin-bottom: 7px;
+   text-align: center;
+  }
+
+  @media (max-width:576.98px) {
+   font-size: 18px;
+   line-height: 22px;
+  }
+ }
+
+ &__items {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 224px;
+  position: relative;
+
+  @media (max-width:991.98px) {
+   flex-direction: column;
+   grid-gap: 35px;
+   justify-content: center;
+   align-items: center;
+  }
+
+  @media (max-width:479.98px) {
+   grid-gap: 25px;
+  }
+ }
+
+ &__item {
+  width: 480px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width:1199.98px) {
+   width: 450px;
+  }
+
+  @media (max-width:991.98px) {
+   width: 100%;
+  }
+ }
+
+ &__img {
+  height: 180px;
+  width: 367px;
+  border-radius: 40px;
+  margin-bottom: 38px;
+  display: block;
+  border-radius: 40px;
+  overflow: hidden;
+
+  @media (max-width:1199.98px) {
+   width: 290px;
+  }
+
+  @media (max-width:991.98px) {
+   width: 367px;
+  }
+
+  @media (max-width:479.98px) {
+   width: 209px;
+   height: 111px;
+   margin-bottom: 14px;
+  }
+
+  img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+  }
+ }
+
+ &__descr {
+  font-weight: 500;
+  font-family: $mont;
+
+  @media (max-width:479.98px) {
+   font-size: 10px;
+   line-height: 12px;
+  }
+ }
+
+ &__prev {
+  text-align: center;
+  width: 261px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -18px;
+
+  @media (max-width:991.98px) {
+   position: relative;
+   left: 0;
+   top: 0;
+   transform: translateX(0);
+  }
+
+  .explain__descr {
+   font-weight: 500;
+   font-family: $mont;
+   font-size: 10px;
+   line-height: 12px;
+   margin-bottom: 12px;
+  }
+
+  .explain__improve {
+   margin: 0 auto;
+   display: block;
+
+   img {
+    max-width: 100%;
+    object-fit: cover;
+
+   }
+
+   @media (max-width: 991.98px) {
+    height: 70px;
+    overflow: hidden;
+   }
+
+   @media (max-width:479.98px) {
+    width: 150px;
+    height: 40px;
+   }
+  }
+ }
+}

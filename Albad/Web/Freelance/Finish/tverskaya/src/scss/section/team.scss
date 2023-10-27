@@ -1,0 +1,159 @@
+.team {
+	margin: 0 0 140px 0;
+}
+
+.team__container {}
+
+.team__title {
+	@extend %title_fz_45;
+}
+
+.team__list {
+	display: flex;
+	align-items: center;
+	margin: 0 0 60px 0;
+
+	li {
+		cursor: pointer;
+		font-size: 20px;
+		line-height: 125%;
+		padding: 18px 26px;
+		border-radius: 65px;
+
+		&.active {
+			background: $yellow;
+		}
+
+		@media (max-width: 576.98px) {
+			font-size: 18px;
+			text-align: center;
+		}
+
+	}
+
+	@media (max-width: 576.98px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 30px;
+	}
+}
+
+.team__body {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 80px;
+
+	@media (max-width: 1279.98px) {
+		grid-gap: 50px;
+	}
+}
+
+.team__items {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 80px; 
+	align-items: flex-start;
+
+	@media (max-width: 1199.98px) {
+		justify-content: space-between;
+		grid-gap: 45px;
+	}
+
+	@media (max-width: 1079.98px) {	
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+
+	@media (max-width: 767.98px) { 
+		grid-template-columns: repeat(2, minmax(150px, 1fr)); 
+		grid-gap: 45px 25px;
+	}
+	@media (max-width: 374.98px) {
+		grid-gap: 45px;
+		grid-template-columns: repeat(1, minmax(150px, 1fr)); 
+	}
+
+
+}
+
+.team__item {
+	text-align: center;
+
+}
+
+.team__img {
+	position: relative;
+	max-height: 360px;
+	width: 100%;
+	margin: 0 auto 25px;
+
+	img {
+		object-fit: cover;
+		max-width: 100%;
+	}
+
+}
+
+.team__name {
+	font-size: 24px;
+	line-height: 125%;
+	margin: 0 0 10px 0;
+	@media (max-width: 991.98px) {
+		font-size: 22px;
+	}
+	@media (max-width: 767.98px) {
+		font-size: 24px;
+	}
+	@media (max-width: 576.98px) {
+		font-size: 20px;
+	}
+	@media (max-width: 374.98px) {
+		font-size: 24px;
+	}
+
+}
+
+.team__descr {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 23px;
+	margin: 0 0 20px 0;
+	@media (max-width: 991.98px) {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	@media (max-width: 767.98px) {
+		font-size: 18px;
+		line-height: 23px;
+	}
+	@media (max-width: 576.98px) {
+		font-size: 14px;
+		line-height: 19px;
+	}
+	@media (max-width: 374.98px) {
+		font-size: 18px;
+		line-height: 23px;
+	}
+}
+
+.team__info {
+	color: $blue;
+	font-size: 18px;
+	line-height: 23px;
+	@media (max-width: 991.98px) {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	@media (max-width: 767.98px) {
+		font-size: 18px;
+		line-height: 23px;
+	}
+	@media (max-width: 576.98px) {
+		font-size: 14px;
+		line-height: 19px;
+	}
+	@media (max-width: 374.98px) {
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+}

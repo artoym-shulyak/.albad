@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+	"title":"Риолит – город-призрак в штате Невада"
+})
+<body>
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+
+			<section class="head">
+				<div class="head__container">
+					<ul class="head__paths">
+						<li class="head__path">
+							<a href="index.html">Главная</a>
+						</li>
+						<span>/</span>
+						<li class="head__path">
+							<a href="page-markings.html">Туразметки</a>
+						</li>
+						<span>/</span>
+						<li class="head__path">Риолит – город-призрак в штате Невада</li>
+					</ul>
+					<h1 class="head__title">Риолит – город-призрак в штате Невада</h1>
+				</div>
+			</section>
+
+			<section class="live">
+				<div class="live__container">
+					<div class="live__head">
+						<div class="live__info">
+							Этот небольшой заброшенный городок находится в округе Най, в 190 км от Лас-Вегаса, штате Невада. Город получил название в честь горной породы, дававшей наибольшее количество золота.
+							<br>
+							<br>
+							С момента своего основания в 1905 году Риолит был шахтёрским посёлком, начавшим строиться в годы знаменитой «Золотой лихорадки» близ прилегающих холмов. Но совсем скоро (через 15 лет) из-за слухов о возможном скором землетрясении в Сан-Франциско и истощения запасов был полностью покинут и брошен жителями.
+						</div>
+						<div class="live__images">
+							<img src="img/turism-8.png" alt=""></div>
+						</div>
+						<div class="live__item">
+							<div class="live__description">
+								Главной причиной отсутствия жизни в городе стали проблемы в экономике. Инвесторы стали выводить свои деньги и закрывать бизнес. В результате, это привело к закрытию шахт, банков и покиданию людьми города.
+								<br>
+								<br>
+								Сейчас город находится в полном запустении возле границ известной «Долины смерти». Напоминает о нем пресловутый указатель (поворот) в 15 км от границы между Невадой и Калифорнией. Там нередко можно встретить туристов, заезжающих посмотреть на заброшенные реликвии. Например, несколько уцелевших зданий вроде железнодорожной станции, музей и прочие мелочи.
+								<br>
+								<br>
+								Стоит отметить, что Риолит – не единственный в своем роде такой город-брошенка. Американцы и туристы, проезжающие Неваду на автомобиле, в окрестностях Долины смерти знают еще парочку городов-признаков ­– Балларат (Ballarat Ghost Town) и Пэнэминт-Сити (Panamint City Ghost Town).
+							</div>
+						</div>
+							</div>
+						</section>
+						@@include('html/social.html',{})
+					</main>
+					@@include('html/footer.html',{})
+				</div>
+				>
+				<form class="modal__form">
+					<input type="text" placeholder="Ваше имя*">
+					<input type="phone" placeholder="Ваш телефон">
+					<input type="email" placeholder="Ваш email*">
+					<textarea placeholder="Ваш вопрос*"></textarea>
+					<button class="contact__btn">отправить</button>
+				</form>
+				<div class="modal__sub-text">
+					Нажимая кнопку «Отправить» вы даёте согласие на обработку
+					персональных данных и соглашаетесь
+					<a href="page-polyte.html">с политикой конфиденциальности.</a>
+				</div>
+			</div>
+		</div>
+@@include('html/modals.html',{})
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+								<script src="files/script.js"></script>
+
+		<script src="files/main.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+
+	</html>

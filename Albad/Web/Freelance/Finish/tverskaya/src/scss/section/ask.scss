@@ -1,0 +1,59 @@
+.ask {
+	margin: 0 0 140px 0; 
+}
+.ask__container {
+	display: grid;
+	grid-template-columns: 430px auto;
+	grid-gap: 55px;
+	position: relative;
+	&::after {
+		position: absolute;
+		content: '';
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background: $yellow;
+		width: 850px;
+		height: 320px;
+		z-index: -1;
+		border-radius: 24px;
+	}
+}
+	.ask__title {
+		@extend %title_fz_45;
+	}
+	.ask__item {
+		display: flex;
+		align-items: center;
+	}
+	.ask__ava {
+		margin: 0 50px 0 0;
+		height: 280px;
+		width: 280px;
+		border-radius: 100%;
+		position: relative;
+		img {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.ask__info {}
+	.ask__name {
+		font-size: 24px;
+		line-height: 125%;
+		margin-bottom: 10px;
+	}
+	.ask__status {
+		font-size: 18px;
+		line-height: 23px;
+		margin: 0 0 50px 0;
+	}
+	.ask__mail {font-size: 36px;
+		line-height: 130%;
+		&:hover {
+			text-decoration: underline;
+		}}

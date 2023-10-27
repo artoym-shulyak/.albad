@@ -1,0 +1,257 @@
+.main {
+ .diagcs {
+  border-radius: 50px;
+  background: $white;
+  padding: 87px 50px 144px 50px;
+  display: grid;
+  grid-template-columns: 387px auto;
+  grid-gap: 43px;
+  align-items: center;
+  display: none;
+
+  &.active {
+   display: grid;
+  }
+
+  @media (max-width:1279.98px) {
+   grid-template-columns: 300px auto;
+  }
+
+  @media (max-width:1199.98px) {
+   grid-template-columns: 250px auto;
+   grid-gap: 35px;
+   padding: 57px 30px 114px 30px;
+  }
+
+  @media (max-width:1079.98px) {
+   grid-template-columns: 100%;
+   grid-gap: 0;
+  }
+
+  @media (max-width:991.98px) {
+   padding: 23px 16px 95px 16px;
+   margin-top: 42px;
+  }
+
+  @media (max-width:576.98px) {
+   margin-top: 32px;
+  }
+
+  &__image {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 386px;
+   width: 386px;
+   background: #D9D9D9;
+   border-radius: 40px;
+   overflow: hidden;
+
+   @media (max-width:1279.98px) {
+    height: 300px;
+    width: 300px;
+   }
+
+   @media (max-width:1199.98px) {
+    width: 250px;
+    height: 250px;
+   }
+
+   @media (max-width:1079.98px) {
+    margin: 0 auto 12px;
+   }
+
+   @media (max-width:576.98px) {
+    width: 200px;
+    height: 200px;
+   }
+
+   @media (max-width:479.98px) {
+    width: 150px;
+    height: 150px;
+   }
+
+   img {
+    max-width: 100%;
+    object-fit: cover;
+   }
+  }
+
+  &__body {
+   text-align: center;
+
+   .diagcs__title {
+    display: block;
+   }
+
+   @media (max-width:1079.98px) {
+    .diagcs__title {
+     display: none;
+    }
+   }
+  }
+
+  &__title {
+   font-family: $roboto;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 35px;
+   margin-bottom: 27px;
+   display: none;
+
+   @media (max-width:1279.98px) {
+    font-size: 26px;
+    line-height: 30px;
+   }
+
+   @media (max-width:1199.98px) {
+    font-size: 22px;
+    line-height: 26px;
+   }
+
+   @media (max-width:1079.98px) {
+    margin-bottom: 13px;
+    text-align: center;
+    display: block;
+   }
+
+   @media (max-width:576.98px) {
+    font-size: 20px;
+    line-height: 22px;
+   }
+
+   @media (max-width:479.98px) {
+    font-size: 18px;
+    line-height: 20px;
+   }
+  }
+
+
+  &__descr {
+   font-size: 22px;
+   line-height: 27px;
+   margin-bottom: 30px;
+   text-align: center;
+
+   @media (max-width:1279.98px) {
+    font-size: 18px;
+    line-height: 24px;
+   }
+
+   @media (max-width:1199.98px) {
+    font-size: 16px;
+    line-height: 22px;
+   }
+
+   @media (max-width:1079.98px) {
+    margin-bottom: 20px;
+   }
+
+   @media (max-width:576.98px) {
+    font-size: 14px;
+    line-height: 16px;
+   }
+
+   @media (max-width:479.98px) {
+    font-size: 12px;
+    line-height: 14px;
+   }
+
+  }
+
+  &__sub-descr {
+   font-size: 22px;
+   line-height: 27px;
+   text-align: center;
+   margin-bottom: 45px;
+
+   @media (max-width:1279.98px) {
+    font-size: 18px;
+    line-height: 24px;
+   }
+
+   @media (max-width:1199.98px) {
+    font-size: 16px;
+    line-height: 22px;
+   }
+
+   @media (max-width:1079.98px) {
+    margin-bottom: 85px;
+   }
+
+   @media (max-width:576.98px) {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 50px;
+   }
+
+   @media (max-width:479.98px) {
+    font-size: 12px;
+    line-height: 14px;
+   }
+  }
+
+  &__btn {
+   width: 240px;
+   padding: 19px;
+   background: $blue-dark;
+   border-radius: 50px;
+   cursor: pointer;
+   margin: 0 auto;
+   color: $white;
+   font-weight: 500;
+   letter-spacing: -0.005em;
+
+   @media (max-width:1199.98px) {
+    width: 200px;
+    padding: 17px;
+   }
+
+   @media (max-width:576.98px) {
+    padding: 13px;
+    font-size: 12px;
+    line-height: 14px;
+   }
+
+   @media (max-width:479.98px) {
+    width: 170px;
+    padding: 10px;
+    font-size: 10px;
+    line-height: 12px;
+   }
+
+  }
+
+  &__back {
+   display: none;
+
+   @media (max-width:991.98px) {
+    position: absolute;
+    top: 8px;
+    left: 24px;
+    padding: 6px 10px;
+    width: 100px;
+    height: unset;
+    background: $blue-dark;
+    color: $white;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.05px;
+    display: block;
+
+    svg {
+     display: none;
+    }
+
+    @media (max-width:576.98px) {
+     font-size: 10px;
+     width: 71px;
+     padding: 3.5px 10px;
+    }
+   }
+  }
+ }
+}

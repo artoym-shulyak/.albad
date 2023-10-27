@@ -1,0 +1,49 @@
+$black: #1D1D1D;
+$black-light: #565656;
+$red: #ED1331;
+$white: #FFFFFF;
+$green: #13ED1C;
+$orange-dark: #FF4003;
+$yellow: #FFF500;
+$blue: #7002FE;
+$bg-modal: rgba(33, 33, 33, 0.26);
+$animation: all 0.3s ease-in-out;
+
+%title-default {
+ font-weight: 600;
+ font-size: 32px;
+ line-height: 100%;
+ color: $black;
+
+ @media (max-width:576.98px) {
+  font-size: 20px;
+ }
+
+ @media (max-width:374.98px) {
+  font-size: 16px;
+ }
+}
+
+%pagination-default {
+ height: 2px;
+ bottom: 0;
+ position: relative;
+
+ .swiper-pagination-bullet {
+  background-color: #565656;
+  opacity: 0.2;
+  width: 24px;
+  height: 2px;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 0;
+
+  &:hover {
+   opacity: 0.4;
+  }
+ }
+
+ .swiper-pagination-bullet-active {
+  background-color: #565656;
+  opacity: 1;
+ }
+}

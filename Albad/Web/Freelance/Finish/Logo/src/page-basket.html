@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="busket__result">
+@@include('html/head.html',{
+"title":"Корзина"
+})
+
+<body>
+  @@include('html/header.html',{})
+  <main>
+
+    <!-- Корзина -->
+    <section class="basket">
+      <div class="basket__container">
+        <ul class="basket__path">
+          <li>Главная</li>
+          <li>Каталог</li>
+          <li>Одежда</li>
+          <li>Корзина</li>
+        </ul>
+        <!-- <div class="basket__empty">
+          <img src="img/img-basket.svg" alt="">
+          <div class="basket__text">Корзина пуста ;(</div>
+          <button class="basket__more"><span>Перейти к покупкам</span><img src="img/more.svg" alt=""></button>
+        </div> -->
+        <form class="basket__wrapper">
+          <div class="basket__body">
+            <div class="basket__data">
+              <h2 class="basket__title">Информация о клиенте</h2>
+              <label for="">
+                <div class="basket__lead">Ваше имя<span>*</span></div>
+                <span class="basket__sub-lead">Имя получателя заказа</span>
+                <input type="text" placeholder="Ваше имя">
+              </label>
+              <label for="">
+                <div class="basket__lead">E-mail<span>*</span></div>
+                <span class="basket__sub-lead">Для отправки деталей заказа, статуса производства и доставки</span>
+                <input type="text" placeholder="Введите e-mail">
+              </label>
+              <label for="">
+                <div class="basket__lead">Телефон<span>*</span></div>
+                <span class="basket__sub-lead">Чтобы мы могли связаться для уточнения деталей доставки или заказанного
+                  товара.</span>
+                <input type="text" placeholder="Введите телефон">
+              </label>
+            </div>
+            <div class="basket__info">
+              <h2 class="basket__title">Информация о доставке</h2>
+              <p class="basket__descr">Бесплатная доставка при заказе от 3 000 руб. <br>
+                Вы можете выбрать подходящий для вас способ доставки товара:</p>
+              <ul class="basket__list">
+                <li><img src="img/icon-car.svg" alt="">
+                  <span>Курьерская доставка<br>
+                    Срок – от 1 дня.</span>
+                </li>
+                <li><img src="img/icon-box.svg" alt="">
+                  <span>Пункты выдачи заказов и постаматы<br>
+                    Срок – от 1 дня.</span>
+                </li>
+                <li><img src="img/icon-map.svg" alt="">
+                  Самовывозом из магазина<br>
+                  Срок – от 1 дня.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="basket__body">
+            <div class="basket__head">
+              <div class="basket__lead"></div>
+              <div class="basket__lead">Цвет</div>
+              <div class="basket__lead">Размер</div>
+              <div class="basket__lead">Количество</div>
+              <div class="basket__lead">Цена</div>
+            </div>
+            <div class="basket__goods">
+              <div class="basket__good">
+                <div class="basket__item">
+                  <img src="img/img-small-prev.png" alt="">
+                  <div class="basket__descr">
+                    <div>Зип худи шерпа
+                      с капюшоном</div>
+                    <span>АРТикул st0171</span>
+                  </div>
+                </div>
+                <div class="basket__color"></div>
+                <div class="basket__size">S</div>
+                <div class="basket__count">
+                  <div data-minus class="basket__operation"><img src="img/minus.svg" alt=""></div>
+                  <div data-count class="basket__number">1</div>
+                  <div data-add class="basket__operation"><img src="img/add.svg" alt=""></div>
+                  <div class="basket__favo"><img src="img/icon-heart.svg" alt=""></div>
+                </div>
+                <div class="basket__wrap">
+                  <div class="basket__price"><span>3 999</span> &#8381</div>
+                  <div class="basket__remove">Удалить товар</div>
+                </div>
+              </div>
+              <div class="basket__good">
+                <div class="basket__item">
+                  <img src="img/img-small-prev.png" alt="">
+                  <div class="basket__descr">
+                    <div>Зип худи шерпа
+                      с капюшоном</div>
+                    <span>АРТикул st0171</span>
+                  </div>
+                </div>
+                <div class="basket__color"></div>
+                <div class="basket__size">S</div>
+                <div class="basket__count">
+                  <div data-minus class="basket__operation"><img src="img/minus.svg" alt=""></div>
+                  <div data-count class="basket__number">1</div>
+                  <div data-add class="basket__operation"><img src="img/add.svg" alt=""></div>
+                  <div class="basket__favo"><img src="img/icon-heart.svg" alt=""></div>
+                </div>
+                <div class="basket__wrap">
+                  <div class="basket__price"><span>3 999</span> &#8381</div>
+                  <div class="basket__remove">Удалить товар</div>
+                </div>
+              </div>
+              <div class="basket__good">
+                <div class="basket__item">
+                  <img src="img/img-small-prev.png" alt="">
+                  <div class="basket__descr">
+                    <div>Зип худи шерпа
+                      с капюшоном</div>
+                    <span>АРТикул st0171</span>
+                  </div>
+                </div>
+                <div class="basket__color"></div>
+                <div class="basket__size">S</div>
+                <div class="basket__count">
+                  <div data-minus class="basket__operation"><img src="img/minus.svg" alt=""></div>
+                  <div data-count class="basket__number">1</div>
+                  <div data-add class="basket__operation"><img src="img/add.svg" alt=""></div>
+                  <div class="basket__favo"><img src="img/icon-heart.svg" alt=""></div>
+                </div>
+                <div class="basket__wrap">
+                  <div class="basket__price"><span>3 999</span> &#8381</div>
+                  <div class="basket__remove">Удалить товар</div>
+                </div>
+              </div>
+            </div>
+            <ul class="basket__information">
+              <li>
+                <span class="basket__lead">Количество</span>
+                <span class="basket__price">7</span>
+              </li>
+              <li>
+                <span class="basket__lead">Стоимость</span>
+                <span class="basket__price">10 500 &#8381</span>
+              </li>
+              <li>
+                <span class="basket__lead">Скидка</span>
+                <span class="basket__price basket__price--cheap">200 &#8381</span>
+              </li>
+              <li>
+                <span class="basket__lead">Доставка </span>
+                <span class="basket__price">500 &#8381</span>
+              </li>
+            </ul>
+            <div class="busket__result">
+              <span class="basket__lead">Итого</span>
+              <span class="basket__price">27 500 &#8381</span>
+            </div>
+            <div class="basket__promocode">
+              <input type="text" placeholder="Введите промокод">
+              <button class="basket__btn">применить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Корзина -->
+
+    <!-- Популярное -->
+    <section class="products popular media-swiper">
+      <div class="products__container">
+        <div class="products__head">
+          <h2 class="products__title">Популярное</h2>
+          <a href="#" class="products__more"><span>В каталог</span><img src="img/more-black.svg" alt=""></a>
+        </div>
+        <div class="swiper products__swiper popular__swiper">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide good">
+              <div class="good__img">
+                <img src="img/img-popular-1.png" alt="">
+                <div class="good__new">New</div>
+                <div class="good__favo"><img src="img/favo-white.svg" alt=""></div>
+                <div class="good__dots">
+                  <div class="good__dot active">
+                    <div href="img/img-popular-1.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-3.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="good__footer">
+                <div class="good__prices">
+                  <div class="good__price"><span>3990</span>&#8381</div>
+                  <div class="good__basket"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.25 6.75H3.75C3.33579 6.75 3 7.08579 3 7.5V19.5C3 19.9142 3.33579 20.25 3.75 20.25H20.25C20.6642 20.25 21 19.9142 21 19.5V7.5C21 7.08579 20.6642 6.75 20.25 6.75Z"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M8.25 9.75V6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75V9.75"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="good__name">Stone Island</h6>
+                <p class="good__descr">Зип худи шерпа с капюшоном (белый)</p>
+                <ul class="good__info">
+                  <li>40</li>
+                  <li>46</li>
+                  <li>56</li>
+                  <li>58</li>
+                </ul>
+              </div>
+            </a>
+
+            <a href="#" class="swiper-slide good">
+              <div class="good__img">
+                <img src="img/img-popular-1.png" alt="">
+                <div class="good__new">New</div>
+                <div class="good__favo"><img src="img/favo-white.svg" alt=""></div>
+                <div class="good__dots">
+                  <div class="good__dot active">
+                    <div href="img/img-popular-1.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-3.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="good__footer">
+                <div class="good__prices">
+                  <div class="good__price"><span>3990</span>&#8381</div>
+                  <div class="good__basket"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.25 6.75H3.75C3.33579 6.75 3 7.08579 3 7.5V19.5C3 19.9142 3.33579 20.25 3.75 20.25H20.25C20.6642 20.25 21 19.9142 21 19.5V7.5C21 7.08579 20.6642 6.75 20.25 6.75Z"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M8.25 9.75V6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75V9.75"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="good__name">Stone Island</h6>
+                <p class="good__descr">Зип худи шерпа с капюшоном (белый)</p>
+                <ul class="good__info">
+                  <li>40</li>
+                  <li>46</li>
+                  <li>56</li>
+                  <li>58</li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide good">
+              <div class="good__img">
+                <img src="img/img-popular-1.png" alt="">
+                <div class="good__new">New</div>
+                <div class="good__favo"><img src="img/favo-white.svg" alt=""></div>
+                <div class="good__dots">
+                  <div class="good__dot active">
+                    <div href="img/img-popular-1.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-3.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="good__footer">
+                <div class="good__prices">
+                  <div class="good__price"><span>3990</span>&#8381</div>
+                  <div class="good__basket"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.25 6.75H3.75C3.33579 6.75 3 7.08579 3 7.5V19.5C3 19.9142 3.33579 20.25 3.75 20.25H20.25C20.6642 20.25 21 19.9142 21 19.5V7.5C21 7.08579 20.6642 6.75 20.25 6.75Z"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M8.25 9.75V6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75V9.75"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="good__name">Stone Island</h6>
+                <p class="good__descr">Зип худи шерпа с капюшоном (белый)</p>
+                <ul class="good__info">
+                  <li>40</li>
+                  <li>46</li>
+                  <li>56</li>
+                  <li>58</li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide good">
+              <div class="good__img">
+                <img src="img/img-popular-1.png" alt="">
+                <div class="good__new">New</div>
+                <div class="good__favo"><img src="img/favo-white.svg" alt=""></div>
+                <div class="good__dots">
+                  <div class="good__dot active">
+                    <div href="img/img-popular-1.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-3.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="good__footer">
+                <div class="good__prices">
+                  <div class="good__price"><span>3990</span>&#8381</div>
+                  <div class="good__basket"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.25 6.75H3.75C3.33579 6.75 3 7.08579 3 7.5V19.5C3 19.9142 3.33579 20.25 3.75 20.25H20.25C20.6642 20.25 21 19.9142 21 19.5V7.5C21 7.08579 20.6642 6.75 20.25 6.75Z"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M8.25 9.75V6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75V9.75"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="good__name">Stone Island</h6>
+                <p class="good__descr">Зип худи шерпа с капюшоном (белый)</p>
+                <ul class="good__info">
+                  <li>40</li>
+                  <li>46</li>
+                  <li>56</li>
+                  <li>58</li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide good">
+              <div class="good__img">
+                <img src="img/img-popular-1.png" alt="">
+                <div class="good__new">New</div>
+                <div class="good__favo"><img src="img/favo-white.svg" alt=""></div>
+                <div class="good__dots">
+                  <div class="good__dot active">
+                    <div href="img/img-popular-1.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-3.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="good__footer">
+                <div class="good__prices">
+                  <div class="good__price"><span>3990</span>&#8381</div>
+                  <div class="good__basket"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.25 6.75H3.75C3.33579 6.75 3 7.08579 3 7.5V19.5C3 19.9142 3.33579 20.25 3.75 20.25H20.25C20.6642 20.25 21 19.9142 21 19.5V7.5C21 7.08579 20.6642 6.75 20.25 6.75Z"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M8.25 9.75V6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75V9.75"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="good__name">Stone Island</h6>
+                <p class="good__descr">Зип худи шерпа с капюшоном (белый)</p>
+                <ul class="good__info">
+                  <li>40</li>
+                  <li>46</li>
+                  <li>56</li>
+                  <li>58</li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide good">
+              <div class="good__img">
+                <img src="img/img-popular-1.png" alt="">
+                <div class="good__new">New</div>
+                <div class="good__favo"><img src="img/favo-white.svg" alt=""></div>
+                <div class="good__dots">
+                  <div class="good__dot active">
+                    <div href="img/img-popular-1.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-3.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="good__footer">
+                <div class="good__prices">
+                  <div class="good__price"><span>3990</span>&#8381</div>
+                  <div class="good__basket"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.25 6.75H3.75C3.33579 6.75 3 7.08579 3 7.5V19.5C3 19.9142 3.33579 20.25 3.75 20.25H20.25C20.6642 20.25 21 19.9142 21 19.5V7.5C21 7.08579 20.6642 6.75 20.25 6.75Z"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M8.25 9.75V6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75V9.75"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="good__name">Stone Island</h6>
+                <p class="good__descr">Зип худи шерпа с капюшоном (белый)</p>
+                <ul class="good__info">
+                  <li>40</li>
+                  <li>46</li>
+                  <li>56</li>
+                  <li>58</li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide good">
+              <div class="good__img">
+                <img src="img/img-popular-1.png" alt="">
+                <div class="good__new">New</div>
+                <div class="good__favo"><img src="img/favo-white.svg" alt=""></div>
+                <div class="good__dots">
+                  <div class="good__dot active">
+                    <div href="img/img-popular-1.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-3.png"></div>
+                  </div>
+                  <div class="good__dot">
+                    <div href="img/img-popular-2.png"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="good__footer">
+                <div class="good__prices">
+                  <div class="good__price"><span>3990</span>&#8381</div>
+                  <div class="good__basket"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.25 6.75H3.75C3.33579 6.75 3 7.08579 3 7.5V19.5C3 19.9142 3.33579 20.25 3.75 20.25H20.25C20.6642 20.25 21 19.9142 21 19.5V7.5C21 7.08579 20.6642 6.75 20.25 6.75Z"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M8.25 9.75V6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75V9.75"
+                        stroke="#1D1D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h6 class="good__name">Stone Island</h6>
+                <p class="good__descr">Зип худи шерпа с капюшоном (белый)</p>
+                <ul class="good__info">
+                  <li>40</li>
+                  <li>46</li>
+                  <li>56</li>
+                  <li>58</li>
+                </ul>
+              </div>
+            </a>
+
+          </div>
+          <div class="products__prev"><img src="img/prev-white.svg" alt=""></div>
+          <div class="products__next"><img src="img/next-white.svg" alt=""></div>
+        </div>
+        <div class="products__pagination"></div>
+      </div>
+    </section>
+    <!-- Популярное -->
+
+  </main>
+  @@include('html/footer.html',{})
+
+  <!-- Модальное окно - Сменить пароль - -->
+  @@include('html/modal-save.html',{})
+  <!-- Модальное окно - Сменить пароль - -->
+
+  <!-- Модальное окно - Регистрация - -->
+  @@include('html/modal-register.html',{})
+  <!-- Модальное окно - Регистрация - -->
+
+  <!-- Модальное окно - Вход - -->
+  @@include('html/modal-sign.html',{})
+  <!-- Модальное окно - Вход - -->
+
+  <!-- Оформить заказ -->
+  @@include('html/modal-arrange.html',{})
+  <!-- Оформить заказ -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8"> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <link
+ 	rel="stylesheet"
+ 	href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20231015173504"
+ 	/> 
+ <link rel="stylesheet" href="css/style.min.css?_v=20231015173504"> 
+ <title>Новости</title>
+ </head>
+
+<body>
+	<div class="wrapper">
+		<main class="main">
+
+			<section class="news news_dots">
+				<div class="news__container">
+					<ul class="news__list">
+						<li>
+							<div class="news__mode">
+								<div class="news__time">18.01.23 г.</div>
+								<div class="news__data">11.29</div>
+							</div>
+							<div href="#" class="news__wrap">
+								<div class='news__prev'>
+									<div class="news__data">11.29</div>
+									<div class="news__img"><picture><source srcset="img/news-img_1.webp" type="image/webp"><img src="img/news-img_1.png" alt=""></picture></div>
+								</div>
+								<div class="news__info">
+									<a href='#' class="news__title">Какой-то заголовок</a>
+									<div class="news__img"><picture><source srcset="img/news-img_1.webp" type="image/webp"><img src="img/news-img_1.png" alt=""></picture></div>
+									<p class="news__descr">Lorem ipsum dolor sit amet consectetur. Ipsum ut viverra purus fermentum.
+										Viverra egestas pretium sollicitudin dolor tristique porta urna. Lorem ipsum dolor sit amet
+										consectetur. Ipsum ut viverra purus fermentum.
+										Viverra egestas pretium sollicitudin dolor tristique porta urna.</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="news__mode">
+								<div class="news__time">18.01.23 г.</div>
+								<div class="news__data">11.29</div>
+							</div>
+							<div href="#" class="news__wrap">
+								<div class='news__prev'>
+									<div class="news__data">11.29</div>
+									<div class="news__img"><picture><source srcset="img/news-img_1.webp" type="image/webp"><img src="img/news-img_1.png" alt=""></picture></div>
+								</div>
+								<div class="news__info">
+									<a href='#' class="news__title">Какой-то заголовок</a>
+									<div class="news__img"><picture><source srcset="img/news-img_1.webp" type="image/webp"><img src="img/news-img_1.png" alt=""></picture></div>
+									<p class="news__descr">Lorem ipsum dolor sit amet consectetur. Ipsum ut viverra purus fermentum.
+										Viverra egestas pretium sollicitudin dolor tristique porta urna. Sed ut risus scelerisque faucibus
+										tellus orci molestie. Integer quis velit elementum egestas viverra ullamcorper pharetra.</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="news__mode">
+								<div class="news__time">18.01.23 г.</div>
+								<div class="news__data">11.29</div>
+							</div>
+							<div href="#" class="news__wrap">
+								<div class='news__prev'>
+									<div class="news__data">11.29</div>
+									<div class="news__img"><picture><source srcset="img/news-img_1.webp" type="image/webp"><img src="img/news-img_1.png" alt=""></picture></div>
+								</div>
+								<div class="news__info">
+									<a href='#' class="news__title">Какой-то заголовок</a>
+									<div class="news__img"><picture><source srcset="img/news-img_1.webp" type="image/webp"><img src="img/news-img_1.png" alt=""></picture></div>
+									<p class="news__descr">Lorem ipsum dolor sit amet consectetur. Ipsum ut viverra purus fermentum.
+										Viverra egestas pretium sollicitudin dolor tristique porta urna. Sed ut risus scelerisque faucibus
+										tellus orci molestie. Integer quis velit elementum egestas viverra ullamcorper pharetra.</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="news__mode">
+								<div class="news__time">18.01.23 г.</div>
+								<div class="news__data">11.29</div>
+							</div>
+							<div href="#" class="news__wrap">
+								<div class='news__prev'>
+									<div class="news__data">11.29</div>
+									<div class="news__img"><picture><source srcset="img/news-img_1.webp" type="image/webp"><img src="img/news-img_1.png" alt=""></picture></div>
+								</div>
+								<div class="news__info">
+									<a href='#' class="news__title">Какой-то заголовок</a>
+									<div class="news__img"><picture><source srcset="img/news-img_1.webp" type="image/webp"><img src="img/news-img_1.png" alt=""></picture></div>
+									<p class="news__descr">Lorem ipsum dolor sit amet consectetur. Ipsum ut viverra purus fermentum.
+										Viverra egestas pretium sollicitudin dolor tristique porta urna. Sed ut risus scelerisque faucibus
+										tellus orci molestie. Integer quis velit elementum egestas viverra ullamcorper pharetra.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+		</main>
+	</div>
+
+	<!-- <script src="js/app.min.js?_v=20231015173504"></script> -->
+	<script>
+
+		function resizeTextNews(texts) {
+			const textNews = document.querySelectorAll(texts)
+			const media_767_more = window.matchMedia('(min-width: 767.98px)').matches
+			const media_991_more = window.matchMedia('(min-width: 991.98px)').matches
+			const media_1199_more = window.matchMedia('(min-width: 1199.98px)').matches
+			const media_320_more = window.matchMedia('(min-width: 320.98px)').matches
+
+			textNews.forEach(elem => {
+				let text = elem.textContent
+
+				if (media_1199_more) {
+					console.log('>1199')
+					text.length > 500 ? text = text.substring(0, 500) + '...' : text
+					elem.innerHTML = text
+				} else if (media_991_more) {
+					console.log('>991')
+					text.length > 290 ? text = text.substring(0, 290) + '...' : text
+					elem.innerHTML = text
+				} else if (media_767_more) {
+					console.log('>767')
+					text.length > 500 ? text = text.substring(0, 500) + '...' : text
+					elem.innerHTML = text
+				} else if (media_320_more) {
+					console.log('>375')
+					text.length > 290 ? text = text.substring(0, 290) + '...' : text
+					elem.innerHTML = text
+				}
+			})
+
+		}
+		resizeTextNews('.news__descr')
+
+		// window.addEventListener('resize', () => {
+		// 	try {
+		// 		resizeTextNews('.news__descr')
+		// 	} catch (e) { }
+		// })
+
+	</script>
+</body>
+
+</html>

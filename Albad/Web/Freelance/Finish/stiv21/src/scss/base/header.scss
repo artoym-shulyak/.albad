@@ -1,0 +1,228 @@
+.header {
+	padding: 20px 0;
+	position: relative;
+	&::after {
+		position: absolute;
+		content: '';
+		left: 50%;
+		transform: translateX(-50%);
+		right: 0;
+		bottom: 0;
+		width: 10000%;
+		background: $black;
+		height: 1px;
+	}
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	grid-gap: 30px;
+	@media (max-width: 1079.98px) {
+		justify-content: unset;
+	}
+	@media (max-width: 991.98px) {
+		justify-content: space-between;
+	}
+}
+.header__logo {
+	@extend %logo;
+}
+.header__menu {
+	display: flex;
+	align-items: center;
+	grid-gap: 25px;
+	&._active {
+		display: flex;
+	}
+	@media (max-width: 1079.98px) {
+		position: fixed;
+		top: 122px;
+		width: 360px;
+		padding: 30px 15px 40px 15px;
+		background: $dark;
+		z-index: 2;
+		right: 0;
+		flex-direction: column;
+		grid-gap: 30px;
+		display: none;
+		align-items: flex-end;
+	}
+	@media (max-width: 991.98px) {
+		top: 90px;
+	}
+	@media (max-width: 767.98px) {
+		top: 70px;
+	}
+	@media (max-width: 479.98px) {
+		width: 100%;
+		top: 70px;
+	}
+	li {
+		font-size: 22px;
+		font-weight: 500;
+		font-family: $raleway;
+		@media (max-width: 1199.98px) {
+			font-size: 18px;
+		}
+		@media (max-width: 1079.98px) {
+			text-align: right;
+			color: $white;
+			font-size: 22px;
+			font-weight: 500 !important;
+		}
+	}
+	li:nth-child(1),
+	li:nth-child(2) {
+		font-weight: 700;
+	}
+}
+.header__btn {
+	cursor: pointer;
+	padding: 33px 15px;
+	flex: 0 1 300px;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: $raleway;
+	text-align: center;
+	background: $dark;
+	backdrop-filter: blur(7.5px);
+	color: $white;
+	@media (max-width: 1299.98px) {
+		flex: 0 1 230px;
+	}
+	@media (max-width: 1199.98px) {
+		flex: 0 1 200px;
+		font-size: 18px;
+		padding: 25px 15px;
+	}
+	@media (max-width: 1079.98px) {
+		margin-left: auto;
+	}
+	@media (max-width: 991.98px) {
+		display: none;
+	}
+}
+.header__burger {
+	width: 25px;
+	height: 20px;
+	position: relative;
+	cursor: pointer;
+	display: none;
+	@media (max-width: 1079.98px) {
+		display: block;
+	}
+	svg {
+		pointer-events: none;
+		max-width: 100%;
+		object-fit: cover;
+	}
+}
+
+.header__more-links {
+	position: relative;
+	ul {
+		color: $white;
+		position: absolute;
+		left: 50%;
+		width: 400px;
+		transform: translateX(-50%);
+		top: 95px;
+		background: $dark;
+		text-align: center;
+		padding: 30px 28px 40px 28px;
+		opacity: 0;
+		z-index: -1;
+		@media (max-width: 1079.98px) {
+			position: relative;
+			right: 0;
+			top: 0;
+			opacity: 1;
+			z-index: 2;
+			width: 100%;
+			background: transparent;
+			padding: 30px 0 0 0;
+			display: none;
+			text-align: right;
+		}
+		li {
+			font-weight: 600 !important;
+		}
+	}
+	a.active + ul {
+		opacity: 1;
+		z-index: 2;
+		@media (max-width: 1079.98px) {
+			display: flex;
+			flex-direction: column;
+			text-align: right;
+			li {
+				display: inline-block;
+				font-weight: 400 !important;
+				a {
+					position: relative;
+					&::after {
+						position: absolute;
+						left: -16px;
+						top: 11px;
+						height: 4px;
+						width: 4px;
+						background: #fff;
+						border-radius: 50%;
+						content: '';
+					}
+				}
+			}
+		}
+	}
+}
+// .header__more {
+// 	cursor: pointer;
+// }
+// .header__more._active + .header__links {
+// 	opacity: 1;
+// 	z-index: 2;
+// 	@media (max-width: 1079.98px) {
+// 		display: block;
+// 	}
+// }
+.header__links {
+	color: $white;
+	position: absolute;
+	left: 50%;
+	width: 400px;
+	transform: translateX(-50%);
+	top: 95px;
+	background: $dark;
+	text-align: center;
+	padding: 30px 28px 40px 28px;
+	opacity: 0;
+	z-index: -1;
+	@media (max-width: 1079.98px) {
+		position: relative;
+		right: 0;
+		top: 0;
+		opacity: 1;
+		z-index: 2;
+		width: 100%;
+		background: transparent;
+		padding: 30px 0 0 0;
+		display: none;
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		grid-gap: 12.5px;
+		li {
+			font-weight: 600 !important;
+			@media (max-width: 1079.98px) {
+				font-weight: 400 !important;
+			}
+			a {
+				color: inherit;
+				width: inherit;
+				display: block;
+			}
+		}
+	}
+}

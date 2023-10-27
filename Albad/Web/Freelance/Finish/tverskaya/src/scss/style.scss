@@ -1,0 +1,64 @@
+// Шрифты
+@import "fonts";
+
+// Основы
+@import "base/vars";
+@import "base/global.scss";
+@import "base/header.scss";
+@import "base/footer.scss";
+@import "base/modal.scss";
+
+// Блоки
+@import "section/head.scss";
+@import "section/reports.scss";
+@import "section/contacts.scss";
+@import "section/helps.scss";
+@import "section/more.scss";
+@import "section/condition.scss";
+@import "section/timetable.scss";
+@import "section/ask.scss";
+@import "section/our.scss";
+@import "section/partners.scss";
+@import "section/project.scss";
+@import "section/documents.scss";
+@import "section/good.scss";
+@import "section/requisites.scss";
+@import "section/team.scss";
+@import "section/about.scss";
+@import "section/inclusion.scss";
+@import "section/geography.scss";
+@import "section/occupation.scss";
+@import "section/results.scss";
+@import "section/brend.scss";
+@import "section/members.scss";
+@import "section/news.scss";
+@import "section/money.scss";
+@import "section/course.scss";
+@import "section/check.scss";
+@import "section/hall.scss";
+@import "section/book.scss";
+@import "section/equipment.scss";
+@import "section/afisha.scss";
+@import "section/content.scss";
+@import "section/figura.scss";
+@import "section/event.scss";
+@import "section/shop.scss";
+@import "section/center.scss";
+@import "section/our-partners.scss";
+@import "section/trade.scss";
+@import "section/product.scss";
+@import "section/similar.scss";
+@import "section/basket.scss";
+@import "section/ordering.scss";
+
+.swiper {
+	z-index: 0;
+}
+
+
+.or {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 10px;
+	font-size: 32px;
+}

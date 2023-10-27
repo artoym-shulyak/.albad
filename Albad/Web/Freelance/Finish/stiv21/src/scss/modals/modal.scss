@@ -1,0 +1,75 @@
+.modal {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	padding: 0 15px;
+	&._active {
+		display: flex;
+	}
+}
+.modal__body {
+	width: 600px;
+	padding: 80px 60px 60px 60px;
+	background: $dark;
+	@media (max-width: 767.98px) {
+		padding: 80px 15px 60px 15px;
+		width: 100%;
+	}
+}
+.modal__title {
+	@extend %title-middle;
+	color: $white;
+	text-align: center;
+	margin-bottom: 50px;
+	line-height: 120%;
+}
+.modal__form {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 50px;
+	textarea {
+		height: 264px;
+		background: $white;
+		font-family: $raleway;
+		color: $dark;
+		text-align: left;
+		padding: 18px;
+		font-weight: 500;
+		resize: none;
+		outline: 2px solid transparent;
+		&::placeholder {
+			color: $dark;
+			opacity: 0.5;
+			font-family: $raleway;
+			font-weight: 500;
+		}
+		&:focus {
+			outline: 2px solid $yellow;
+		}
+	}
+	button {
+		@extend %btn-light;
+		background: $yellow;
+		grid-gap: 22px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: $raleway;
+		font-size: 24px;
+		@media (max-width: 767.98px) {
+			padding: 30px 0;
+			font-size: 20px;
+		}
+		svg {
+			height: 27px;
+			width: 27px;
+			object-fit: cover;
+		}
+	}
+}

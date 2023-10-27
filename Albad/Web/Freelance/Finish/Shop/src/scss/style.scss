@@ -1,0 +1,29 @@
+// Шрифты
+@import "fonts";
+
+// Основы
+@import "base/_vase.scss";
+@import "base/global.scss";
+@import "base/header.scss";
+@import "base/footer.scss";
+@import "base/date";
+
+// Блоки
+@import "section/head.scss";
+@import "section/clothes.scss";
+@import "section/brend.scss";
+@import "section/products.scss";
+@import "section/current.scss";
+@import "section/subcribe.scss";
+@import "section/news.scss";
+@import "section/good.scss";
+@import "section/catalog.scss";
+@import "section/info.scss";
+@import "section/blog.scss";
+@import "section/shop.scss";
+@import "section/user.scss";
+@import "section/modal.scss";
+@import "section/basket.scss";
+@import "section/card.scss";
+@import "section/menu.scss";
+@import "section/description.scss";

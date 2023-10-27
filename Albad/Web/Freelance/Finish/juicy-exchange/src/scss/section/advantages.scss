@@ -1,0 +1,123 @@
+.advantages {
+    padding: 30px 0 30px 0;
+
+    @media (max-width: 991.98px) {
+        padding: 35px 0 88px -0;
+    }
+
+    &__container {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            left: 280px;
+            top: 50px;
+            background-image: url('../img/starts-advantages.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 887px;
+            height: 464px;
+            z-index: -2;
+
+            @media (max-width: 1220px) {
+                width: 100%;
+                left: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            @media (max-width: 767.98px) {
+                background-image: url('../img/starts-advantages-767.svg');
+                height: 100%;
+                width: 100%;
+                top: 0;
+            }
+
+            @media (max-width: 576.98px) {
+                top: -60px;
+                height: 851px;
+                width: 340px;
+            }
+
+            @media (max-width: 389.98px) {
+                top: -90px;
+                width: 300px;
+            }
+        }
+    }
+
+    &__title {
+        @extend %title-default;
+        margin-bottom: 90px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-gap: 57px 0;
+
+        @media (max-width: 991.98px) {
+            grid-gap: 55px 35px;
+        }
+
+        @media (max-width: 389.98px) {
+            grid-gap: 45px 20px;
+        }
+
+        li {
+            flex: 0 1 25%;
+            text-align: center;
+
+            @media (max-width: 767.98px) {
+                flex: 0 1 45%;
+            }
+
+            span {
+                margin: 0 auto;
+                margin-bottom: 20px;
+                height: 85px;
+                width: 85px;
+                border: 3px solid #C1DF6C;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width: 991.98px) {
+                    height: 70px;
+                    width: 70px;
+                    margin-bottom: 13px;
+                }
+
+                @media (max-width: 389.98px) {
+                    height: 55px;
+                    width: 55px;
+                }
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            p {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                padding: 0 15px;
+
+                @media (max-width: 991.98px) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                @media (max-width: 389.98px) {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}

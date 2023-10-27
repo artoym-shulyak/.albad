@@ -1,0 +1,246 @@
+.content {
+ padding: 43px 0 118px 0;
+
+ @media (max-width:991.98px) {
+  padding: 40px 0 20px 0;
+ }
+
+ &__container {}
+
+ &__title {
+  @extend %title-default;
+  margin-bottom: 40px;
+
+  @media (max-width:991.98px) {
+   text-align: center;
+  }
+
+  @media (max-width:576.98px) {
+   margin-bottom: 13px;
+   font-size: 20px;
+   line-height: 24px;
+  }
+ }
+
+ &__wrapper {
+  display: flex;
+  align-items: center;
+  grid-gap: 79px;
+
+  @media (max-width:1199.98px) {
+   grid-gap: 30px;
+  }
+
+  @media (max-width:991.98px) {
+   grid-gap: 120px;
+   flex-direction: column;
+  }
+
+  @media (max-width:576.98px) {
+   grid-gap: 60px;
+  }
+ }
+
+ &__prev {
+  height: 399px;
+  width: 415px;
+  flex: 0 0 415px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #A1CBFE 0%, #DBEBFE 100%);
+  display: flex;
+  align-items: center;
+  padding: 29px;
+  justify-content: center;
+  position: relative;
+  margin-left: 34px;
+
+  @media (max-width:1199.98px) {
+   width: 350px;
+   height: 325px;
+   flex: 0 0 350px;
+  }
+
+  @media (max-width:991.98px) {
+   margin-left: 0px;
+   margin: 0 auto;
+  }
+
+  @media (max-width:576.98px) {
+   width: 255px;
+   height: 247px;
+   flex: 0 0 255px;
+   margin: 0;
+   padding: 20px;
+  }
+
+  img {
+   border-radius: 50%;
+   max-width: 100%;
+   object-fit: cover;
+  }
+
+  .content__small {
+   position: absolute;
+   left: -25px;
+   bottom: 26px;
+   background: rgba(193, 221, 255, 0.48);
+   border-radius: 50%;
+   height: 50px;
+   width: 50px;
+
+   @media (max-width:576.98px) {
+    height: 32px;
+    width: 32px;
+   }
+  }
+
+  .content__big {
+   position: absolute;
+   left: -10px;
+   bottom: -58px;
+   height: 72px;
+   width: 72px;
+   border-radius: 50%;
+   background: linear-gradient(180deg, #B6D6FF 0%, rgba(173, 209, 255, 0) 100%);
+
+   @media (max-width:576.98px) {
+    height: 44px;
+    width: 44px;
+    bottom: -30px;
+   }
+  }
+ }
+
+ &__body {
+  position: relative;
+
+  .content__small {
+   position: absolute;
+   right: 92px;
+   top: 26px;
+   background: rgba(49, 139, 254, 0.4);
+   border-radius: 50%;
+   height: 74px;
+   width: 74px;
+   z-index: 2;
+
+   @media (max-width:991.98px) {
+    display: none;
+   }
+  }
+
+  .content__big {
+   position: absolute;
+   right: 15px;
+   top: -56px;
+   height: 123px;
+   width: 123px;
+   border-radius: 50%;
+   background: linear-gradient(180deg, rgba(49, 139, 254, 0.48) 0%, rgba(193, 221, 255, 0) 100%);
+   z-index: 1;
+
+   @media (max-width:991.98px) {
+    display: none;
+   }
+  }
+ }
+
+ &__list {
+  padding-left: 72px;
+  margin-bottom: 50px;
+  display: grid;
+  flex-direction: column;
+  grid-gap: 22px;
+
+  @media (max-width:1199.98px) {
+   padding-left: 10px;
+  }
+
+  @media (max-width:991.98px) {
+   margin-bottom: 16px;
+  }
+
+  @media (max-width:576.98px) {
+   padding-left: 10px;
+  }
+
+  li {
+   display: grid;
+   grid-template-columns: 50px auto;
+   align-items: center;
+
+   @media (max-width:576.98px) {
+    grid-template-columns: 35px auto;
+    align-items: flex-start;
+   }
+  }
+ }
+
+ &__number {
+  font-family: $baron;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 70px;
+  color: $blue-dark;
+  display: block;
+
+  @media (max-width:576.98px) {
+   font-size: 50px;
+   line-height: 50px;
+  }
+ }
+
+ &__item {
+  position: relative;
+
+  &::after {
+   content: '';
+   height: 1px;
+   width: 307px;
+   position: absolute;
+   top: -17px;
+   left: 0;
+   border-top: 1px solid #100072;
+
+   @media (max-width:576.98px) {
+    width: 176px;
+    top: -8px;
+   }
+  }
+ }
+
+ &__name {
+  color: $blue-dark;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: $mont;
+
+  @media (max-width:576.98px) {
+   font-size: 16px;
+   line-height: 20px;
+  }
+ }
+
+ &__text {
+  font-family: $mont;
+  font-weight: 500;
+
+  @media (max-width:576.98px) {
+   font-size: 10px;
+   line-height: 12px;
+  }
+ }
+
+ &__descr {
+  font-family: $mont;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  @media (max-width:576.98px) {
+   font-size: 14px;
+   line-height: 17px;
+  }
+ }
+}

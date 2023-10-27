@@ -1,0 +1,125 @@
+.news-about {
+	padding: 50px 0 24px 0;
+	font-family: mont;   
+	@media (max-width: 576.98px)  {
+		padding: 35px 0;
+	}
+}
+.news-about__container {
+	display: grid;
+	grid-template-columns: 280px auto;
+	grid-gap: 20px;
+	position: relative;
+	padding: 20px 20px;
+	z-index: 0;
+	@media (max-width: 1199.98px) {
+		grid-template-columns: 250px auto;
+	}
+	@media (max-width: 991.98px) {
+		grid-template-columns: 1fr;
+	}
+	&::after {
+		position: absolute;
+		content: '';
+		left: 50%;
+		transform: translateX(-50%);
+		top: 0;
+		width: 1367px;
+		background: #9E1200;
+		height: 100%;
+		z-index: -1;
+	}
+} 
+.news-about__title {
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 0.1em;
+	color: #fff;
+}
+.news-about__list {
+	li {
+		// overflow: hidden;
+		margin-bottom: 15px;
+		background: #fff;
+		display: grid;
+		grid-template-columns: 120px auto;
+		grid-auto-rows: 120px; 
+		grid-gap: 74px;
+		padding: 10px;
+		@media (max-width: 1199.98px) {
+			grid-gap: 50px;
+		}
+		@media (max-width: 767.98px) {
+			grid-gap: 20px;
+
+		}
+		@media (max-width: 576.98px) {
+			grid-template-rows: auto;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto auto;
+			grid-gap: 20px;
+		}
+	}
+	li:last-child {
+		margin-bottom: 0;
+	}
+	.news-about__photo {
+		position: relative;
+		width: 100%;  
+		height: 120px;
+		@media (max-width: 576.98px) {
+			height: 200px;
+		}
+		@media (max-width: 479.98px) {
+			height: 300px;
+		}
+		@media (max-width:374.98px) {
+			height: 200px;
+		}
+		img {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.news-about__info {}
+	.news-about__name {
+		display: inline-block;
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 26px;
+		margin-bottom: 8px;
+		text-decoration: underline;
+		transition: all 0.2s ease-in-out;
+		@media (max-width: 576.98px) {
+			font-size: 18px;
+			line-height: 24px;
+		}
+		&:hover {
+			color: #9CADF7;
+		}
+	}
+	.news-about__descr {
+		font-weight: 900;
+		font-size: 16px;
+		line-height: 20px;
+		color: #6F6F6E;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+    @media (max-width: 767.98px) {
+    	-webkit-line-clamp: 3;
+    }
+    @media (max-width: 576.98px) {
+    	font-size: 14px;
+    	line-height: 18px;
+    	-webkit-line-clamp: 5;
+    }
+  }
+}

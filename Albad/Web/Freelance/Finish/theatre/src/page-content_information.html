@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html',{
+	"title":"Содержание"
+})
+<body>
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+
+			<section class="theme">
+				<div class="theme__container">
+					<div id="theme-head" class="theme__head">
+						<div id="dates" class="theme__data">
+							<h3 class="theme__lead">
+								Ближайшие
+								<br>даты:</h3>
+							<ul class="theme__list">
+								<li>
+									<h4 class="theme__name">6-сентября</h4>
+									<div class="theme__mode">понедельник 11:30</div>
+								</li>
+								<li>
+									<h4 class="theme__name">6-сентября</h4>
+									<div class="theme__mode">понедельник 11:30</div>
+								</li>
+								<li>
+									<h4 class="theme__name">6-сентября</h4>
+									<div class="theme__mode">понедельник 11:30</div>
+								</li>
+								<li>
+									<h4 class="theme__name">6-сентября</h4>
+									<div class="theme__mode">понедельник 11:30</div>
+								</li>
+							</ul>
+						</div>
+						<div id="theme-adres" class="theme__adres">
+							Сцена на ул.
+							<span>Перовской</span>
+						</div>
+						<div id="theme-arrows" class="theme__arrows">
+							<button class="theme__prev">
+								<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5769 26.5769C27.141 26.0128 27.141 25.0983 26.5769 24.5342L16.0428 14L26.5769 3.46582C27.141 2.90173 27.1 41 1.98716 26.5769 1.42307C26.0128 0.858974 25.0983 0.858974 24.5342 1.42307L12.9786 12.9786C12.4145 13.5427 12.4145 14.4573 12.9786 15.0214L24.5342 26.5769C25.0983 27.141 26.0128 27.141 26.5769 26.5769ZM15.0214 26.5769C15.5855 26.0128 15.5855 25.0983 15.0214 24.5342L4.4872 14L15.0214 3.46582C15.5855 2.90173 15.5855 1.98716 15.0214 1.42307C14.4573 0.858974 13.5427 0.858974 12.9786 1.42307L1.42307 12.9786C0.85898 13.5427 0.85898 14.4573 1.42307 15.0214L12.9786 26.5769C13.5427 27.141 14.4573 27.141 15.0214 26.5769Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+
+							</button>
+							<button class="theme__next">
+								<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M1.42307 1.42307C0.858977 1.98716 0.858977 2.90173 1.42307 3.46582L11.9572 14L1.42307 24.5342C0.858978 25.0983 0.858978 26.0128 1.42307 26.5769C1.98716 27.141 2.90173 27.141 3.46582 26.5769L15.0214 15.0214C15.5855 14.4573 15.5855 13.5427 15.0214 12.9786L3.46582 1.42307C2.90173 0.858977 1.98716 0.858977 1.42307 1.42307ZM12.9786 1.42307C12.4145 1.98716 12.4145 2.90173 12.9786 3.46582L23.5128 14L12.9786 24.5342C12.4145 25.0983 12.4145 26.0128 12.9786 26.5769C13.5427 27.141 14.4573 27.141 15.0214 26.5769L26.5769 15.0214C27.141 14.4573 27.141 13.5427 26.5769 12.9786L15.0214 1.42307C14.4573 0.858977 13.5427 0.858977 12.9786 1.42307Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div id="theme-body" class="theme__body">
+						<div id="theme-info" class="theme__info">
+							<h4 class="theme__text">Адрес:</h4>
+							<div class="theme__adres">
+								<span>метро</span>
+								<br>
+								<span>Новогиреево</span>
+								<br>
+								г. Москва,
+								<br>ул. Перовская, 75</div>
+							<div class="theme__wrap">
+								<div class="theme__create">Создатели спектакля:</div>
+								<div class="theme__authors">Действующие лица и исполнители:</div>
+							</div>
+							<ul class="theme__list">
+								<li>
+									<div class="theme__name">Продолжительность:</div>
+									<div class="theme__descr">1 час 15 мин.</div>
+								</li>
+								<li>
+									<div class="theme__name">Антракт:</div>
+									<div class="theme__descr">Без антракта</div>
+								</li>
+								<li>
+									<div class="theme__name">Жанр:</div>
+									<div class="theme__descr">Мюзикл</div>
+								</li>
+							</ul>
+						</div>
+						<div class="theme__wrapper">
+							<div class="swiper theme__swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="img/theme-img_1.png" alt=""></div>
+									<div class="swiper-slide">
+										<img src="img/theme-img_1.png" alt=""></div>
+									<div class="swiper-slide">
+										<img src="img/theme-img_1.png" alt=""></div>
+								</div>
+								<div class="theme__arrows">
+									<div class="swiper-button-prev">
+										<img src="img/icon-prev.svg" alt=""></div>
+									<div class="swiper-pagination"></div>
+									<div class="swiper-button-next">
+										<img src="img/icon-next.svg" alt=""></div>
+								</div>
+								<div class="theme__time">1 час 15 мин.</div>
+							</div>
+							<div id="theme-footer" class="theme__footer">
+								<h3 id="theme-title" class="theme__title">
+									<p>Женитьба Кощея</p>
+									<span>0+</span>
+								</h3>
+								<button id="theme-play" class="theme__play">
+									<svg width="21" height="25" viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M20 12.5L10.625 17.9127L1.25 23.3253L1.25 12.5L1.25 1.67468L10.625 7.08734L20 12.5Z" fill="#9E1200" stroke="#fff" stroke-width="2"/>
+									</svg>
+								</button>
+								<button class="theme__buy">Купить билет</button>
+							</div>
+						</div>
+					</div>
+					<div id="theme-end" class="theme__end">
+						<div class="theme__description">
+							<h3 class="theme__author">Автор: У. Шекспир</h3>
+							<p>
+								Это одна из самых поэтичных и романтических комедий Уильяма Шекспира. Постановка режиссера Гульнары Галавинской – это своеобразная игра с временным пространством, где герои переходят из одной эпохи в другую, примеряя на себя разные образы и настроения, оказываются заложниками непостоянных чувств и фарсовых положений.
+															Но, главной силой в спектакле остается любовь, которую с большим поэтическим пафосом воспел Шекспир, как одно из самых прекрасных и возвышенных проявлений человеческой природы.
+															Постановка наполнена живой музыкой, современной хореографией, новыми ритмами и неутомимой энергией страсти, которые соединяют эпоху Шекспира с сегодняшним днем.
+															Пьеса Уильяма Шекспира «Сон в летнюю ночь» не укладывается в рамки одного определенного жанра, ведь в сюжете филигранно переплетается ирония, тонкая психология, лирика и фарсовые положения.
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			@@include('html/partners.html',{})
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+	@@include('html/subscription.html',{})
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="files/main.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+</html>

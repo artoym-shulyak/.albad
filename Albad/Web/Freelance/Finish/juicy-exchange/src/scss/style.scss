@@ -1,0 +1,14 @@
+// Шрифты
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+// @import "fonts";
+
+// Основы
+@import "base/variables.scss";
+@import "base/global.scss";
+@import "base/header.scss";
+@import "base/footer.scss";
+
+// Блоки
+@import "section/comments.scss";
+@import "section/advantages.scss";
+@import "section/content.scss";

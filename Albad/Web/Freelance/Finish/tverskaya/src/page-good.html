@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Оранжевый дракон"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html',{})
+    <main class="main">
+
+      <section class="head">
+        <div class="head__container">
+          <ul class="head__path">
+            <li>
+              <a href="index.html">главная</a>
+            </li>
+            <span>/</span>
+            <li>магазин</li>
+          </ul>
+          <div class="head__middle">
+            <h2 class="head__title">Оранжевый дракон</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="product">
+        <div class="product__container">
+          <div class="product__wrapper">
+            <div class="product__thumbs">
+              <div class="swiper product__img">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product__prev-img">
+                      <img src="img/product-1.png" alt="">
+                      <span>новинка</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product__prev-img">
+                      <img src="img/product-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product__prev-img">
+                      <img src="img/product-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product__prev-img">
+                      <img src="img/product-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product__prev-img">
+                      <img src="img/product-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product__prev-img">
+                      <img src="img/product-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product__prev-img">
+                      <img src="img/product-1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__scrollbar"></div>
+            <div class="product__body">
+              <div class="product__top">
+                <div class="product__category">посуда</div>
+                <h4 class="product__name">Блюдо «Огненный тюльпан»</h4>
+                <div class="product__status">Артикул: 0102000003</div>
+                <div class="product__price">1600 ₽</div>
+                <div class="product__count">
+                  <div class="product__item">
+                    <div id="plus" class="product__come active" data-plus></div>
+                    <div class="product__num">
+                      <span id="number" data-number>1</span>
+                    </div>
+                    <div id="minus" class="product__come" data-minus></div>
+                  </div>
+                  <button class="product__btn">купить</button>
+                </div>
+              </div>
+              <div class="product__middle">
+                <img src="img/circles.svg" alt="">
+              </div>
+              <ul class="product__footer">
+                <li>
+                  <span>Материал:</span>
+                  <p>керамика; размер: высота 8 см.</p>
+                </li>
+                <li>
+                  <span>Материал:</span>
+                  <p>Керамика</p>
+                </li>
+                <li>
+                  <span>Рисунок:</span>
+                  <p>Животные</p>
+                </li>
+                <li>
+                  <span>Тип:</span>
+                  <p>Фигурки</p>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper product__images">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product__prev-img">
+                    <img src="img/pro-small-1.png">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__prev-img">
+                    <img src="img/pro-small-2.png">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__prev-img">
+                    <img src="img/pro-small-3.png">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__prev-img">
+                    <img src="img/pro-small-4.png">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__prev-img">
+                    <img src="img/pro-small-5.png">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__prev-img">
+                    <img src="img/pro-small-6.png">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__prev-img">
+                    <img src="img/pro-small-7.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__items">
+            <div class="product__item">натуральные материалы</div>
+            <div class="product__item">натуральные материалы</div>
+            <div class="product__item">натуральные материалы</div>
+            <div class="product__item">натуральные материалы</div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="similar">
+        <div class="similar__container">
+          <h2 class="similar__title">вы смотрели:</h2>
+          <div class="swiper similar__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="shop__item">
+                  <div class="shop__images">
+                    <img src="img/good-1.png" alt="">
+                    <span>новинка</span>
+                  </div>
+                  <div class="shop__info">
+                    <div class="shop__status">категория</div>
+                    <h4 class="shop__name">Заяц в красной накидке</h4>
+                    <div class="shop__end">
+                      <div class="shop__price">800 ₽</div>
+                      <button class="shop__btn">купить</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="shop__item">
+                  <div class="shop__images">
+                    <img src="img/good-2.png" alt="">
+                    <span>новинка</span>
+                  </div>
+                  <div class="shop__info">
+                    <div class="shop__status">категория</div>
+                    <h4 class="shop__name">Заяц в красной накидке</h4>
+                    <div class="shop__end">
+                      <div class="shop__price">800 ₽</div>
+                      <button class="shop__btn">купить</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="shop__item">
+                  <div class="shop__images">
+                    <img src="img/good-3.png" alt="">
+                  </div>
+                  <div class="shop__info">
+                    <div class="shop__status">категория</div>
+                    <h4 class="shop__name">Тарелка маленькая «Бабочки» №2</h4>
+                    <div class="shop__end">
+                      <div class="shop__price">550 ₽</div>
+                      <button class="shop__btn">купить</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="shop__item">
+                  <div class="shop__images">
+                    <img src="img/good-4.png" alt="">
+                    <span>новинка</span>
+                  </div>
+                  <div class="shop__info">
+                    <div class="shop__status">категория</div>
+                    <h4 class="shop__name">Чашка «Индийские цветы»</h4>
+                    <div class="shop__end">
+                      <div class="shop__price">600 ₽</div>
+                      <button class="shop__btn">купить</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="shop__item">
+                  <div class="shop__images">
+                    <img src="img/good-4.png" alt="">
+                    <span>новинка</span>
+                  </div>
+                  <div class="shop__info">
+                    <div class="shop__status">категория</div>
+                    <h4 class="shop__name">Чашка «Индийские цветы»</h4>
+                    <div class="shop__end">
+                      <div class="shop__price">600 ₽</div>
+                      <button class="shop__btn">купить</button>
+                    </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="similar__scrollbar"></div>
+        <a href="#" class="similar__link">перейти в магазин</a>
+  </div>
+  </section>
+
+  <section class="similar">
+    <div class="similar__container">
+      <h2 class="similar__title">похожие товары:</h2>
+      <div class="swiper similar__swiper sim__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="shop__item">
+              <div class="shop__images">
+                <img src="img/good-1.png" alt="">
+                <span>новинка</span>
+              </div>
+              <div class="shop__info">
+                <div class="shop__status">категория</div>
+                <h4 class="shop__name">Заяц в красной накидке</h4>
+                <div class="shop__end">
+                  <div class="shop__price">800 ₽</div>
+                  <button class="shop__btn">купить</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="shop__item">
+              <div class="shop__images">
+                <img src="img/good-2.png" alt="">
+                <span>новинка</span>
+              </div>
+              <div class="shop__info">
+                <div class="shop__status">категория</div>
+                <h4 class="shop__name">Заяц в красной накидке</h4>
+                <div class="shop__end">
+                  <div class="shop__price">800 ₽</div>
+                  <button class="shop__btn">купить</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="shop__item">
+              <div class="shop__images">
+                <img src="img/good-3.png" alt="">
+              </div>
+              <div class="shop__info">
+                <div class="shop__status">категория</div>
+                <h4 class="shop__name">Тарелка маленькая «Бабочки» №2</h4>
+                <div class="shop__end">
+                  <div class="shop__price">550 ₽</div>
+                  <button class="shop__btn">купить</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="shop__item">
+              <div class="shop__images">
+                <img src="img/good-4.png" alt="">
+                <span>новинка</span>
+              </div>
+              <div class="shop__info">
+                <div class="shop__status">категория</div>
+                <h4 class="shop__name">Чашка «Индийские цветы»</h4>
+                <div class="shop__end">
+                  <div class="shop__price">600 ₽</div>
+                  <button class="shop__btn">купить</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="shop__item">
+              <div class="shop__images">
+                <img src="img/good-4.png" alt="">
+                <span>новинка</span>
+              </div>
+              <div class="shop__info">
+                <div class="shop__status">категория</div>
+                <h4 class="shop__name">Чашка «Индийские цветы»</h4>
+                <div class="shop__end">
+                  <div class="shop__price">600 ₽</div>
+                  <button class="shop__btn">купить</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="wathed__scrollbar"></div>
+      <a href="#" class="similar__link">перейти в магазин</a>
+    </div>
+  </section>
+
+  </main>
+  @@include('html/footer.html',{})
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="files/main.js"></script>
+</body>
+
+</html>

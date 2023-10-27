@@ -1,0 +1,105 @@
+.thank {
+	padding-bottom: 140px;
+	@media (max-width: 991.98px) {
+		padding-top: 140px;
+	}
+}
+.thank__container {
+	position: relative;
+}
+.thank__items {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(260px, 1fr));
+	grid-template-rows: repeat(auto, minmax(600px, 1fr));
+	grid-gap: 40px;
+	margin-bottom: 80px;
+	@media (max-width: 1399.98px) {
+		grid-template-rows: repeat(auto, minmax(500px, 1fr));
+	}
+	@media (max-width: 1199.98px) {
+		grid-template-rows: repeat(auto, minmax(450px, 1fr));
+	}
+	@media (max-width: 991.98px) {
+		grid-template-rows: repeat(auto, minmax(1200px, 1fr));
+		grid-template-columns: 1fr;
+	}
+	@media (max-width: 767.98px) {
+		grid-template-rows: repeat(auto, minmax(900px, 1fr));
+	}
+	@media (max-width: 576.98px) {
+		grid-template-rows: repeat(auto, minmax(600px, 1fr));
+	}
+	@media (max-width: 479.98px) {
+		grid-template-rows: repeat(auto, minmax(455px, 1fr));
+	}
+	&.active {
+		.thank__item {
+			display: block;
+		}
+	}
+}
+.thank__item {
+	background: #d9d9d9;
+	height: 600px;
+	display: none;
+	&:nth-child(1),
+	&:nth-child(2),
+	&:nth-child(3) {
+		display: block;
+	}
+	@media (max-width: 1399.98px) {
+		height: 500px;
+	}
+	@media (max-width: 1199.98px) {
+		height: 450px;
+	}
+	@media (max-width: 991.98px) {
+		height: 1200px;
+	}
+	@media (max-width: 767.98px) {
+		height: 900px;
+	}
+	@media (max-width: 576.98px) {
+		height: 600;
+	}
+	@media (max-width: 479.98px) {
+		height: 455px;
+	}
+	img {
+		max-width: 100%;
+		height: 100%;
+	}
+}
+.thank__more {
+	cursor: pointer;
+	@extend %circle280;
+	margin: 0 auto;
+	font-family: $raleway;
+	font-size: 24px;
+	@media (max-width: 767.98px) {
+		height: 200px;
+		width: 200px;
+		padding: 0;
+		font-size: 20px;
+	}
+	svg {
+		margin-top: 0;
+	}
+}
+.thank__circle {
+	@extend %circle-transparent;
+	height: 550px;
+	width: 550px;
+	left: -450px;
+	top: 10px;
+	@media (max-width: 767.98px) {
+		height: 300px;
+		width: 300px;
+		left: -150px;
+		top: 50px;
+	}
+	@media (max-width: 479.98px) {
+		top: -40px;
+		left: -130px;
+	}
+}

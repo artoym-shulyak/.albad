@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":" Сервис"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main class="main">
+
+            <section class="head">
+                <div class="head__container">
+                    <ul class="head__paths">
+                        <li class="head__path"><a href="index.html">Главная</a></li>
+                        <span>/</span>
+                        <li class="head__path"> Сервис
+                        </li>
+                    </ul>
+                    <h1 class="head__title"> Сервис</h1>
+                </div>
+            </section>
+
+            <section class="description">
+                <div class="description__container">
+                    <p class="description__text">Вместе с американскими коллегами нашим клиентам из России и стран СНГ
+                        доступен высококачественный сервис и сопровождение в области иммиграции в США.</p>
+                </div>
+            </section>
+
+            <section class="box-interest">
+                <div class="box-interest__container">
+                    <div class="box-interest__items">
+                        <a href="faq.html" class="box-interest__item">
+                            <img src="img/box-interest.jpg" alt="">
+                            <span>Вопросы и ответы</span>
+                        </a>
+                        <a href="cases.html" class="box-interest__item">
+                            <img src="img/box-interest.jpg" alt="">
+                            <span>Иммиграция «под ключ»</span>
+                        </a>
+                        <a href="visas.html" class="box-interest__item">
+                            <img src="img/box-interest.jpg" alt="">
+                            <span>Визы в США</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gets">
+                <div class="gets__container">
+                    <h2 class="gets__title">ProImmigrationHouse — безопасная иммиграция!
+                    </h2>
+                    <div class="gets__body">
+                        <div class="gets__wrap">
+                            <div class="gets__item">Точно ли получится иммигрировать?
+                            </div>
+                            <div class="gets__info">
+                                <p class="gets__descr">Миграционный юрист по США несёт репутационную и финансовую
+                                    ответственность (личный бренд) за все действия с клиентом непосредственно до
+                                    выигрыша – <span>личный бренд, договор</span></p>
+                            </div>
+                        </div>
+                        <div class="gets__wrap">
+                            <div class="gets__info">
+                                <p class="gets__descr">Поэтапная оплата услуг миграционного адвоката по США как
+                                    дополнительная финансовая <span>гарантия профессионализма, статистика, опыт</span>
+                                </p>
+                            </div>
+                            <div class="gets__item">Страшно получить отказ в иммиграции (не будет результата)
+                            </div>
+                        </div>
+                        <div class="gets__wrap">
+                            <div class="gets__item">Адаптация к жизни в США, как привыкнуть
+                            </div>
+                            <div class="gets__info">
+                                <p class="gets__descr"><span>Социальная адаптация иммигрантов из России на территории
+                                        США – <span>психологическая помощь иммигрантам</span></p>
+                            </div>
+                        </div>
+                        <div class="gets__wrap">
+                            <div class="gets__info">
+                                <p class="gets__descr">На территории США мы имеет реальную практику содействия в
+                                    трудоустройстве иммигрантов – Задать вопрос</p>
+                            </div>
+                            <div class="gets__item">Как найти работу (где работать)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            @@include('html/consultation.html',{})
+
+            @@include('html/social.html',{})
+
+        </main>
+        @@include('html/footer.html',{})
+    </div>
+   @@include('html/modals.html',{})
+   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+                                <script src="files/script.js"></script>
+    <script src="files/main.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

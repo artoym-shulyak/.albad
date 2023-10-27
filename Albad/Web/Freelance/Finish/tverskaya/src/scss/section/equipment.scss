@@ -1,0 +1,125 @@
+.equipment {
+	@extend %margin_bottom140;
+}
+.equipment__container {
+
+}
+.equipment__head {
+	display: flex;
+	align-items: center;
+	margin: 0 0 60px 0;
+	@media (max-width: 767.98px) {
+		flex-direction: column;
+		align-items: start;
+	}
+	@media (max-width: 576.98px) {
+		margin-bottom: 40px;
+	}
+}
+.equipment__title {
+	@extend %title_fz_45;
+	margin: 0 45px 0 0;
+	@media (max-width: 767.98px) {
+		margin: 0 0 20px 0;
+	}
+}
+.equipment__items {
+	display: flex;
+	align-items: cetner;
+	li {
+		font-size: 20px;
+		font-weight: 400;
+		cursor: pointer;
+		line-height: 125%;
+		border-radius: 65px;
+		padding: 18px 26px;
+		&.active {
+			background: $yellow;
+		}
+	}
+}
+.equipment__item {
+	padding: 0 0 40px 0;
+	@media (max-width: 479.98px) {
+		padding-top: 30px;
+	}
+}
+.equipment__img {
+	margin: 0 0 36px 0;
+	height: 288px;
+	padding: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@media (max-width: 479.98px) {
+		padding: 20px;
+	}
+	@media (max-width: 576.98px) {
+		height: 250px;
+	}
+	@media (max-width: 479.98px) {
+		height: 200px;
+	}
+	@media (max-width: 374.98px) {
+		height: 160px;
+		margin-bottom: 20px;
+	}
+	img {
+		max-width: 100%;
+		object-fit: cover;
+	}
+}
+.equipment__info{
+	padding: 0 24px;
+	@media (max-width: 479.98px) {
+		padding: 20px;
+	}
+}
+.equipment__status {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	margin: 0 0 17px 0;
+}
+.equipment__name {
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 130%;
+	@media (max-width: 479.98px) {
+		font-size: 22px;
+	}
+	@media (max-width: 375.98px) {
+		font-size: 20px;
+	}
+}
+
+.equipment__swiper {
+	height: 561px;
+	width: 106%;
+	margin-bottom: 40px;
+	@media (max-width: 1439.98px) {
+		width: 100%;
+	}
+	@media (max-width: 991.98px) {
+		overflow: visible;
+	}
+	@media (max-width: 576.98px) {
+		height: 510px;
+	}
+	@media (max-width: 479.98px) {
+		height: 480px;
+	}
+	@media (max-width: 374.98px) {
+		height: 400px;
+	}
+	.swiper-slide {
+		background: $grey-light;
+		border-radius: 24px;
+		height: 100%;
+		width: 355px;
+		@media (max-width: 479.98px) {
+			width: 260px;
+		}
+	}
+
+}

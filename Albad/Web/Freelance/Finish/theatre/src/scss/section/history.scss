@@ -1,0 +1,41 @@
+.history {
+	padding: 70px 0;
+	font-family: mont;
+}
+.history__container {}
+.history__inner {
+	display: grid;
+	grid-template-columns: auto 400px;
+	grid-gap: 80px;
+	margin-bottom: 75px;
+}
+.history__inner:last-child {
+	margin-bottom: 0;
+}
+.history__info {}
+.history__name {
+	font-family: HelveticaInseratLTStd;
+	font-weight: 800;
+	font-size: 28px;
+	line-height: 33px;
+	letter-spacing: 0.1em;
+	margin-bottom: 20px;
+}
+.history__descr {
+	color: #6F6F6E;
+	font-size: 16px;
+	line-height: 22px;
+
+}
+.history__image {
+	position: relative;
+	img {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
+}

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Аренда залов"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+
+			<section class="head">
+				<div class="head__container">
+					<ul class="head__path">
+						<li><a href="index.html">главная</a></li>
+						<span>/</span>
+						<li>аренда залов</li>
+					</ul>
+					<div class="head__middle">
+						<h2 class="head__title">аренда залов</h2>
+						<button id="btn-primary"><img src="img/hearth.svg" alt=""><span>хочу
+								помочь</span></button>
+					</div>
+				</div>
+			</section>
+
+			<section class="hall">
+				<div class="hall__container">
+					<div class="hall__information">
+						<div class="hall__top">
+							<div class="hall__info">
+								Наше пространство находится в самом центре Москвы,
+								по адресу
+								ул. Тверская, 15
+							</div>
+							<div class="hall__info">
+								У нас вы можете провести лекции, тренинги, концеренции, круглые столы, концерты, корпоративные
+								праздники  и многое другое.
+							</div>
+						</div>
+						<div class="hall__footer">
+							<div class="hall__info">
+								<div class="hall__span">1 этаж</div>
+								<ul class="hall__list">
+									<li>130 м2</li>
+									<li>до 120 человек<span>комфортно 70-90</span></li>
+								</ul>
+							</div>
+							<div class="hall__info">
+								<div class="hall__span">2 этаж</div>
+								<ul class="hall__list">
+									<li>170 м2</li>
+									<li>до 130 человек<span>комфортно 90-110</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="hall__wrapper">
+						<ul class="hall__list">
+							<li class="hall__li">1 этаж</li>
+							<li class="hall__li">2 этаж</li>
+						</ul>
+						<div class="hall__body">
+							<div class="hall__item">
+								<div class="swiper hall__swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="hall__img">
+												<img src="img/hall-1.png" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="hall__img">
+												<img src="img/hall-1.png" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="hall__img">
+												<img src="img/hall-1.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="hall__info">
+									<div class="hall__box">
+										<div class="hall__price">1500 р./час</div>
+										<button class="hall__btn">забронировать</button>
+									</div>
+									<p class="hall__descr">Просторный зал для проведения фотосъёмок, тренингов или мероприятий.
+									</p>
+									<div class="hall__img">
+										<img src="img/hall-2.png" alt="">
+									</div>
+								</div>
+								<div class="hall__arrows">
+									<div class="hall__prev"><img src="img/prev.svg" alt=""></div>
+									<div class="hall__next"><img src="img/next-60.svg" alt=""></div>
+								</div>
+							</div>
+							<div class="hall__footer">
+								<a href="doc.docx" class="hall__btn">скачать презентацию</a>
+								<p class="hall__info">Просим отнестись с пониманием, что предпочтение мы отдаем проведению наших
+									собственных детских и взрослых мероприятий, и мы сможем предоставить вам площадку только в то
+									время, когда в нашем расписании нет занятий.</p>
+							</div>
+						</div>
+						<div class="hall__body">
+							<div class="hall__item">
+								<div class="swiper hall__swiper-second">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="hall__img">
+												<img src="img/hall-1.png" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<img src="img/hall-1.png" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/hall-1.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="hall__info">
+									<div class="hall__box">
+										<div class="hall__price">2300 р./час</div>
+										<button class="hall__btn">забронировать</button>
+									</div>
+									<p class="hall__descr">Просторный зал для проведения фотосъёмок, тренингов или мероприятий.
+									</p>
+									<div class="hall__img">
+										<img src="img/hall-2.png" alt="">
+									</div>
+								</div>
+								<div class="hall__arrows-second">
+									<div class="hall__prev"><img src="img/prev.svg" alt=""></div>
+									<div class="hall__next"><img src="img/next-60.svg" alt=""></div>
+								</div>
+							</div>
+							<div class="hall__footer">
+								<button class="hall__btn">скачать презентацию</button>
+								<p class="hall__info">Просим отнестись с пониманием, что предпочтение мы отдаем проведению наших
+									собственных детских и взрослых мероприятий, и мы сможем предоставить вам площадку только в то
+									время, когда в нашем расписании нет занятий.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="timetable">
+				<div class="timetable__container">
+					<h2 class="timetable__title">расписание</h2>
+					<div class="timetable__head">
+						<div class="timetable__arrows">
+							<div class="timetable__prev"><img src="img/prev.svg" alt=""></div>
+							<div class="timetable__name">сентябрь 2022</div>
+							<div class="timetable__next"><img src="img/next-60.svg" alt=""></div>
+						</div>
+						<ul class="timetable__data">
+							<li class="active">месяц</li>
+							<li>неделя</li>
+						</ul>
+						<div class="timetable__overflow">
+							<ul class="timetable__days">
+								<li class="active">сегодня</li>
+								<li>выходные</li>
+								<li>указать дату<img src="img/calendar.svg" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<ul class="timetable__names">
+						<li>понельник</li>
+						<li>вторник</li>
+						<li>среда</li>
+						<li>четверг</li>
+						<li>пятница</li>
+						<li>суббота</li>
+						<li>воскресенье</li>
+					</ul>
+					<div class="timetable__body">
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+						<div class="timetable__item">
+							<div class="timetable__number">28</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">1</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+							<div class="timetable__wrap">
+								<div class="timetable__span">2</div>
+								<ul class="timetable__list">
+									<li>12:00—14:00</li>
+									<li>14:00—16:00</li>
+									<li>16:00—18:00</li>
+								</ul>
+								<div class="timetable__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z" fill="white" />
+									</svg></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="book">
+				<div class="book__container">
+					<div class="book__body">
+						<h2 class="book__title">забронировать зал</h2>
+						<ul class="book__data">
+							<li>
+								<div class="book__name">выберите зал</div>
+								<div class="book__box">
+									<div class="book__value">
+										1 этаж
+									</div>
+									<div class="book__lead">
+										<ul>
+											<li class="active">1 этаж</li>
+											<li>2 этаж</li>
+											<li>3 этаж</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="book__name">выберите дату</div>
+								<div class="book__box">
+									<div class="book__value">
+										15 сентября 2022
+									</div>
+									<div class="book__lead">
+										<ul>
+											<li>20 ноября 2023</li>
+											<li>10 июля 2023</li>
+											<li>19 октября 2023</li>
+										</ul>
+									</div>
+									<img src="img/calendar.svg" alt="">
+								</div>
+							</li>
+						</ul>
+						<h3 class="book__sub-title">удобное время <span>можно несколько</span></h3>
+						<ul class="book__items">
+							<li class="active">12:00—14:00</li>
+							<li>14:00—16:00</li>
+							<li>16:00—18:00</li>
+							<li>18:00—20:00</li>
+						</ul>
+						<div class="book__add"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M11 13V24H13V13H24V11H13V0H11V11H0V13H11Z"
+									fill="white" />
+							</svg>
+						</div>
+						<h3 class="book__sub-title">оставьте ваши контакты</h3>
+						<ul class="book__list">
+							<li>
+								<div class="book__name">контактное лицо</div>
+								<div class="book__input"><input type="text" placeholder="имя"></div>
+							</li>
+							<li>
+								<div class="book__name">номер телефона</div>
+								<div class="book__input"><input type="text" placeholder="+7 (    )"></div>
+							</li>
+							<li>
+								<div class="book__name">почта</div>
+								<div class="book__input"><input type="text" placeholder="@"></div>
+							</li>
+							<li>
+								<div class="book__name">комментарий</div>
+								<div class="book__input"><input type="text" placeholder="по желанию"></div>
+							</li>
+							</li>
+						</ul>
+						<div class="book__footer">
+							<button class="book__btn">забронировать</button>
+							<div class="book__info">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+								соглашаетесь c <a href="#">политикой конфиденциальности</a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="equipment">
+				<div class="equipment__container">
+					<div class="equipment__head">
+						<h2 class="equipment__title">наше оборудование</h2>
+						<ul class="equipment__items">
+							<li class="active">техника</li>
+							<li>мебель</li>
+						</ul>
+					</div>
+					<div class="swiper equipment__swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="equipment__item">
+									<div class="equipment__img">
+										<img src="img/equipment-1.png" alt="">
+									</div>
+									<div class="equipment__info">
+										<div class="equipment__status">техника</div>
+										<h3 class="equipment__name">Проектор EPSON EB-U05 (300 лм) + кликер</h3>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="equipment__item">
+									<div class="equipment__img">
+										<img src="img/equipment-2.png" alt="">
+									</div>
+									<div class="equipment__info">
+										<div class="equipment__status">техника</div>
+										<h3 class="equipment__name">Экран 3х2 м</h3>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="equipment__item">
+									<div class="equipment__img">
+										<img src="img/equipment-2.png" alt="">
+									</div>
+									<div class="equipment__info">
+										<div class="equipment__status">техника</div>
+										<h3 class="equipment__name">Экран 3х2 м</h3>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="equipment__item">
+									<div class="equipment__img">
+										<img src="img/equipment-3.png" alt="">
+									</div>
+									<div class="equipment__info">
+										<div class="equipment__status">техника</div>
+										<h3 class="equipment__name">3 колонки Behringer EURO LIVE B212D (345 Вт)</h3>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="equipment__item">
+									<div class="equipment__img">
+										<img src="img/equipment-3.png" alt="">
+									</div>
+									<div class="equipment__info">
+										<div class="equipment__status">техника</div>
+										<h3 class="equipment__name">3 колонки Behringer EURO LIVE B212D (345 Вт)</h3>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="equipment__item">
+									<div class="equipment__img">
+										<img src="img/equipment-4.png" alt="">
+									</div>
+									<div class="equipment__info">
+										<div class="equipment__status">техника</div>
+										<h3 class="equipment__name">Микшерный пульт Samson MDR10</h3>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="wathed__scrollbar"></div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="files/main.js"></script>
+</body>
+
+</html>

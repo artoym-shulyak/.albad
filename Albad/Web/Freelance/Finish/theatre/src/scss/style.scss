@@ -1,0 +1,54 @@
+// Шрифты
+@import 'fonts';
+
+// Основы
+@import 'base/global.scss';
+// @import "base/header.scss";
+// @import "base/footer.scss";
+
+// Блоки
+// @import "section/veterinar.scss";
+// @import "section/authors.scss";
+@import 'section/news.scss';
+// @import "section/repertore.scss";
+// @import "section/history.scss";
+// @import "section/theatre.scss";
+// @import "section/news-about.scss";
+// @import "section/adres.scss";
+// @import "section/contacts.scss";
+// @import "section/partners.scss";
+// @import "section/product.scss";
+// @import "section/performance.scss";
+// @import "section/theme.scss";
+// @import "section/subscription.scss";
+
+// Иконка подписка
+// .icon-subscription__container {
+// 	position: fixed;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	bottom: 100px;
+// 	max-width: 1365px;
+// 	width: 1365px;
+// 	padding: 0;
+// 	z-index: 25;
+// 	@media (max-width: 1364.98px) {
+// 		width: 100%;
+// 		max-width: 100%;
+// 	}
+// 	@media (max-width: 991.98px) {
+// 		bottom: 30px;
+// 	}
+// }
+// .icon-subscription__img {
+// 	width: 65px;
+// 	height: 72px;
+// 	cursor: pointer;
+// 	@media (max-width: 576.98px) {
+// 		width: 55px;
+// 		height: 62px;
+// 	}
+// 	img {
+// 		max-width: 100%;
+// 	}
+// }

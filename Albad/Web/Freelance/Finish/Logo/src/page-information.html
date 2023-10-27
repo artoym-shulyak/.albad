@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Оплата, доставка, возврат"
+})
+
+<body>
+  @@include('html/header.html',{})
+  <main>
+
+    <!-- Оплата, доставка, возврат -->
+    <section class="info">
+      <div class="info__container">
+        <div class="info__item">
+          <h2 class="info__title">Оплата</h2>
+          <p class="info__descr">Оплачивать выбранные товары можно с помощью
+            <strong>Apple Pay, Google <br> Pay, MasterCard, Visa, Maestro, Visa Electron и Мир.</strong>
+          </p>
+        </div>
+        <div class="info__item">
+         <h2 class="info__title">Доставка</h2>
+         <div class="info__wraps">
+           <div class="info__wrap">
+            <h3 class="info__name">Самовывоз</h3>
+            <ul class="info__list">
+              <li>Стоимость доставки рассчитывается из объема поставки и согласно тарифам выбранной транспортной
+                компании.
+              </li>
+            </ul>
+          </div>
+          <div class="info__wrap">
+            <h3 class="info__name">Доставка курьером</h3>
+            <ul class="info__list">
+              <li>Стоимость доставки по Москве 349 рублей.</li>
+              <li>Доставка по Московской области, Санкт-<br>Петербургу и России 450 руб.</li>
+            </ul>
+          </div>
+          <div class="info__wrap">
+            <div class="info__box">
+              <div class="info__label">г. Москва, Карманицкий переулок,<br> д.9, этаж 4, офис 416</div>
+              <p class="info__adres">Метро Смоленская Арбатско-Покровской линии</p>
+              <div class="info__mode"><img src="img/icon-mode.svg" alt=""><span>с 10 до 19 по московскому времени.
+              пн-пт</span></div>
+                <a href="#" class="info__phone">8 800 700-49-15</a>
+                <div class="info__mode"><img src="img/icon-mode.svg" alt=""><span>с 10 до 19 по московскому времени.
+                    пн-пт</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info__item">
+          <h2 class="info__title">Обмен и возврат</h2>
+          <div class="info__inner">
+            <h3 class="info__sub-title">Если вы получили товар ненадлежащего качества:</h3>
+            <ul class="info__points">
+              <li><span>1</span>
+                <p>Отправьте нам письмо на support@youmake.pro с указанием номера заказа и причины возврата. При
+                  необходимости
+                  прикрепите фотографии изделия.</p>
+              </li>
+              <li><span>2</span>
+                <p>В течение 5 рабочих дней мы обязательно свяжемся с вами, заменим товар или вернем деньги.</p>
+              </li>
+              <li><span>3</span>
+                <p>Вы можете обменять или вернуть товар ненадлежащего качества в течение 14 дней с момента получения
+                  заказа.</p>
+              </li>
+              <li><span>4</span>
+                <p>Вы можете обменять или вернуть товар надлежащего качества в течение 14 дней с момента получения
+                  заказа, за
+                  исключением товаров надлежащего качества, изготовленных по индивидуальному заказу.</p>
+              </li>
+              <li><span>5</span>
+                <p>Все расходы по обмену и возврату бракованного товара мы берем на себя.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Оплата, доставка, возврат -->
+
+    <!-- Скидка -->
+    @@include('html/subcribe.html',{})
+    <!-- Скидка -->
+
+  </main>
+  @@include('html/footer.html',{})
+
+  <!-- Модальное окно - Сменить пароль - -->
+  @@include('html/modal-save.html',{})
+  <!-- Модальное окно - Сменить пароль - -->
+
+  <!-- Модальное окно - Регистрация - -->
+  @@include('html/modal-register.html',{})
+  <!-- Модальное окно - Регистрация - -->
+
+  <!-- Модальное окно - Вход - -->
+  @@include('html/modal-sign.html',{})
+  <!-- Модальное окно - Вход - -->
+
+  <!-- Оформить заказ -->
+  @@include('html/modal-arrange.html',{})
+  <!-- Оформить заказ -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

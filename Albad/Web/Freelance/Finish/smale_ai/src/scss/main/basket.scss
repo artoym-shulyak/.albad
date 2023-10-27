@@ -1,0 +1,377 @@
+.main {
+ .basket {
+  height: 85vh;
+  position: relative;
+  display: none;
+
+  &__title {
+   font-family: $roboto;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 35px;
+   margin-bottom: 10px;
+   padding-left: 22px;
+
+   @media (max-width:991.98px) {
+    padding-left: 0;
+   }
+
+   @media (max-width:767.98px) {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 28px;
+   }
+
+   @media (max-width:479.98px) {
+    font-size: 20px;
+    line-height: 24px;
+   }
+
+   @media (max-width:374.98px) {
+    font-size: 18px;
+    line-height: 20px;
+   }
+  }
+
+  &__goods {
+   display: flex;
+   flex-direction: column;
+   grid-gap: 30px;
+   margin-bottom: 30px;
+
+   @media (max-width:767.98px) {
+    margin-bottom: 14px;
+   }
+  }
+
+  &__good {
+   display: flex;
+   grid-gap: 36px;
+   background: $white;
+   border-radius: 50px;
+   overflow: hidden;
+   padding: 15px 56px;
+
+   @media (max-width:991.98px) {
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 14px 18px;
+   }
+
+   @media (max-width:767.98px) {
+    grid-gap: 18px;
+   }
+
+   .basket__img {
+    width: 81px;
+    flex: 0 0 81px;
+
+    @media (max-width:767.98px) {
+     width: 60px;
+     flex: 0 0 60px;
+    }
+
+    @media (max-width:479.98px) {
+     width: 28px;
+     flex: 0 0 28px;
+    }
+
+    img {
+     max-width: 100%;
+     object-fit: cover;
+    }
+   }
+
+   .basket__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 29px 0 17px 0;
+    grid-gap: 19px;
+
+    @media (max-width:767.98px) {
+     padding: 5px 0;
+    }
+
+    .basket__lead {
+     display: flex;
+     flex-direction: column;
+     grid-gap: 8px;
+
+     @media (max-width:767.98px) {
+      grid-gap: 6px;
+     }
+    }
+
+    .basket__name {
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 24px;
+
+     @media (max-width:767.98px) {
+      font-size: 18px;
+      line-height: 20px;
+     }
+
+     @media (max-width:576.98px) {
+      font-size: 16px;
+      line-height: 18px;
+     }
+
+
+     @media (max-width:474.98px) {
+      font-size: 10px;
+      line-height: 12px;
+     }
+    }
+
+    .basket__count {
+     font-size: 18px;
+     line-height: 22px;
+
+     @media (max-width:767.98px) {
+      font-size: 16px;
+      line-height: 18px;
+     }
+
+     @media (max-width:576.98px) {
+      font-size: 14px;
+      line-height: 16px;
+     }
+
+     @media (max-width:479.98px) {
+      font-size: 12px;
+      line-height: 14px;
+     }
+
+     @media (max-width:374.98px) {
+      font-size: 8px;
+      line-height: 10px;
+     }
+
+     span {
+      margin-left: 3px;
+     }
+    }
+
+    .basket__price {
+     font-weight: 600;
+     font-size: 20px;
+     line-height: 24px;
+     display: flex;
+
+     @media (max-width:767.98px) {
+      font-size: 18px;
+      line-height: 20px;
+     }
+
+     @media (max-width:576.98px) {
+      font-size: 16px;
+      line-height: 18px;
+     }
+
+     @media (max-width:479.98px) {
+      font-size: 14px;
+      line-height: 16px;
+     }
+
+     @media (max-width:374.98px) {
+      font-size: 12px;
+      line-height: 14px;
+     }
+
+     span {
+      margin-left: 5px;
+      font-weight: 500;
+     }
+    }
+   }
+  }
+
+  &__result {
+   display: flex;
+   justify-content: space-between;
+
+   @media (max-width:767.98px) {
+    flex-direction: column;
+    grid-gap: 24px;
+   }
+
+   .basket__promocode {
+    .basket__name {
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 24px;
+     margin-bottom: 10px;
+     margin-left: 24px;
+
+     @media (max-width:991.98px) {
+      margin-left: 0;
+     }
+
+     @media (max-width:767.98px) {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 6px;
+     }
+
+     @media (max-width:576.98px) {
+      font-size: 16px;
+      line-height: 18px;
+     }
+
+     @media (max-width:479.98px) {
+      font-size: 14px;
+      line-height: 16px;
+     }
+
+     @media (max-width:374.98px) {
+      font-size: 12px;
+      line-height: 14px;
+     }
+    }
+
+    input {
+     padding: 14px 15px;
+     background: #FFFFFF;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     outline: none;
+     border-radius: 30px;
+     width: 295px;
+
+     @media (max-width:1139.98px) {
+      width: 240px;
+     }
+
+     @media (max-width:767.98px) {
+      border-radius: 10px;
+      padding: 10px 10px;
+     }
+
+     @media (max-width:479.98px) {
+      width: 180px;
+     }
+
+     @media (max-width:374.98px) {
+      padding: 7px 10px;
+      width: 128px;
+     }
+    }
+
+   }
+
+   .basket__info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+   }
+
+   .basket__amount,
+   .basket__company {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (max-width:767.98px) {
+     font-size: 18px;
+     line-height: 20px;
+    }
+
+    @media (max-width:576.98px) {
+     font-size: 16px;
+     line-height: 18px;
+    }
+
+    @media (max-width:479.98px) {
+     font-size: 14px;
+     line-height: 16px;
+    }
+
+    @media (max-width:374.98px) {
+     font-size: 10px;
+     line-height: 12px;
+    }
+   }
+
+   .basket__price {
+    margin: 7px 0 20px 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    @media (max-width:767.98px) {
+     font-size: 20px;
+     line-height: 24px;
+    }
+
+    @media (max-width:576.98px) {
+     font-size: 18px;
+     line-height: 20px;
+    }
+
+    @media (max-width:479.98px) {
+     font-size: 16px;
+     line-height: 18px;
+    }
+
+    @media (max-width:374.98px) {
+     font-size: 12px;
+     line-height: 14px;
+    }
+
+    span {
+     margin-left: 5px;
+    }
+   }
+
+   .basket__btn {
+    font-weight: 500;
+    letter-spacing: -0.005em;
+    padding: 18px;
+    width: 221px;
+    cursor: pointer;
+    letter-spacing: -0.005em;
+    background: #100072;
+    border-radius: 50px;
+    color: $white;
+    margin-left: auto;
+
+    @media (max-width:991.98px) {
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+    }
+
+    @media (max-width:479.98px) {
+     padding: 10px;
+     width: 151px;
+     font-size: 10px;
+     line-height: 12px;
+    }
+   }
+  }
+
+  &__home {
+   font-weight: 500;
+   letter-spacing: -0.005em;
+   padding: 18px;
+   width: 187px;
+   cursor: pointer;
+   background: #100072;
+   border-radius: 50px;
+   color: $white;
+   margin-left: auto;
+   margin-top: auto;
+   display: block;
+   text-align: center;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+
+   @media (max-width:991.98px) {
+    display: none;
+   }
+  }
+ }
+}

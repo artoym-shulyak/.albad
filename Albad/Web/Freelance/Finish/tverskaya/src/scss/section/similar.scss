@@ -1,0 +1,62 @@
+.similar {
+    @extend %margin_bottom140;
+    overflow: hidden;
+}
+
+.similar__title {
+    @extend %title_fz_45;
+}
+
+.similar__items {
+    margin-bottom: 50px;
+}
+
+.similar__link {
+    padding: 18px 26px;
+    border: 1.5px solid $blue-dark;
+    border-radius: 65px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 238px;
+}
+
+// Swiper
+.similar__swiper,
+.wathed__swiper,
+.sim__swiper {
+    width: 100%;
+    margin-bottom: 50px;
+
+    @media (max-width: 1199.98px) {
+        overflow: visible;
+    }
+
+    @media (max-width: 991.98px) {
+        margin-bottom: 40px;
+    }
+
+    .swiper-slide {
+        border-radius: 25px;
+        overflow: hidden;
+        width: 350px;
+
+        @media (max-width: 479.98px) {
+            width: 250px;
+        }
+    }
+
+
+}
+
+
+.similar__scrollbar,
+.wathed__scrollbar {
+    @extend %scroll_bar;
+    // display: none;
+
+    @media (max-width: 991.98px) {
+        display: block;
+    }
+
+}

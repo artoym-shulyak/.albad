@@ -1,0 +1,27 @@
+.figura {
+	margin: 42px 0 60px 0;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+
+	@media (max-width: 991.98px) {
+		justify-content: start;
+		height: 119px;
+	}
+
+	@media (max-width: 767.98px) {
+		transform: translateX(-30px);
+		margin: 70px 0 80px 0;
+	}
+
+	@media (max-width: 576.98px) {
+		height: 80px;
+		margin: 30px 0 30px 0;
+	}
+
+	@media (max-width: 479.98px) {
+		margin: 30px 0 30px 0;
+		height: 60px;
+	}
+
+}

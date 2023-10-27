@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Наши программы"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+
+			<section class="head">
+				<div class="head__container">
+					<ul class="head__path">
+						<li><a href="index.html">главная</a></li>
+						<span>/</span>
+						<li>о нас</li>
+					</ul>
+					<div class="head__middle">
+						<h2 class="head__title">о нас</h2>
+						<button id="btn-primary"><img src="img/hearth.svg" alt=""><span>хочу
+								помочь</span></button>
+					</div>
+				</div>
+			</section>
+
+			<section class="head-items head-documents">
+				<div class="head-items__container">
+					<div class="head__swiper head__swiper-program">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide ">
+								<a href="#">миссия</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">команда</a>
+							</div>
+							<div class="swiper-slide ">
+								<a href="#">документы и реквизиты</a>
+							</div>
+							<div class="swiper-slide ">
+								<a href="#">отчёты</a>
+							</div>
+							<div class="swiper-slide active">
+								<a href="#">наши программы и проекты</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">наши партнёры</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">новости</a>
+							</div>
+							<div class="swiper-slide ">
+								<a href="#">мы в сми</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="our">
+				<div class="our__container">
+					<h2 class="our__title">наши программы</h2>
+					<div class="our__body">
+						<div class="our__item">
+							<div class="our__header">
+								<h3 class="our__name"><img src="img/figura-1.svg" alt=""><span>Инклюзивное взаимодействие</span>
+								</h3>
+								<p class="our__descr">Основная цель программы — социальная адаптация, повышение качества жизни и
+									вовлеченности в общество детей и взрослых с нарушением социализации через специально
+									разработанные творческие и познавательные проекты и мероприятия. Важным элементом является
+									безопасная и экологичная инклюзивная среда, над созданием которой каждый день работает
+									команда нашего центра.</p>
+							</div>
+							<div class="our__footer">
+								<a href="#" class="our__link">
+									<p>В рамках программы проходят дискуссии, круглые столы и другие мероприятия направленные на
+										построение внутрисекторальных горизонтальных связей.</p>
+									<img src="img/next.svg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="our__images"><img src="img/program-1.png" alt=""></div>
+					</div>
+					<div class="our__body">
+						<div class="our__item">
+							<div class="our__header">
+								<h3 class="our__name"><img src="img/figura-2.svg" alt=""><span>Инклюзивное взаимодействие</span>
+								</h3>
+								<p class="our__descr">Основная цель программы — социальная адаптация, повышение качества жизни и
+									вовлеченности в общество детей и взрослых с нарушением социализации через специально
+									разработанные творческие и познавательные проекты и мероприятия. Важным элементом является
+									безопасная и экологичная инклюзивная среда, над созданием которой каждый день работает
+									команда нашего центра.</p>
+							</div>
+							<div class="our__footer">
+								<a href="#" class="our__link">
+									<p>В рамках программы проходят дискуссии, круглые столы и другие мероприятия направленные на
+										построение внутрисекторальных горизонтальных связей.</p>
+									<img src="img/next.svg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="our__images"><img src="img/program-2.png" alt=""></div>
+					</div>
+					<div class="our__body">
+						<div class="our__item">
+							<div class="our__header">
+								<h3 class="our__name"><img src="img/figura-3.svg" alt=""><span>Инклюзивное взаимодействие</span>
+								</h3>
+								<p class="our__descr">Основная цель программы — социальная адаптация, повышение качества жизни и
+									вовлеченности в общество детей и взрослых с нарушением социализации через специально
+									разработанные творческие и познавательные проекты и мероприятия. Важным элементом является
+									безопасная и экологичная инклюзивная среда, над созданием которой каждый день работает
+									команда нашего центра.</p>
+							</div>
+							<div class="our__footer">
+								<a href="#" class="our__link">
+									<p>В рамках программы проходят дискуссии, круглые столы и другие мероприятия направленные на
+										построение внутрисекторальных горизонтальных связей.</p>
+									<img src="img/next.svg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="our__images"><img src="img/program-3.png" alt=""></div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="files/main.js"></script>
+</body>
+
+</html>

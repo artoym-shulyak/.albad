@@ -1,0 +1,28 @@
+[
+{
+"keys": ["ctrl+1"], "command": "goto_css_declaration", "args": {"goto":"next"} // Переход на style.css по нажатию ctrl+1 с index.html
+},{
+"keys": ["ctrl+`"], "command": "tag_classes"// Копирует в имена классов из HTML
+},
+{ "keys": ["ctrl+alt+l"], "command": "reindent", "args": { "single_line": false } }
+]
+
+
+{
+  "ignored_packages":
+  [
+    "Vintage",
+  ],
+  "draw_white_space": false, //Отображает непечатаемые символы
+"draw_indent_guides": false, //Убирает направляющие линии
+"font_size": 11, //Размер шрифта по умолчанию
+"margin": 0,//Убирает отступы
+"tab_size": 2, //Размер табуляции
+"trim_trailling_white_space_on_save": false, //Отключает самодеятельность программы
+"remeber_open_files": true, //Помнит открытые ранее файлы
+"font_face": "Comic Neue",
+"word_wrap": true,
+  // "color_scheme": "Packages/One Dark Material - Theme/schemes/OneDark.tmTheme",
+  "theme": "Adaptive.sublime-theme",
+  "color_scheme": "Packages/One Dark Material - Theme/schemes/OneDark.tmTheme",
+}
